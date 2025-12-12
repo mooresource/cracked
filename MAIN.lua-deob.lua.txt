@@ -1,0 +1,9583 @@
+-- filename: 
+-- version: lua51
+-- line: [0, 0] id: 0
+local r0_0 = (function()
+  -- line: [0, 0] id: 35
+  local r0_35 = #{}
+  local r1_35 = #{
+    "x"
+  }
+  local r2_35 = r1_35 + r1_35
+  local r3_35 = r2_35 + r1_35
+  local r4_35 = r3_35 + r1_35
+  local r5_35 = r4_35 + r1_35
+  local r6_35 = r5_35 + r1_35
+  local r7_35 = r6_35 + r1_35
+  local r8_35 = r7_35 + r1_35
+  local r10_35 = r6_35 * r8_35
+  return {
+    mk = function(r0_36)
+      -- line: [0, 0] id: 36
+      return string.char(r10_35 + r0_36)
+    end,
+    n = {
+      r0_35,
+      r1_35,
+      r2_35,
+      r3_35,
+      r4_35,
+      r5_35,
+      r6_35,
+      r7_35,
+      r8_35,
+      r8_35 + r1_35
+    },
+  }
+end)()
+local r1_0 = r0_0.mk(r0_0.n[9]) .. r0_0.mk(r0_0.n[8]) .. r0_0.mk(r0_0.n[8]) .. r0_0.mk(r0_0.n[9])
+if not _G[tostring(r1_0)] then
+  loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/keysystem.lua"))()
+end
+repeat
+  wait()
+until _G[tostring(r1_0)] == true
+local r2_0 = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/translator.lua"))()
+local function r3_0(r0_55)
+  -- line: [0, 0] id: 55
+  return r2_0:translateText(r0_55)
+end
+local r4_0 = game:GetService("TextService")
+local function r5_0(r0_77)
+  -- line: [0, 0] id: 77
+  local r1_77 = r0_77.TextSize
+  while 1 < r1_77 and r4_0:GetTextSize(r0_77.Text, r1_77, r0_77.Font, Vector2.new(math.huge, math.huge)).X > r0_77.AbsoluteSize.X do
+    r1_77 = r1_77 - 1
+    r0_77.TextSize = r1_77
+  end
+  return r1_77
+end
+local r6_0 = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/notif_lib.lua"))()
+local r7_0 = game:GetService("ContentProvider")
+local r8_0 = "rbxassetid://94707254666920"
+local r9_0 = "rbxassetid://95485559387661"
+local r10_0 = "rbxassetid://131827423757726"
+local r11_0 = "rbxassetid://100154109194536"
+r7_0:PreloadAsync({
+  r8_0,
+  r9_0,
+  r10_0,
+  r11_0,
+  "rbxassetid://70452176150315",
+  "rbxassetid://1524549907",
+  "rbxassetid://104269922408932",
+  "rbxassetid://7383525713",
+  "rbxassetid://18595195017"
+})
+local function r13_0(r0_7, r1_7)
+  -- line: [0, 0] id: 7
+  local r2_7 = Instance.new("Sound")
+  r2_7.SoundId = "rbxassetid://" .. r0_7
+  r2_7.Parent = game.Players.LocalPlayer.Character or game.Players.LocalPlayer
+  r2_7.Volume = r1_7 or 1
+  r2_7:Play()
+end
+local r14_0 = Instance.new("ScreenGui")
+local r15_0 = Instance.new("Frame")
+local r16_0 = Instance.new("TextButton")
+local r17_0 = Instance.new("TextButton")
+local r18_0 = Instance.new("ImageButton")
+local r19_0 = Instance.new("TextLabel")
+local r20_0 = Instance.new("UICorner")
+local r21_0 = Instance.new("UICorner")
+local r22_0 = Instance.new("ScrollingFrame")
+local r23_0 = Instance.new("UIListLayout")
+local r24_0 = Instance.new("UIPadding")
+local r25_0 = Instance.new("ScrollingFrame")
+local r26_0 = Instance.new("UIListLayout")
+local r27_0 = Instance.new("UIListLayout")
+local r28_0 = Instance.new("UIPadding")
+local r29_0 = Instance.new("UIPadding")
+local r30_0 = Instance.new("TextLabel")
+local r31_0 = Instance.new("ScrollingFrame")
+local r32_0 = Instance.new("TextLabel")
+local r33_0 = Instance.new("TextBox")
+local r34_0 = Instance.new("TextButton")
+local r35_0 = Instance.new("TextButton")
+local r36_0 = Instance.new("Frame")
+local r37_0 = Instance.new("TextBox")
+local r38_0 = Instance.new("Frame")
+local r39_0 = Instance.new("Frame")
+local r40_0 = Instance.new("ImageButton")
+local r41_0 = Instance.new("ImageButton")
+local r42_0 = Instance.new("Frame")
+local r43_0 = Instance.new("UIListLayout")
+local r44_0 = Instance.new("UIPadding")
+local r45_0 = Instance.new("ImageLabel")
+local r46_0 = Instance.new("ImageLabel")
+r14_0.Parent = game:GetService("CoreGui")
+r14_0.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+r15_0.Name = "frame"
+r15_0.Parent = r14_0
+r15_0.BackgroundColor3 = Color3.fromRGB(33, 33, 41)
+r15_0.Position = UDim2.new(0.5, 0, 0.5, 0)
+r15_0.AnchorPoint = Vector2.new(0.5, 0.5)
+r15_0.Size = UDim2.new(0, 475, 0, 272)
+r20_0.CornerRadius = UDim.new(0, 4)
+r20_0.Name = "uic1"
+r20_0.Parent = r15_0
+r2_0:requestLang(r15_0, "first")
+r16_0.Name = "closeButton"
+r16_0.Parent = r15_0
+r16_0.BackgroundTransparency = 1
+r16_0.LayoutOrder = 1
+r16_0.Position = UDim2.new(1, -40, 0, 4)
+r16_0.Size = UDim2.new(0, 35, 0, 35)
+r16_0.ZIndex = 5
+r16_0.Font = Enum.Font.SourceSansBold
+r16_0.Text = "X"
+r16_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+r16_0.TextScaled = true
+r16_0.TextWrapped = true
+r17_0.Name = "infoButton"
+r17_0.Parent = r15_0
+r17_0.BackgroundTransparency = 1
+r17_0.LayoutOrder = 2
+r17_0.Position = UDim2.new(0, 5, 0, 4)
+r17_0.Size = UDim2.new(0, 35, 0, 35)
+r17_0.ZIndex = 5
+r17_0.Font = Enum.Font.SourceSansBold
+r17_0.Text = "?"
+r17_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+r17_0.TextScaled = true
+r17_0.TextWrapped = true
+r18_0.Name = "changeLanguageButton"
+r18_0.Parent = r15_0
+r18_0.BackgroundTransparency = 1
+r18_0.LayoutOrder = 2
+r18_0.Position = UDim2.new(0, 43, 0, 5)
+r18_0.Size = UDim2.new(0, 35, 0, 35)
+r18_0.ZIndex = 5
+r18_0.Image = "rbxassetid://123593076590814"
+r19_0.Name = "title"
+r19_0.Parent = r15_0
+r19_0.BackgroundColor3 = Color3.fromRGB(50, 57, 73)
+r19_0.Size = UDim2.new(1, 0, 0, 50)
+r19_0.Font = Enum.Font.SourceSansBold
+r19_0.Text = "TALENTLESS"
+r19_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+r19_0.TextSize = 46
+r19_0.ZIndex = 2
+r21_0.CornerRadius = UDim.new(0, 4)
+r21_0.Name = "uic2"
+r21_0.Parent = r19_0
+r22_0.Name = "categoriesFrame"
+r22_0.Parent = r15_0
+r22_0.Active = true
+r22_0.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+r22_0.BackgroundTransparency = 1
+r22_0.Position = UDim2.new(0.0105263162, 0, 0.183819935, 0)
+r22_0.Size = UDim2.new(0, 111, 0, 222)
+r22_0.ZIndex = 0
+r22_0.ScrollBarThickness = 3
+r22_0.AutomaticCanvasSize = Enum.AutomaticSize.Y
+r23_0.Name = "categoriesLayout"
+r23_0.Parent = r22_0
+r23_0.SortOrder = Enum.SortOrder.LayoutOrder
+r23_0.Padding = UDim.new(0, 10)
+r23_0.HorizontalAlignment = Enum.HorizontalAlignment.Center
+r24_0.Name = "categoriesPadding"
+r24_0.Parent = r22_0
+r24_0.PaddingLeft = UDim.new(0, 5)
+r24_0.PaddingRight = UDim.new(0, 5)
+r24_0.PaddingTop = UDim.new(0, 5)
+r24_0.PaddingBottom = UDim.new(0, 5)
+r25_0.Name = "scroll"
+r25_0.Parent = r15_0
+r25_0.Active = true
+r25_0.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+r25_0.BackgroundTransparency = 1
+r25_0.BorderColor3 = Color3.fromRGB(0, 0, 0)
+r25_0.BorderSizePixel = 0
+r25_0.Position = UDim2.new(0.266860753, 0, 0.183819935, 0)
+r25_0.Size = UDim2.new(0, 198, 0, 222)
+r25_0.CanvasPosition = Vector2.new(0, 17.4999962)
+r25_0.HorizontalScrollBarInset = Enum.ScrollBarInset.Always
+r25_0.ScrollBarThickness = 3
+r25_0.AutomaticCanvasSize = Enum.AutomaticSize.Y
+r26_0.Name = "listLayout"
+r26_0.Parent = r25_0
+r26_0.HorizontalAlignment = Enum.HorizontalAlignment.Center
+r26_0.SortOrder = Enum.SortOrder.LayoutOrder
+r26_0.Padding = UDim.new(0, 20)
+r29_0.Name = "padding"
+r29_0.Parent = r25_0
+r29_0.PaddingTop = UDim.new(0, 50)
+r29_0.PaddingBottom = UDim.new(0, 20)
+r36_0.Name = "searchframe"
+r36_0.Parent = r15_0
+r36_0.BackgroundColor3 = Color3.fromRGB(33, 33, 41)
+r36_0.BorderColor3 = Color3.fromRGB(0, 0, 0)
+r36_0.BorderSizePixel = 0
+r36_0.Position = UDim2.new(0.246315792, 0, 0.183823526, 0)
+r36_0.Size = UDim2.new(0, 208, 0, 38)
+r37_0.Name = "searchbar"
+r37_0.Parent = r36_0
+r37_0.BackgroundColor3 = Color3.fromRGB(96, 102, 121)
+r37_0.BorderColor3 = Color3.fromRGB(0, 0, 0)
+r37_0.BorderSizePixel = 0
+r37_0.Position = UDim2.new(0.158292323, 0, 0.278571635, 0)
+r37_0.Size = UDim2.new(0, 150, 0, 20)
+r37_0.Font = Enum.Font.SourceSansBold
+r37_0.PlaceholderText = r3_0("search")
+r37_0.Text = ""
+r37_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+r37_0.TextScaled = true
+r37_0.TextSize = 14
+r37_0.TextWrapped = true
+r30_0.Name = "creds"
+r30_0.Parent = r15_0
+r30_0.AnchorPoint = Vector2.new(0.5, 0.5)
+r30_0.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+r30_0.BackgroundTransparency = 1
+r30_0.Position = UDim2.new(0.5, 0, 0.189999998, 0)
+r30_0.Size = UDim2.new(0, 314, 0, 26)
+r30_0.Font = Enum.Font.LuckiestGuy
+r30_0.Text = "BY HELLOHELLOHELL012321"
+r30_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+r30_0.TextSize = 14
+r30_0.TextTransparency = 0.32
+r30_0.ZIndex = 3
+r31_0.Name = "bar"
+r31_0.Parent = r15_0
+r31_0.Active = true
+r31_0.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+r31_0.BackgroundTransparency = 1
+r31_0.BorderColor3 = Color3.fromRGB(0, 0, 0)
+r31_0.BorderSizePixel = 0
+r31_0.Position = UDim2.new(1.05001855, -173, 0.20220229, 0)
+r31_0.Size = UDim2.new(0, 144, 0, 217)
+r31_0.ScrollBarThickness = 3
+r31_0.ZIndex = 0
+r31_0.AutomaticCanvasSize = Enum.AutomaticSize.Y
+r27_0.Name = "barlist"
+r27_0.Parent = r31_0
+r27_0.SortOrder = Enum.SortOrder.LayoutOrder
+r27_0.Padding = UDim.new(0, 10)
+r27_0.HorizontalAlignment = Enum.HorizontalAlignment.Center
+r28_0.Name = "barpadding"
+r28_0.Parent = r31_0
+r28_0.PaddingLeft = UDim.new(0, 5)
+r28_0.PaddingRight = UDim.new(0, 5)
+r28_0.PaddingTop = UDim.new(0, 10)
+r28_0.PaddingBottom = UDim.new(0, 5)
+r32_0.Name = "songname"
+r32_0.Parent = r31_0
+r32_0.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+r32_0.BorderColor3 = Color3.fromRGB(64, 68, 90)
+r32_0.BorderSizePixel = 4
+r32_0.Position = UDim2.new(0.0689100027, 0, 0.0855299979, 0)
+r32_0.Size = UDim2.new(0, 125, 0, 34)
+r32_0.ZIndex = -5
+r32_0.Font = Enum.Font.SourceSansBold
+r32_0.Text = r3_0("songname")
+r32_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+r32_0.TextScaled = true
+r32_0.TextSize = 23
+r32_0.TextWrapped = true
+r32_0.LayoutOrder = 1
+r33_0.Name = "bpmbox"
+r33_0.Parent = r31_0
+r33_0.BackgroundColor3 = Color3.fromRGB(96, 102, 121)
+r33_0.BorderColor3 = Color3.fromRGB(0, 0, 0)
+r33_0.BorderSizePixel = 0
+r33_0.Position = UDim2.new(0.163100004, 0, 0.612699986, 0)
+r33_0.Size = UDim2.new(0, 90, 0, 20)
+r33_0.Font = Enum.Font.SourceSansBold
+r33_0.PlaceholderText = "bpm"
+r33_0.Text = ""
+r33_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+r33_0.TextScaled = true
+r33_0.TextSize = 14
+r33_0.TextWrapped = true
+r33_0.LayoutOrder = 2
+r34_0.Name = "playsong"
+r34_0.Parent = r31_0
+r34_0.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+r34_0.BorderColor3 = Color3.fromRGB(64, 68, 90)
+r34_0.BorderSizePixel = 4
+r34_0.Position = UDim2.new(0.0689100027, 0, 0.38815999, 0)
+r34_0.Size = UDim2.new(0, 125, 0, 27)
+r34_0.Font = Enum.Font.SourceSansBold
+r34_0.Text = r3_0("play song")
+r34_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+r34_0.TextSize = 25
+r34_0.LayoutOrder = 3
+r5_0(r34_0)
+r39_0.Name = "songOptionsFrame"
+r39_0.Parent = r31_0
+r39_0.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+r39_0.BackgroundTransparency = 1
+r39_0.BorderColor3 = Color3.fromRGB(0, 0, 0)
+r39_0.BorderSizePixel = 0
+r39_0.LayoutOrder = 4
+r39_0.Position = UDim2.new(0.0300751887, 0, 0.822222233, 0)
+r39_0.Size = UDim2.new(0, 125, 0, 38)
+r40_0.Parent = r39_0
+r40_0.BackgroundTransparency = 1
+r40_0.Position = UDim2.new(0.7, 0, 0, 0)
+r40_0.Size = UDim2.new(0, 38, 0, 38)
+r40_0.Image = r8_0
+r41_0.Parent = r39_0
+r41_0.BackgroundTransparency = 1
+r41_0.BorderSizePixel = 0
+r41_0.Position = UDim2.new(0, 0, 0, 0)
+r41_0.Size = UDim2.new(0, 38, 0, 38)
+r41_0.Image = r10_0
+r38_0.Name = "barseperator"
+r38_0.Parent = r31_0
+r38_0.BackgroundColor3 = Color3.fromRGB(64, 68, 90)
+r38_0.LayoutOrder = 5
+r38_0.Position = UDim2.new(-0.251879692, 0, 1.17777777, 0)
+r38_0.Size = UDim2.new(0, 137, 0, 8)
+r42_0.Name = "tagsFrame"
+r42_0.Parent = r31_0
+r42_0.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+r42_0.BackgroundTransparency = 1
+r42_0.BorderColor3 = Color3.fromRGB(0, 0, 0)
+r42_0.BorderSizePixel = 0
+r42_0.LayoutOrder = 6
+r42_0.Position = UDim2.new(-0.195488721, 0, 1.31851852, 0)
+r42_0.Size = UDim2.new(0, 137, 0, 157)
+r43_0.Name = "tagsListLayout"
+r43_0.Parent = r42_0
+r43_0.FillDirection = Enum.FillDirection.Horizontal
+r43_0.SortOrder = Enum.SortOrder.LayoutOrder
+r43_0.Padding = UDim.new(0, 10)
+r43_0.Wraps = true
+r44_0.Name = "tagsPadding"
+r44_0.Parent = r42_0
+r44_0.PaddingBottom = UDim.new(0, 5)
+r44_0.PaddingLeft = UDim.new(0, 5)
+r44_0.PaddingRight = UDim.new(0, 5)
+r45_0.Name = "snowpile"
+r45_0.Parent = r15_0
+r45_0.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+r45_0.BackgroundTransparency = 1
+r45_0.BorderColor3 = Color3.fromRGB(0, 0, 0)
+r45_0.BorderSizePixel = 0
+r45_0.Position = UDim2.new(-0.0149999997, 0, 0.716000021, 0)
+r45_0.Size = UDim2.new(0, 202, 0, 192)
+r45_0.Image = "rbxassetid://124461981242866"
+r46_0.Name = "xmaslights"
+r46_0.Parent = r15_0
+r46_0.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+r46_0.BackgroundTransparency = 1
+r46_0.BorderColor3 = Color3.fromRGB(0, 0, 0)
+r46_0.BorderSizePixel = 0
+r46_0.Position = UDim2.new(-0.0484210514, 0, 0.0147058824, 0)
+r46_0.Size = UDim2.new(0, 520, 0, 100)
+r46_0.ZIndex = 2
+r46_0.Image = "rbxassetid://850806532"
+r35_0.Name = "toggle"
+r35_0.Parent = r14_0
+r35_0.BackgroundColor3 = Color3.fromRGB(50, 57, 73)
+r35_0.BorderColor3 = Color3.fromRGB(64, 68, 90)
+r35_0.BorderSizePixel = 4
+r35_0.AnchorPoint = Vector2.new(0, 0.5)
+r35_0.Position = UDim2.new(0, 0, 0.5, 0)
+r35_0.Size = UDim2.new(0, 136, 0, 40)
+r35_0.Font = Enum.Font.SourceSansBold
+r35_0.Text = r3_0("toggle ui")
+r35_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+r35_0.TextScaled = true
+r35_0.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 26
+  r15_0.Visible = not r15_0.Visible
+  if r15_0.Visible then
+    r13_0(70452176150315, 0.1)
+  else
+    r13_0(1524549907, 0.1)
+  end
+end)
+r16_0.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 46
+  r14_0:Destroy()
+  STOPLOOP = nil
+  playingall = false
+  r13_0("104269922408932", 0.2)
+end)
+r17_0.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 45
+  loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/info.lua", true))()
+end)
+r18_0.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 68
+  r2_0:requestLang(r15_0, "change")
+  r14_0:Destroy()
+  STOPLOOP = nil
+  playingall = false
+  loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/MAIN.lua", true))()
+end)
+local r47_0 = game:GetService("UserInputService")
+local r48_0 = r35_0
+local r49_0 = nil
+local r50_0 = nil
+local r51_0 = nil
+local r52_0 = nil
+local function r53_0(r0_29)
+  -- line: [0, 0] id: 29
+  local r1_29 = r0_29.Position - r51_0
+  r48_0.Position = UDim2.new(r52_0.X.Scale, r52_0.X.Offset + r1_29.X, r52_0.Y.Scale, r52_0.Y.Offset + r1_29.Y)
+end
+r48_0.InputBegan:Connect(function(r0_17)
+  -- line: [0, 0] id: 17
+  if r0_17.UserInputType == Enum.UserInputType.MouseButton1 or r0_17.UserInputType == Enum.UserInputType.Touch then
+    r49_0 = true
+    r51_0 = r0_17.Position
+    r52_0 = r48_0.Position
+    r0_17.Changed:Connect(function()
+      -- line: [0, 0] id: 18
+      if r0_17.UserInputState == Enum.UserInputState.End then
+        r49_0 = false
+      end
+    end)
+  end
+end)
+r48_0.InputChanged:Connect(function(r0_76)
+  -- line: [0, 0] id: 76
+  if r0_76.UserInputType == Enum.UserInputType.MouseMovement or r0_76.UserInputType == Enum.UserInputType.Touch then
+    r50_0 = r0_76
+  end
+end)
+r47_0.InputChanged:Connect(function(r0_24)
+  -- line: [0, 0] id: 24
+  if r0_24 == r50_0 and r49_0 then
+    r53_0(r0_24)
+  end
+end)
+local r55_0 = false
+local r57_0 = nil	-- notice: implicit variable refs by block#[5]
+if game.GameId == 3929033413 then
+  local r56_0 = Instance.new("TextButton")
+  r57_0 = Instance.new("TextButton")
+  local r58_0 = Instance.new("TextLabel")
+  r56_0.Name = "spoofMidiInfo"
+  r56_0.Parent = r15_0
+  r56_0.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+  r56_0.BorderColor3 = Color3.fromRGB(64, 68, 90)
+  r56_0.BorderSizePixel = 2
+  r56_0.LayoutOrder = 3
+  r56_0.Position = UDim2.new(0.919436276, 0, 0.884484231, 0)
+  r56_0.Size = UDim2.new(0, 23, 0, 23)
+  r56_0.Font = Enum.Font.SourceSansItalic
+  r56_0.Text = "?"
+  r56_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+  r56_0.TextSize = 25
+  r56_0.MouseButton1Click:Connect(function()
+    -- line: [0, 0] id: 54
+    loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/spooferinfo.lua", true))()
+  end)
+  r57_0.Name = "spoofMidi"
+  r57_0.Parent = r15_0
+  r57_0.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+  r57_0.BackgroundTransparency = 1
+  r57_0.BorderColor3 = Color3.fromRGB(64, 68, 90)
+  r57_0.BorderSizePixel = 4
+  r57_0.LayoutOrder = 3
+  r57_0.Position = UDim2.new(0.68785733, 0, 0.899189472, 0)
+  r57_0.Size = UDim2.new(0, 103, 0, 15)
+  r57_0.Font = Enum.Font.SourceSansItalic
+  r57_0.Text = r3_0("spoof midi") .. " [ ]"
+  r57_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+  r57_0.TextSize = 23
+  r57_0.TextXAlignment = Enum.TextXAlignment.Left
+  r5_0(r57_0)
+  r57_0.MouseButton1Click:Connect(function()
+    -- line: [0, 0] id: 53
+    r55_0 = not r55_0
+    if r55_0 then
+      r57_0.Text = r3_0("spoof midi") .. " [x]"
+      r13_0(18595195017, 1)
+      r6_0:SendNotification("Success", r3_0("midispoofon"), 5)
+    else
+      r57_0.Text = r3_0("spoof midi") .. " [ ]"
+      r13_0(18595195017, 1)
+      r6_0:SendNotification("Success", r3_0("midispoofoff"), 5)
+    end
+  end)
+  r58_0.Name = "underline"
+  r58_0.Parent = r57_0
+  r58_0.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+  r58_0.BackgroundTransparency = 1
+  r58_0.BorderColor3 = Color3.fromRGB(0, 0, 0)
+  r58_0.BorderSizePixel = 0
+  r58_0.Position = UDim2.new(-0.121739127, 0, -0.0386352539, 0)
+  r58_0.Size = UDim2.new(0, 102, 0, 22)
+  r58_0.Font = Enum.Font.SourceSans
+  r58_0.Text = "_____________"
+  r58_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+  r58_0.TextSize = 14
+  -- close: r56_0
+end
+local r56_0 = {
+  "+"
+}
+function r57_0(r0_23)
+  -- line: [0, 0] id: 23
+  r0_23 = r0_23:lower()
+  r25_0.CanvasPosition = Vector2.new(0, 0)
+  for r4_23, r5_23 in pairs(r25_0:GetChildren()) do
+    if r5_23:IsA("TextButton") then
+      if r5_23.Text ~= "+" and r5_23 ~= PLAYRANDOM and r5_23 ~= LOOPRANDOM and r5_23 ~= PLAYPLAYLISTBUTTON and r5_23 ~= SHUFFLEPLAYLISTBUTTON then
+        local r6_23 = r5_23.Text:lower()
+        local r8_23 = (r5_23:GetAttribute("AlternateNames") or ""):split(",")
+        local r9_23 = false
+        if r6_23:find(r0_23) then
+          r9_23 = true
+        else
+          for r13_23, r14_23 in pairs(r8_23) do
+            if r9_23 == false and r14_23:lower():find(r0_23) then
+              r9_23 = true
+            end
+          end
+        end
+        r5_23.Visible = r9_23
+      else
+        r5_23.Visible = false
+      end
+    elseif r5_23:IsA("Frame") and r5_23:FindFirstChildOfClass("TextButton") then
+      r5_23.Visible = r5_23:FindFirstChildOfClass("TextButton").Text:lower():find(r0_23)
+    end
+  end
+end
+r37_0:GetPropertyChangedSignal("Text"):Connect(function()
+  -- line: [0, 0] id: 21
+  r57_0(r37_0.Text)
+end)
+r57_0("")
+local r58_0 = game:GetService("UserInputService")
+local r59_0 = r15_0
+local r60_0 = nil
+local r61_0 = nil
+local r62_0 = nil
+local r63_0 = nil
+local function r64_0(r0_4)
+  -- line: [0, 0] id: 4
+  local r1_4 = r0_4.Position - r62_0
+  r59_0.Position = UDim2.new(r63_0.X.Scale, r63_0.X.Offset + r1_4.X, r63_0.Y.Scale, r63_0.Y.Offset + r1_4.Y)
+end
+r59_0.InputBegan:Connect(function(r0_1)
+  -- line: [0, 0] id: 1
+  if r0_1.UserInputType == Enum.UserInputType.MouseButton1 or r0_1.UserInputType == Enum.UserInputType.Touch then
+    r60_0 = true
+    r62_0 = r0_1.Position
+    r63_0 = r59_0.Position
+    r0_1.Changed:Connect(function()
+      -- line: [0, 0] id: 2
+      if r0_1.UserInputState == Enum.UserInputState.End then
+        r60_0 = false
+      end
+    end)
+  end
+end)
+r59_0.InputChanged:Connect(function(r0_69)
+  -- line: [0, 0] id: 69
+  if r0_69.UserInputType == Enum.UserInputType.MouseMovement or r0_69.UserInputType == Enum.UserInputType.Touch then
+    r61_0 = r0_69
+  end
+end)
+r58_0.InputChanged:Connect(function(r0_3)
+  -- line: [0, 0] id: 3
+  if r0_3 == r61_0 and r60_0 then
+    r64_0(r0_3)
+  end
+end)
+local function r65_0(r0_44, r1_44)
+  -- line: [0, 0] id: 44
+  local r2_44 = Instance.new("TextButton")
+  r2_44.Name = r0_44
+  r2_44.Parent = r25_0
+  r2_44.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+  r2_44.BorderColor3 = Color3.fromRGB(64, 68, 90)
+  r2_44.BorderSizePixel = 4
+  r2_44.Size = UDim2.new(0, 175, 0, 35)
+  r2_44.Font = Enum.Font.SourceSansBold
+  r2_44.Text = r0_44
+  r2_44.TextColor3 = Color3.fromRGB(255, 255, 255)
+  r2_44.TextSize = 27
+  r2_44:SetAttribute("AlternateNames", table.concat(r1_44 or {}, ","))
+  local r3_44 = Instance.new("ImageButton")
+  r3_44.Parent = r2_44
+  r3_44.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+  r3_44.BackgroundTransparency = 1
+  r3_44.BorderColor3 = Color3.fromRGB(0, 0, 0)
+  r3_44.BorderSizePixel = 0
+  r3_44.AnchorPoint = Vector2.new(0, 0.5)
+  r3_44.Position = UDim2.new(0, 0, 0.5, 0)
+  r3_44.Size = UDim2.new(0, 25, 0, 25)
+  r3_44.Image = r8_0
+  r3_44.Visible = false
+  r3_44.Name = "favButton"
+  r5_0(r2_44)
+  return r2_44
+end
+LOOPRANDOM = r65_0(r3_0("shuffle play songs"), {})
+LOOPRANDOM.LayoutOrder = 1
+PLAYRANDOM = r65_0(r3_0("play random song"), {})
+PLAYRANDOM.LayoutOrder = 1
+local r66_0 = Instance.new("Frame")
+r66_0.Name = "seperator"
+r66_0.Parent = r25_0
+r66_0.BackgroundColor3 = Color3.fromRGB(64, 68, 90)
+r66_0.Size = UDim2.new(0, 200, 0, 8)
+r66_0.LayoutOrder = 2
+A505 = r65_0("505", {
+  "arctic monkeys",
+  "artic monkeys"
+})
+A7_WEEKS_3_DAYS = r65_0("7 WEEKS & 3 DAYS", {})
+A99DOT9 = r65_0("99.9", {
+  "mob psycho 100"
+})
+A_CYBERS_WORLD = r65_0("A CYBER\'S WORLD?", {
+  "toby fox"
+})
+A_SKY_FULL = r65_0("A SKY FULL OF STARS", {
+  "coldplay"
+})
+A_THOUSAND = r65_0("A THOUSAND MILES", {
+  "popular"
+})
+AFTER_DARK = r65_0("AFTER DARK", {
+  "mr kitty"
+})
+ALL_GIRLS = r65_0("ALL GIRLS ARE THE SAME", {
+  "juice wrld"
+})
+ALL_I_WANT_IS_YOU = r65_0("ALL I WANT IS YOU", {
+  "rebzyyx"
+})
+ALL_MY_FELLAS = r65_0("ALL MY FELLAS", {})
+ALL_THE_STARS = r65_0("ALL THE STARS", {
+  "kendrick lamar",
+  "sza",
+  "black panther"
+})
+ALONE = r65_0("ALONE", {
+  "marshmello"
+})
+ALTALE = r65_0(r3_0("ALTALE"), {})
+ENIGMATIC = r65_0("AN ENIGMATIC ENCOUNTER", {
+  "undertale last breath",
+  "toby fox"
+})
+ANNIHILATE = r65_0("ANNIHILATE", {
+  "spider man",
+  "spiderman",
+  "spider-man",
+  "metro boomin"
+})
+ANOTHER_LOVE = r65_0("ANOTHER LOVE", {
+  "sad, love"
+})
+ANYONE_CAN = r65_0("ANYONE CAN BE FIND LOVE (except you.)", {
+  "breakcore"
+})
+ARIA_MATH = r65_0("ARIA MATH", {
+  "c418"
+})
+ARUARIAN = r65_0("ARUARIAN DANCE", {
+  "nujabes"
+})
+AS_IT_WAS = r65_0("AS IT WAS", {
+  "harry styles"
+})
+ASGORE = r65_0("ASGORE", {
+  "toby fox"
+})
+ASSUMPTIONS = r65_0("ASSUMPTIONS", {})
+ASTRONAMIA = r65_0("ASTRONAMIA (COFFIN DANCE)", {})
+SPEED_OF = r65_0("AT THE SPEED OF LIGHT", {
+  "gd"
+})
+ATTACK_OF_THE_KILLER_QUEEN = r65_0("ATTACK OF THE KILLER QUEEN", {
+  "toby fox",
+  "mrbeast",
+  "phonk"
+})
+AVENGERS = r65_0("AVENGERS (EPIC COVER)", {
+  "movie",
+  "hard"
+})
+BAD_APPLE = r65_0("BAD APPLE!!", {})
+BAD_HABIT = r65_0("BAD HABIT", {
+  "steve lacy"
+})
+BAD_PIGGIES = r65_0("BAD PIGGIES", {
+  "angry birds"
+})
+BATTLE_AGAINST = r65_0("BATTLE AGAINST A TRUE HERO", {})
+BEANIE = r65_0("BEANIE", {
+  "beanie chezile"
+})
+BEAUTIFUL_THINGS = r65_0("BEAUTIFUL THINGS", {
+  "benson boone"
+})
+BEETHOVEN_VIRUS = r65_0("BEETHOVEN VIRUS", {
+  "ludwig van beethoven"
+})
+BELIEVER = r65_0("BELIEVER", {
+  "imagine dragons"
+})
+BELLA_CIAO = r65_0("BELLA CIAO", {})
+BIG_FISH = r65_0("BIG FISH (大鱼)", {})
+BIG_SHOT = r65_0("BIG SHOT", {
+  "toby fox"
+})
+BIRDS_OF_A = r65_0("BIRDS OF A FEATHER", {
+  "billie eilish"
+})
+BLINDING_LIGHTS = r65_0("BLINDING LIGHTS", {
+  "the weeknd"
+})
+BLOODY = r65_0("BLOODY MARY", {
+  "lady gaga",
+  "wednesday"
+})
+BLUE = r65_0("BLUE (DA BA DEE)", {
+  "im blue",
+  "im good"
+})
+BLUE_YUNG = r65_0("BLUE (YUNG KAI)", {})
+BOHEMIAN_RHAPSODY = r65_0("BOHEMIAN RHAPSODY", {
+  "queen"
+})
+BREADY = r65_0("BREADY, SET, GO!", {})
+BY_YOUR_SIDE = r65_0("BY YOUR SIDE", {})
+CAN_YOU_HEAR = r65_0("CAN YOU HEAR THE MUSIC", {
+  "oppenheimer",
+  "popular"
+})
+CAN_YOU_HEAR_EPIC = r65_0("CAN YOU HEAR THE MUSIC (EPIC VER.)", {
+  "hans zimmer",
+  "oppenheimer"
+})
+CANDYLAND = r65_0("CANDYLAND", {
+  "tobu",
+  "ncs",
+  "no copyright sounds"
+})
+CANON_D = r65_0("CANON IN D", {})
+CANT_LET = r65_0("CANT LET GO", {
+  "gd"
+})
+CARELESS = r65_0("CARELESS WHISPER", {})
+CAROL_OF_THE_BELLS = r65_0("CAROL OF THE BELLS", {
+  "christmas"
+})
+CAROL_OF_THE_BELLS_EPIC = r65_0("CAROL OF THE BELLS (EPIC VER.)", {
+  "christmas",
+  "peter buka"
+})
+CENTIMETER = r65_0(r3_0("CENTIMETER"), {
+  "rent a girlfriend",
+  "rent-a-girlfriend"
+})
+CHAOS_KING = r65_0("CHAOS KING", {
+  "toby fox"
+})
+CHRISTMAS_KIDS = r65_0("CHRISTMAS KIDS", {
+  "roar"
+})
+CLAIR_DE_LUNE = r65_0("CLAIR DE LUNE", {
+  "debussy"
+})
+CLOCKS = r65_0("CLOCKS", {
+  "coldplay"
+})
+CLOUD_9 = r65_0("CLOUD 9", {
+  "tobu",
+  "ncs",
+  "no copyright sounds"
+})
+CLUBSTEP = r65_0("CLUBSTEP", {
+  "dj nate",
+  "gd"
+})
+COCONUT = r65_0("COCONUT MALL !!", {
+  "mario kart",
+  "nintendo"
+})
+COMPTINE_DUN_AUTRE_ETE = r65_0("COMPTINE D\'UN AUTRE ÉTÉ", {
+  "yann tiersen",
+  "amelie"
+})
+COUNTING_STARS = r65_0("COUNTING STARS", {
+  "one republic"
+})
+CRAB_RAVE = r65_0("CRAB RAVE", {
+  "no copyright sounds",
+  "ncs",
+  "noisestorm"
+})
+CRADLES = r65_0("CRADLES", {
+  "ncs",
+  "no copyright sounds",
+  "sub urban"
+})
+CREEP = r65_0("CREEP", {
+  "radiohead"
+})
+CROSSING_FIELD = r65_0("CROSSING FIELD", {
+  "sword art online",
+  "sao"
+})
+CUPID = r65_0("CUPID", {
+  "love"
+})
+DAISY_BELL = r65_0("DAISY BELL", {})
+DAMNED = r65_0("DAMNED (COD ZOMBIES)", {
+  "cod zombies theme",
+  "call of duty",
+  "creepy"
+})
+DARK_BEACH = r65_0("DARK BEACH", {
+  "pastel ghost"
+})
+DAWN_OF = r65_0("DAWN OF THE DOORS", {
+  "doors",
+  "roblox",
+  "lsplash"
+})
+DAYLIGHT = r65_0("DAYLIGHT", {
+  "david kushner"
+})
+DEADLOCKED = r65_0("DEADLOCKED", {
+  "gd"
+})
+DEATH_BED = r65_0("DEATH BED", {
+  "powfu",
+  "beabadoobee"
+})
+DESPACITO = r65_0("DESPACITO", {})
+DEXTER_BLOOD_THEME = r65_0("DEXTER - BLOOD THEME", {})
+DETROIT = r65_0("DETROIT: BECOME HUMAN - OPENING", {})
+DIE_WITH = r65_0("DIE WITH A SMILE", {
+  "lady gaga",
+  "bruno mars"
+})
+DIES_IRAE = r65_0("DIES IRAE (MESSA DA REQUIEM)", {
+  "giuseppe verdi"
+})
+DIE_IRAE_III = r65_0("DIES IRAE (REQUIEM MVT.3)", {
+  "mozart"
+})
+DIES_IRAE_III_2 = r65_0("DIES IRAE (REQUIEM MVT.3) (EPIC VER.)", {
+  "mozart",
+  "epic"
+})
+DOG_SONG = r65_0("DOG SONG", {})
+DONT_STOP = r65_0("DONT STOP BELIEVIN\'", {
+  "journey"
+})
+DRAMAM = r65_0("DRAMAMIME", {
+  "flawed mangoes"
+})
+DREAM_FL = r65_0("DREAM FLOWER", {
+  "klydix"
+})
+DREAM_ON = r65_0("DREAM ON", {
+  "aerosmith"
+})
+DROWNING_LOVE = r65_0("DROWNING LOVE", {
+  "chasing kou"
+})
+DRY_HANDS = r65_0("DRY HANDS", {
+  "c418"
+})
+DUMB_DUMB = r65_0("DUMB DUMB", {
+  "everyone is dumb"
+})
+DUVET = r65_0("DUVET", {
+  "boa"
+})
+EASY_ON_ME = r65_0("EASY ON ME", {
+  "adele"
+})
+ELEVATOR_JAM = r65_0("ELEVATOR JAM", {
+  "doors",
+  "roblox",
+  "lsplash"
+})
+ELEVATOR_JAM_2 = r65_0("ELEVATOR JAM x HERE I COME", {
+  "doors",
+  "roblox",
+  "lsplash"
+})
+ENEMY = r65_0("ENEMY", {
+  "imagine dragons",
+  "arcane"
+})
+ENTRY_OF_THE = r65_0("ENTRY OF THE GLADIATORS", {
+  "circus",
+  "clown"
+})
+ERIKA = r65_0("ERIKA", {
+  "nazi",
+  "hitler",
+  "german",
+  "ww2",
+  "world war 2"
+})
+ETHEREAL = r65_0("ETHEREAL", {
+  "txmy"
+})
+EVERGREEN = r65_0("EVERGREEN", {})
+EXPERIENCE = r65_0("EXPERIENCE", {})
+EXPERIENCE_FLOWS = r65_0("EXPERIENCE FLOWS IN YOU", {
+  "tony ann",
+  "river flows in you"
+})
+FADED = r65_0("FADED", {
+  "ncs",
+  "alan walker",
+  "no copyright sounds"
+})
+FALLEN_DOWN = r65_0("FALLEN DOWN", {})
+FANTAISIE = r65_0("FANTAISIE IMPROMPTU", {
+  "frederic chopin"
+})
+FIELD_OF_HOPES_AND_DREAMS = r65_0("FIELD OF HOPES AND DREAMS", {
+  "toby fox"
+})
+FIELD_OF_MEMORIES = r65_0("FIELD OF MEMORIES", {
+  "waterflame",
+  "stick war"
+})
+FINAL_DUET = r65_0("FINAL DUET", {
+  "omori"
+})
+FINALE = r65_0("FINALE", {
+  "toby fox",
+  "flowey"
+})
+FIVE_NIGHTS_1 = r65_0("FIVE NIGHTS AT FREDDYS 1", {
+  "fnaf",
+  "five nights at freddys",
+  "the living tombstone"
+})
+FLARE = r65_0("FLARE", {
+  "hensonn",
+  "sahara",
+  "phonk"
+})
+FLASHING = r65_0("FLASHING LIGHTS", {
+  "kanye west",
+  "graduation"
+})
+FLY_ME_TO_THE_MOON = r65_0("FLY ME TO THE MOON", {
+  "frank sinatra",
+  "love",
+  "squid game",
+  "jazz"
+})
+FOR_THE_DAMAGED_CODA = r65_0("FOR THE DAMAGED CODA", {
+  "evil morty",
+  "rick and morty",
+  "rick & morty"
+})
+FOR_THE_DAMAGED_CODA_2 = r65_0("FOR THE DAMAGED CODA (EPIC VER.)", {
+  "evil morty",
+  "rick and morty",
+  "rick & morty"
+})
+FREAKS = r65_0("FREAKS", {
+  "surf curse"
+})
+FREEDOM_DIVE = r65_0("FREEDOM DIVE", {
+  "xi"
+})
+FRIENDS = r65_0("FRIENDS", {
+  "marshmello",
+  "anne marie"
+})
+FR = r65_0("FROM THE START", {
+  "laufey",
+  "love",
+  "popular"
+})
+FUKASHIGI = r65_0(r3_0("FUKASHIGI NO CARTE"), {
+  "senpai"
+})
+FUR_ELISE = r65_0("FUR ELISE", {
+  "ludwig van beethoven",
+  "classical"
+})
+GANGSTAS_PARADISE = r65_0("GANGSTA\'S PARADISE", {
+  "coolio"
+})
+GEOMETRY_DASH = r65_0("GEOMETRY DASH THEME (DASH)", {
+  "gd"
+})
+GIORNO = r65_0(r3_0("GIORNO\'S THEME"), {
+  "giornos theme",
+  "jojo",
+  "jojo\'s bizarre adventure"
+})
+GLASSY_SKY = r65_0("GLASSY SKY", {
+  "tokyo ghoul"
+})
+GODS_PLAN = r65_0("GODS PLAN", {
+  "drake"
+})
+GOLDENHOUR = r65_0("GOLDEN HOUR", {
+  "jvke",
+  "love, sad",
+  "popular"
+})
+GOOD_MORNING = r65_0("GOOD MORNING (OMORI)", {
+  "omori"
+})
+GOOFY_AHH = r65_0("GOOFY AHH NPC MUSIC", {
+  "whistle"
+})
+GRAVITY_FALLS = r65_0("GRAVITY FALLS", {})
+GURENGE = r65_0(r3_0("GURENGE"), {
+  "lisa",
+  "demon slayer"
+})
+GYPSY_WOMAN = r65_0("GYPSY WOMAN", {
+  "crystal waters",
+  "slickback",
+  "slick back",
+  "gipsy woman"
+})
+HAGGSTORM = r65_0("HAGGSTORM", {
+  "c418"
+})
+HAPPIER = r65_0("HAPPIER", {
+  "marshmello",
+  "bastille"
+})
+HATSUNE_MIKU_NO_GEKISHOU = r65_0("HATSUNE MIKU NO GEKISHOU (激唱)", {
+  "hatsune miku",
+  "vocaloid",
+  "miku",
+  "colorful stage",
+  "project sekai"
+})
+HAZY_MOON = r65_0("HAZY MOON", {
+  "minato",
+  "hatsune miku"
+})
+HEART_AFIRE = r65_0("HEART AFIRE", {
+  "defqwop"
+})
+HEARTACHE = r65_0("HEARTACHE", {})
+HEAT_WAVE = r65_0("HEAT WAVE", {
+  "glass animals"
+})
+HEATHENS = r65_0("HEATHENS", {
+  "twenty one pilots",
+  "suicide squad"
+})
+HELLO = r65_0("HELLO X I LOVE YOU", {
+  "omfg"
+})
+HERE_I_COME = r65_0("HERE I COME", {
+  "doors",
+  "roblox",
+  "lsplash"
+})
+HERE_WITH = r65_0("HERE WITH ME", {
+  "d4vd",
+  "romantic homicide"
+})
+HES_A_PIRATE = r65_0("HES A PIRATE", {
+  "hans zimmer",
+  "pirates of the caribbean"
+})
+HIGH_HOPES = r65_0("HIGH HOPES", {
+  "panic at the disco",
+  "panic!",
+  "house of memories"
+})
+HIMITSU_KOI_GOKORO = r65_0(r3_0("HIMITSU KOI GOKORO"), {
+  "rent a girlfriend",
+  "rent-a-girlfriend",
+  "honeyworks"
+})
+LENAI = r65_0("REN\'AI (レンアイ)", {
+  "rent a girlfriend",
+  "rent-a-girlfriend",
+  "lenai",
+  "renai"
+})
+HH = r65_0("HH", {
+  "kanye west",
+  "heil hitler"
+})
+HIS_THEME = r65_0("HIS THEME", {})
+HIT_THE_ROAD = r65_0("HIT THE ROAD, JACK", {
+  "shake"
+})
+HOPE = r65_0("HOPE", {
+  "xxxtentacion"
+})
+HOPES_DREAMS = r65_0("HOPES AND DREAMS", {
+  "asriel"
+})
+HOTLINE_BLING = r65_0("HOTLINE BLING", {
+  "drake"
+})
+HOUSE_OF = r65_0("HOUSE OF MEMORIES", {
+  "panic at the disco",
+  "panic!",
+  "high hopes"
+})
+HOWLS_MOVING_CASTLE = r65_0(r3_0("MERRY-GO-ROUND OF LIFE"), {
+  "howls moving castle",
+  "howl\'s moving castle",
+  "merry-go-round",
+  "ghibli"
+})
+HOWLS_MOVING_CASTLE_2 = r65_0(r3_0("MERRY-GO-ROUND OF LIFE") .. " - ANIMENZ", {
+  "howls moving castle",
+  "howl\'s moving castle",
+  "merry-go-round",
+  "ghibli"
+})
+HUNGARIAN = r65_0("HUNGARIAN DANCE", {})
+I_LIKE_THE_WAY_YOU = r65_0("I LIKE THE WAY YOU KISS ME", {
+  "artemis"
+})
+I_REALLY_WANT_TO_STAY = r65_0("I REALLY WANT TO STAY AT YOUR HOUSE", {
+  "cyberpunk"
+})
+I_WANT = r65_0("I WANT IT THAT WAY", {
+  "backstreet boys"
+})
+SURVIVE = r65_0("I WILL SURVIVE", {})
+ICARUS = r65_0("ICARUS", {
+  "tony ann"
+})
+IDEA_10 = r65_0("IDEA 10", {
+  "gibran alcocers"
+})
+IDGAF = r65_0("IDGAF", {
+  "boywithuke",
+  "blackbear"
+})
+IDOL = r65_0("IDOL", {
+  "oshi no ko",
+  "yoasobi"
+})
+IDOL_EPIC = r65_0("IDOL (EPIC VER.)", {
+  "oshi no ko",
+  "yoasobi"
+})
+IF_I_AM_WITH_YOU = r65_0("IF I AM WITH YOU", {
+  "jjk",
+  "jujutsu kaisen",
+  "hollow purple",
+  "the honored one",
+  "gojo satoru",
+  "premature death"
+})
+IM_NOT_THE_ONLY_ONE = r65_0("IM NOT THE ONLY ONE", {
+  "sam smith"
+})
+IM_STILL = r65_0("IM STILL STANDING", {
+  "sing",
+  "elton john"
+})
+IMMORTAL = r65_0("IMMORTAL", {
+  "playboi carti"
+})
+IN_THE_NAME = r65_0("IN THE NAME OF LOVE", {})
+INSANE = r65_0("INSANE", {
+  "hazbin hotel"
+})
+INTERSTELLAR = r65_0("INTERSTELLAR", {
+  "hans zimmer",
+  "cinematic",
+  "movie",
+  "popular"
+})
+INVISIBLE = r65_0("INVISIBLE (EDM)", {
+  "ncs",
+  "no copyright sounds"
+})
+ISABELLA = r65_0("ISABELLA\'S LULLABY", {})
+ISOLATION = r65_0("ISOLATION", {
+  "limbo",
+  "gd"
+})
+IT_MEANS = r65_0("IT MEANS EVERYTHING", {})
+ITS_BEEN_SO = r65_0("ITS BEEN SO LONG", {
+  "the living tombstone",
+  "five nights at freddys",
+  "fnaf"
+})
+ITS_JUST_A_BURNING = r65_0("ITS JUST A BURNING MEMORY", {
+  "the care taker",
+  "the caretaker"
+})
+ITS_RAINING = r65_0("ITS RAINING TACOS", {})
+JOCELYN_FLORES = r65_0("JOCELYN FLORES", {
+  "xxxtentacion"
+})
+KAWAIKUTEGOMEN = r65_0(r3_0("KAWAIKUTEGOMEN"), {
+  "honeyworks",
+  "sorry for being so cute",
+  "kawaikutegomen"
+})
+KEROSENE = r65_0("KEROSENE", {
+  "popular"
+})
+KEY = r65_0("KEY", {
+  "c418"
+})
+L = r65_0(r3_0("L\'S THEME"), {
+  "death note",
+  "ls theme"
+})
+LAVENDER_TOWN = r65_0("LAVENDER TOWN", {
+  "pokemon"
+})
+LA_CAMPANELLA = r65_0("LA CAMPANELLA", {
+  "etude",
+  "franz liszt"
+})
+LACRIMOSA = r65_0("LACRIMOSA (REQUIEM MVT.8)", {
+  "mozart",
+  "noot noot"
+})
+LALALA = r65_0("LALALA", {
+  "bbno"
+})
+LET_IT_HAPPEN = r65_0("LET IT HAPPEN", {
+  "tame impala"
+})
+LET_ME_DOWN_SLOWLY = r65_0("LET ME DOWN SLOWLY", {
+  "alec benjamin"
+})
+LET_ME_LOVE = r65_0("LET ME LOVE YOU", {
+  "justin bieber",
+  "dj snake"
+})
+LEVAN_POLKKA = r65_0("LEVAN POLKKA", {
+  "hatsune miku",
+  "vocaloid",
+  "le van"
+})
+LEVELS = r65_0("LEVELS", {
+  "avicii"
+})
+LIEBESTRAUM_NO3 = r65_0("LIEBESTRAUM NO.3", {
+  "franz liszt"
+})
+LIGHT_SWITCH = r65_0("LIGHT SWITCH", {
+  "charlie puth"
+})
+LIGHTS = r65_0(r3_0("LIGHT\'S THEME"), {
+  "death note",
+  "lights theme"
+})
+LIVING_MICE = r65_0("LIVING MICE", {
+  "c418"
+})
+LOST_LIBRARY = r65_0("LOST LIBRARY", {
+  "omori"
+})
+LOST_UMB = r65_0(r3_0("LOST UMBRELLA"), {
+  "cute depressed",
+  "vocaloid",
+  "inabakumori"
+})
+LOVE = r65_0("LOVE (W2E)", {
+  "wave to earth",
+  "love."
+})
+LOVELY_B = r65_0("LOVELY BASTARDS", {
+  "phonk"
+})
+LUTHER = r65_0("LUTHER", {
+  "kendrick lamar",
+  "sza",
+  "GNX"
+})
+LUX_AETERNA = r65_0("LUX AETERNA (REQUIEM FOR A DREAM)", {
+  "clint mansell"
+})
+MA_MEILLEUR = r65_0("MA MEILLEUR ENEMIE", {
+  "stromae",
+  "arcane"
+})
+MAGICAL_CURE = r65_0("M@GICAL CURE! LOVE SHOT!", {
+  "miku",
+  "vocaloid",
+  "hatsune miku",
+  "magical cure"
+})
+MARI_BOSS = r65_0("MARI BOSS FIGHT", {
+  "omori"
+})
+MARRIED = r65_0("MARRIED LIFE", {
+  "movie",
+  "up"
+})
+MARY_ON = r65_0("MARY ON A CROSS", {})
+MASTER_OF_PUPPETS = r65_0("MASTER OF PUPPETS", {
+  "metallica"
+})
+MEGALOVANIA = r65_0("MEGALOVANIA", {
+  "popular"
+})
+METAMORPH = r65_0("METAMORPHOSIS", {
+  "phonk"
+})
+MICE_ON = r65_0("MICE ON VENUS", {
+  "c418"
+})
+MICHAEL_MYERS = r65_0("MICHAEL MYERS", {
+  "halloween"
+})
+MIDDLE_OF_THE_NIGHT = r65_0("MIDDLE OF THE NIGHT", {
+  "elley duhe"
+})
+MII = r65_0("MII CHANNEL THEME", {
+  "wii"
+})
+MIKU = r65_0("MIKU", {
+  "vocaloid"
+})
+MINECRAFT = r65_0("MINECRAFT", {
+  "c418"
+})
+MINGLE = r65_0("MINGLE (ROUND AND ROUND)", {
+  "squid game"
+})
+MONODY = r65_0("MONODY", {
+  "ncs",
+  "no copyright sounds",
+  "thefatrat"
+})
+MONTAGEM_TOMADA = r65_0("MONTAGEM TOMADA", {
+  "phonk"
+})
+MOOD = r65_0("MOOD", {
+  "24kgoldn"
+})
+MOOG_CITY = r65_0("MOOG CITY", {
+  "c418"
+})
+MOONLIGHT = r65_0("MOONLIGHT SONATA - FIRST MOVEMENT", {
+  "ludwig van beethoven"
+})
+M3 = r65_0("MOONLIGHT SONATA - THIRD MOVEMENT", {
+  "ludwig van beethoven"
+})
+MY_CASTLE_TOWN = r65_0("MY CASTLE TOWN", {
+  "toby fox"
+})
+MY_EYES = r65_0("MY EYES", {
+  "travis scott",
+  "utopia"
+})
+MY_HEART_WILL_GO_ON = r65_0("MY HEART WILL GO ON", {
+  "titanic",
+  "celine dion"
+})
+MY_LOVE_ALL_MINE = r65_0("MY LOVE MINE ALL MINE", {
+  "mitski"
+})
+MY_ORDINARY_LIFE = r65_0("MY ORDINARY LIFE", {
+  "the living tombstone"
+})
+GIVE_UP = r65_0("NEVER GONNA GIVE YOU UP", {
+  "rick astley",
+  "rickroll",
+  "rick roll"
+})
+NEVER_MEANT = r65_0("NEVER MEANT TO BELONG", {
+  "bleach"
+})
+NO_SURPRISES = r65_0("NO SURPRISES", {
+  "radiohead"
+})
+NOCTURNE = r65_0("NOCTURNE OP.9 NO.2", {
+  "frederic chopin"
+})
+NOPE_YOUR_TOO_LATE = r65_0("NOPE YOUR TOO LATE I ALREADY DIED", {
+  "wifiskeleton"
+})
+NOTHING_ELSE_MATTERS = r65_0("NOTHING ELSE MATTERS", {
+  "metallica"
+})
+NOT_A_SLACKER = r65_0("NOT A SLACKER ANYMORE", {})
+NOT_LIKE_US = r65_0("NOT LIKE US", {
+  "kendrick lamar",
+  "drake"
+})
+NOTION = r65_0("NOTION", {
+  "the rare occasions"
+})
+NUMBERS = r65_0("NUMBERS", {
+  "temporex"
+})
+NYAN_CAT = r65_0("NYAN CAT", {})
+NYEH = r65_0("NYEH HEH HEH!", {
+  "papyrus"
+})
+OBLIVION = r65_0("OBLIVION (GRIMES)", {
+  "grimes"
+})
+OLD_DOLL = r65_0("OLD DOLL", {
+  "mad father"
+})
+OLD_TOWN_ROAD = r65_0("OLD TOWN ROAD", {
+  "lil nas x"
+})
+ONCE_UPON = r65_0("ONCE UPON A TIME", {})
+ONE_DANCE = r65_0("ONE DANCE", {
+  "drake",
+  "wizkid",
+  "kyla"
+})
+ORDER = r65_0("ORDER (ULTRAKILL)", {
+  "minos prime bossfight"
+})
+ORDINARY = r65_0("ORDINARY", {
+  "alex warren"
+})
+OVERTAKEN = r65_0(r3_0("OVERTAKEN"), {
+  "one piece"
+})
+PARADISE = r65_0("PARADISE", {
+  "coldplay"
+})
+PASSACAGLIA = r65_0("PASSACAGLIA, SUITE NO.7", {})
+PASSO_BEM_SOLTO = r65_0("PASSO BEM SOLTO", {
+  "phonk"
+})
+PAST_LIVES = r65_0("PAST LIVES", {})
+PATHETIQUE = r65_0("SONATE OP.13 NO.8 (PATHÉTIQUE)", {
+  "ludwig van beethoven",
+  "sonata pathetique"
+})
+PAYPHONE = r65_0("PAYPHONE", {
+  "maroon 5"
+})
+PEACHES = r65_0("PEACHES", {
+  "jack black",
+  "bowser",
+  "super mario bros"
+})
+PLANT_VS_ZOMBIES = r65_0("PLANT VS ZOMBIES", {
+  "pvz"
+})
+PLEAD = r65_0("PLEAD (FORSAKEN)", {
+  "roblox forsaken",
+  "last man standing",
+  "c00lkidd",
+  "key after key",
+  "007n7"
+})
+POKEMON = r65_0("POKEMON MAIN THEME", {})
+POKEMON_RED = r65_0("POKEMON RED AND BLUE", {})
+PRAYER = r65_0("PRAYER", {
+  "kendrick lamar",
+  "damn"
+})
+PRELUDE_NO2 = r65_0("BACH - PRELUDE NO.2", {
+  "johann sebastian bach"
+})
+PRELUDE_OP28 = r65_0("CHOPIN - PRELUDE OP.28 NO.4", {
+  "frederic chopin"
+})
+RACING_INTO = r65_0(r3_0("RACING INTO THE NIGHT"), {
+  "yoasobi"
+})
+RAIN = r65_0("RAIN", {
+  "tony ann"
+})
+RATDANCE = r65_0("RAT DANCE", {
+  "chess"
+})
+READY_OR_NOT = r65_0("READY OR NOT (FORSAKEN)", {
+  "c00lkidd chase",
+  "roblox forsaken",
+  "key after key"
+})
+RESONANCE = r65_0("RESONANCE", {
+  "home"
+})
+REVOLUTIONARY = r65_0("ETUDE OP.10 NO.12 (REVOLUTIONARY)", {
+  "frederic chopin"
+})
+RIGHTEOUS = r65_0("RIGHTEOUS (MO BEATS)", {})
+RIPTIDE = r65_0("RIPTIDE", {
+  "vance joy"
+})
+RISE_UP = r65_0("RISE UP", {
+  "thefatrat",
+  "ncs",
+  "no copyright sounds"
+})
+RISES_THE = r65_0("RISES THE MOON", {
+  "liana flores"
+})
+RIVER_FLOWS = r65_0("RIVER FLOWS IN YOU", {})
+ROMANTIC_HOMICIDE = r65_0("ROMANTIC HOMICIDE", {
+  "dv4d",
+  "here with me"
+})
+RUDE_BUSTER = r65_0("RUDE BUSTER", {
+  "toby fox"
+})
+RUINS = r65_0("RUINS", {})
+RUNAWAY = r65_0("RUNAWAY", {
+  "kanye",
+  "popular",
+  "rap",
+  "hip"
+})
+RUNAWAY_AURORA = r65_0("RUNAWAY (AURORA)", {})
+RUNNING_UP = r65_0("RUNNING UP THAT HILL", {
+  "stranger things"
+})
+RUSH_C = r65_0("RUSH C", {
+  "sheet music boss"
+})
+RUSHE = r65_0("RUSH E", {
+  "sheet music boss"
+})
+RUSH_F = r65_0("RUSH F", {
+  "sheet music boss"
+})
+RUSH_G = r65_0("RUSH G", {
+  "sheet music boss"
+})
+RUSH_OF_LIFE = r65_0("RUSH OF LIFE", {
+  "tony ann"
+})
+SAILOR_SONG = r65_0("SAILOR SONG", {
+  "gianna perez"
+})
+SANS = r65_0("SANS.", {
+  "undertale"
+})
+SAVE_YOUR = r65_0("SAVE YOUR TEARS", {
+  "weeknd"
+})
+SCARLET_FOREST = r65_0("SCARLET FOREST", {
+  "toby fox"
+})
+SEE_YOU_AGAIN = r65_0("SEE YOU AGAIN (TYLER THE CREATOR)", {
+  "tyler the creator",
+  "kali urchis",
+  "tyler, the creator",
+  "flower boy"
+})
+SEE_YOU_AGAIN_CHARLIE = r65_0("SEE YOU AGAIN (CHARLIE PUTH)", {
+  "charlie puth",
+  "wiz khalifa"
+})
+SHAPE_OF = r65_0("SHAPE OF YOU", {
+  "ed sheeran"
+})
+SHIAWASE = r65_0("SHIAWASE (VIP)", {
+  "tidal wave",
+  "gd"
+})
+SHIKAIRO = r65_0(r3_0("SHIKAIRO DAYS"), {
+  "my dear friend nokotan",
+  "my deer friend nokotan"
+})
+SHOP = r65_0("SHOP", {})
+SICK_OF_U = r65_0("SICK OF U", {
+  "boywithuke"
+})
+SILHOUETTE = r65_0(r3_0("SILHOUETTE"), {
+  "naruto shippuden"
+})
+SKELETAL_SHENANIGANS = r65_0("SKELETAL SHENANIGANS", {
+  "gd"
+})
+SKYFALL = r65_0("SKYFALL", {
+  "adele"
+})
+SLAY = r65_0("SLAY", {
+  "eternxlz",
+  "phonk"
+})
+SNOWFALL = r65_0("SNOWFALL", {
+  "oneheart"
+})
+SNOWY = r65_0("SNOWY", {})
+SOLAS = r65_0("SOLAS", {
+  "sad"
+})
+SOMEBODY_THAT_I_USED = r65_0("SOMEBODY THAT I USED TO KNOW", {
+  "gotye"
+})
+SOMETHING_JUST = r65_0("SOMETHING JUST LIKE THIS", {
+  "the chainsmokers"
+})
+SONG_THAT_MIGHT = r65_0("SONG THAT MIGHT PLAY WHEN YOU FIGHT SANS", {
+  "undertale"
+})
+SOVIET_UNION_ANTHEM = r65_0("SOVIET UNION ANTHEM", {})
+SPACE_SONG = r65_0("SPACE SONG", {
+  "beach house"
+})
+SPARKLE = r65_0(r3_0("SPARKLE"), {
+  "radwimps",
+  "your name",
+  "kimi no na wa"
+})
+SPEAR_OF = r65_0("SPEAR OF JUSTICE", {})
+SPECTRE = r65_0("SPECTRE", {
+  "alan walker",
+  "ncs",
+  "no copyright sounds",
+  "smurf cat"
+})
+SPIDER_DANCE = r65_0("SPIDER DANCE", {
+  "muffet",
+  "toby fox"
+})
+STAY = r65_0("STAY", {
+  "justin bieber",
+  "kid laroi"
+})
+STEREO_HEARTS = r65_0("STEREO HEARTS", {
+  "gym class heroes",
+  "adam levine"
+})
+STEREO_MADNESS = r65_0("STEREO MADNESS", {
+  "gd"
+})
+STRANGER_THINGS = r65_0("STRANGER THINGS", {})
+STRESSED_OUT = r65_0("STRESSED OUT", {
+  "twenty one pilots",
+  "21 pilots",
+  "heathens"
+})
+STRANGERS = r65_0("STRANGERS", {
+  "kenya grace"
+})
+SUBWOOFER = r65_0("SUBWOOFER LULLABY", {
+  "c418"
+})
+SUGAR_PLUM = r65_0("DANCE OF THE SUGAR PLUM FAIRY", {
+  "christmas",
+  "hard"
+})
+SUNFLOWER = r65_0("SUNFLOWER", {
+  "spider man",
+  "post malone"
+})
+SUPER_IDOL = r65_0("SUPER IDOL", {})
+SUPER_MARIOS = r65_0("SUPER MARIO BROS", {})
+SUZUME = r65_0(r3_0("SUZUME"), {
+  "radwimps"
+})
+SWEATER_WEATHER = r65_0("SWEATER WEATHER", {
+  "the neighbourhood",
+  "love",
+  "popular"
+})
+SWEDEN = r65_0("SWEDEN", {
+  "c418"
+})
+SWIMMING = r65_0("SWIMMING", {
+  "flawed mangoes",
+  "dramamime"
+})
+SYMPHONY_NO5 = r65_0("SYMPHONY NO.5", {
+  "ludwig van beethoven",
+  "5th symphony",
+  "fifth symphony"
+})
+TAKE_FIVE = r65_0("TAKE FIVE", {
+  "dave brubeck",
+  "jazz"
+})
+TAKE_ON_ME = r65_0("TAKE ON ME", {
+  "a-ha"
+})
+TEST_DRIVE = r65_0("TEST DRIVE", {
+  "how to train your dragon",
+  "john powell"
+})
+THATS_WHAT_I_WANT = r65_0("THATS WHAT I WANT", {
+  "lil nas x"
+})
+AUTUMN = r65_0("THE 4 SEASONS - AUTUMN", {
+  "the 4 seasons",
+  "vivaldi",
+  "the four seasons"
+})
+SPRING = r65_0("THE 4 SEASONS - SPRING", {
+  "the 4 seasons",
+  "vivaldi",
+  "the four seasons"
+})
+SUMMER = r65_0("THE 4 SEASONS - SUMMER", {
+  "the 4 seasons",
+  "vivaldi",
+  "the four seasons"
+})
+WINTER = r65_0("THE 4 SEASONS - WINTER", {
+  "the 4 seasons",
+  "vivaldi",
+  "the four seasons"
+})
+THE_AMAZING_DIGITAL = r65_0("THE AMAZING DIGITAL CIRCUS", {
+  "pomni"
+})
+THE_BEN = r65_0("THE BENONI", {})
+THE_ECSTASY_OF_GOLD = r65_0("THE ECSTASY OF GOLD", {
+  "the good, the bad and the ugly",
+  "the good the bad and the ugly"
+})
+THE_ENTERTAINER = r65_0("THE ENTERTAINER", {})
+THE_GREAT_FAIRY = r65_0("THE GREAT FAIRY FOUNTAIN", {
+  "zelda",
+  "the legend of zelda"
+})
+THE_LEGEND = r65_0("THE LEGEND", {
+  "toby fox"
+})
+THE_NIGHTS = r65_0("THE NIGHTS", {
+  "avicii"
+})
+THE_SEARCH = r65_0("THE SEARCH", {
+  "nf"
+})
+THE_SLAUGHTER_CONT = r65_0("THE SLAUGHTER CONTINUES", {
+  "undertale last breath",
+  "last breath"
+})
+THE_WORLD = r65_0("THE WORLD", {
+  "death note"
+})
+THE_WORLD_REVOLVING = r65_0("THE WORLD REVOLVING", {
+  "toby fox"
+})
+THICK_OF_IT = r65_0("THICK OF IT", {
+  "nigga",
+  "ksi",
+  "shit",
+  "popular"
+})
+THIS_IS_WHAT_HEARTBREAK = r65_0("THIS IS WHAT HEARTBREAK FEELS LIKE", {
+  "jvke",
+  "golden hour"
+})
+THIS_IS_WHAT_WINTER = r65_0("THIS IS WHAT WINTER FEELS LIKE", {
+  "jvke",
+  "golden hour"
+})
+TICKING = r65_0("TICKING", {})
+TIME_BACK = r65_0("TIME BACK", {})
+TIME_FLOWS_EVER_ONWARD = r65_0(r3_0("TIME FLOWS EVER ONWARD"), {
+  "frieren",
+  "sousou no frieren",
+  "frieren: beyond journey\'s end",
+  "frieren beyond journeys end"
+})
+TORRENT = r65_0("ETUDE OP.10 NO.4 (TORRENT)", {
+  "frederic chopin"
+})
+TOXIC = r65_0("TOXIC (BOYWITHUKE)", {})
+TRAP_R = r65_0("TRAP ROYALTY", {
+  "fetty wap"
+})
+TURKISH = r65_0("TURKISH MARCH", {
+  "mozart",
+  "rondo alla turca"
+})
+UNDERSTAND = r65_0("UNDERSTAND", {
+  "boywithuke"
+})
+UNDERTALE = r65_0("UNDERTALE", {})
+UNDERWATER = r65_0("UNDERWATER PROM QUEENS", {
+  "omori"
+})
+UNITY = r65_0("UNITY", {
+  "thefatrat",
+  "ncs",
+  "no copyright sounds"
+})
+UNRAVEL = r65_0("UNRAVEL", {
+  "tokyo ghoul"
+})
+UNRAVEL_EPIC = r65_0("UNRAVEL (ANIMENZ ARR.)", {
+  "tokyo ghoul",
+  "animenz",
+  "unravel epic"
+})
+UNSTOPPABLE = r65_0("UNSTOPPABLE", {
+  "sia"
+})
+UNTIL_I_FOUND_YOU = r65_0("UNTIL I FOUND YOU", {
+  "stephen sanchez"
+})
+UNTITLED = r65_0("UNTITLED", {
+  "oobja main theme",
+  "cooked"
+})
+VAMPIRE = r65_0("VAMPIRE", {
+  "olivia rodrigo"
+})
+VIVA_LA_VIDA = r65_0("VIVA LA VIDA", {
+  "coldplay"
+})
+WAITING_FOR = r65_0("WAITING FOR LOVE", {
+  "avicii"
+})
+WAKE_ME = r65_0("WAKE ME UP", {
+  "avicii"
+})
+WALTZ_IN_C_MINOR = r65_0("CHOPIN - WALTZ OP.64 NO.2", {
+  "frederic chopin"
+})
+WASHING = r65_0("WASHING MACHINE HEART", {
+  "mitski"
+})
+WE_ARE = r65_0("ONE PIECE - WE ARE!", {})
+WE_DONT = r65_0("WE DONT TALK ABOUT BRUNO", {
+  "encanto"
+})
+WEDDING_MARCH = r65_0("WEDDING MARCH", {
+  "wedding"
+})
+WET_HANDS = r65_0("WET HANDS", {
+  "c418"
+})
+WHERE_WE = r65_0("WHERE WE PLAYED", {
+  "omori"
+})
+WHY_DID_I_SAY = r65_0("WHY DID I SAY OKIE-DOKIE", {
+  "doki doki literature club",
+  "ddlc"
+})
+WII_SPORTS_TITLE = r65_0("WII SPORTS TITLE THEME", {
+  "wii sports",
+  "nintendo"
+})
+WINTER_WIND = r65_0("ETUDE OP.25 NO.11 (WINTER WIND)", {
+  "frederic chopin"
+})
+WORLDS_END = r65_0("WORLDS END VALENTINE", {
+  "omori"
+})
+XO_TOUR = r65_0("XO TOUR LLIF3", {
+  "lil uzi vert"
+})
+YOUNG_GIRL_A = r65_0(r3_0("YOUNG GIRL A"), {
+  "siinamota",
+  "vocaloid"
+})
+YOUNG_GIRL_A_2 = r65_0(r3_0("YOUNG GIRL A") .. " - EPIC VER.", {
+  "siinamota",
+  "vocaloid"
+})
+YOUR_REALITY = r65_0("YOUR REALITY", {
+  "ddlc",
+  "doki"
+})
+YUUSHA = r65_0("YUUSHA/THE BRAVE (勇者)", {
+  "yoasobi",
+  "frieren",
+  "sousou no frieren",
+  "frieren: beyond journey\'s end",
+  "frieren beyond journeys end"
+})
+ZOMBIE = r65_0("ZOMBIE", {
+  "the cranberries"
+})
+GIMME_GIMME_GIMME = r65_0("GIMME! GIMME! GIMME!", {
+  "abba"
+})
+BARBIE_GIRL = r65_0("BARBIE GIRL", {})
+WHAT_IS_LOVE = r65_0("WHAT IS LOVE", {
+  "haddaway"
+})
+DRAGOSTEA_DIN_TEI = r65_0("DRAGOSTEA DIN TEI (NUMA NUMA)", {
+  "o-zone",
+  "o zone"
+})
+STAYIN_ALIVE = r65_0("STAYIN\' ALIVE", {
+  "the bee gees",
+  "the bee gess"
+})
+CLOSE_EYES = r65_0("CLOSE EYES", {
+  "closed eyes",
+  "dvrst",
+  "phonk"
+})
+BOOM_BOOM_BOOM_BOOM = r65_0("BOOM BOOM BOOM BOOM", {
+  "vengaboys"
+})
+FUNK_ESTRANHO = r65_0("FUNK ESTRANHO", {
+  "ALXIKE",
+  "phonk"
+})
+GUREN_NO_YUMIYA = r65_0(r3_0("GUREN NO YUMIYA"), {
+  "animenz",
+  "attack on titan",
+  "aot"
+})
+IDEA_1 = r65_0("IDEA 1", {
+  "gibran alcocer"
+})
+COMEDY = r65_0(r3_0("COMEDY"), {})
+LET_IT_GO = r65_0("LET IT GO", {
+  "elsa",
+  "frozen",
+  "disney"
+})
+BETTER_OFF_ALONE = r65_0("BETTER OFF ALONE", {
+  "a deejay",
+  "deejay"
+})
+MY_WAR = r65_0("MY WAR", {
+  "boku no sensou",
+  "attack on titan"
+})
+AFRICA = r65_0("AFRICA", {
+  "toto"
+})
+KICK_BACK = r65_0("KICK BACK", {
+  "chainsaw man"
+})
+REVENGE = r65_0("REVENGE (CREEPER)", {
+  "creeper awww",
+  "tryhardninja",
+  "captainsparklez"
+})
+SPECIALZ = r65_0("SPECIALZ", {
+  "jujutsu kaisen",
+  "jjk"
+})
+F1 = r65_0("F1", {
+  "hans zimmer"
+})
+MONTAGEM_CORAL = r65_0("MONTAGEM CORAL", {
+  "phonk",
+  "funk"
+})
+RUNNING_IN_THE_90S = r65_0("RUNNING IN THE 90S", {
+  "max coveri"
+})
+A_CRUEL_ANGELS_THESIS = r65_0(r3_0("A CRUEL ANGEL\'S THESIS"), {
+  "neon genesis evangelion",
+  "neo genesis",
+  "a cruel angels"
+})
+BLUEBIRD = r65_0("BLUE BIRD", {
+  "naruto shippuden"
+})
+IM_INVINCIBLE = r65_0(r3_0("I\'M INVINCIBLE"), {
+  "one piece film red",
+  "im invincible"
+})
+LAMOUR_TOUJOURS = r65_0("L\'AMOUR TOUJOURS", {
+  "gigi d\'agostino",
+  "gigi dagostino"
+})
+CRAZY_FROG = r65_0("CRAZY FROG", {
+  "axel f"
+})
+YOUR_GAZE = r65_0(r3_0("YOUR GAZE, CREPUSCULAR"), {
+  "the fragrant flower blooms with dignity",
+  "Manazashi wa Hikari"
+})
+SHINZOU_WO_SASEGEYO = r65_0(r3_0("SHINZOU WO SASEGEYO!"), {
+  "attack on titan",
+  "dedicate your heart"
+})
+A2_PHUT_HON = r65_0("2 PHUT HON FUNK", {
+  "phonk",
+  "salesman"
+})
+I_CANT_HANDLE_CHANGE = r65_0("I CANT HANDLE CHANGE", {
+  "roar"
+})
+HANA_NI_NATTE = r65_0(r3_0("HANA NI NATTE"), {
+  "the apothecary diaries"
+})
+IDEA_9 = r65_0("IDEA 9", {
+  "gibran alcocer"
+})
+IDEA_22 = r65_0("IDEA 22", {
+  "gibran alcocer"
+})
+A90210 = r65_0("90210", {
+  "travis scott"
+})
+I_BROKE_A_STRING = r65_0("I BROKE A STRING MAKING THIS PART", {})
+THE_BEGINNING = r65_0("THE BEGINNING", {
+  "flawed mangoes"
+})
+GYMNOPEDIE_NO1 = r65_0("GYMNOPÉDIE NO.1", {
+  "satie"
+})
+CRY_FOR_ME_MICHITA = r65_0("CRY FOR ME (feat. 愛海)", {})
+DARK_IS_THE_NIGHT = r65_0("DARK IS THE NIGHT", {
+  "Nikita Bogoslovsky"
+})
+MY_WAY = r65_0("MY WAY", {
+  "frank sinatra"
+})
+STILL_DRE = r65_0("STILL D.R.E.", {
+  "snoop dogg"
+})
+THE_BLUE_DANUBE = r65_0("THE BLUE DANUBE", {
+  "squid game"
+})
+NEVER_BE_ALONE = r65_0("NEVER BE ALONE", {
+  "fnaf",
+  "five nights at freddy\'s",
+  "shadrow"
+})
+RUDER_BUSTER = r65_0("RUDER BUSTER", {
+  "toby fox"
+})
+LOVER_IS_A_DAY = r65_0("LOVER IS A DAY", {
+  "cuco"
+})
+DANDELIONS = r65_0("DANDELIONS", {})
+MY_KIND_OF_WOMAN = r65_0("MY KIND OF WOMAN", {
+  "mac demarco"
+})
+WHEN_I_MET_YOU = r65_0("WHEN I MET YOU", {
+  "apo hiking society"
+})
+SADNESS_AND_SORROW = r65_0(r3_0("SADNESS AND SORROW"), {
+  "naruto shippuden"
+})
+THIS_IS_WHAT_FALLING_IN_LOVE = r65_0("THIS IS WHAT FALLING IN LOVE FEELS LIKE", {
+  "jvke"
+})
+CHA_LA_HEAD_CHA_LA = r65_0("CHA-LA HEAD-CHA-LA", {
+  "dragon ball z"
+})
+UWA_SO_TEMPERATE = r65_0("UWA!! SO TEMPERATE♫", {
+  "toby fox"
+})
+WE_WERE_ANGELS = r65_0(r3_0("WE WERE ANGELS"), {
+  "dragon ball z"
+})
+WIEGE = r65_0("WIEGE", {
+  "alien stage"
+})
+DEPARTURE = r65_0("DEPARTURE!", {
+  "hunter x hunter"
+})
+RUE_DES_TROIS_FRERES = r65_0("RUE DES TROIS FRERES", {})
+ITS_TV_TIME = r65_0("IT\'S TV TIME!", {
+  "toby fox",
+  "its tv time"
+})
+CONCERTO_OP30_NO3 = r65_0("RACHMANINOFF - CONCERTO OP.30 NO.3", {
+  "rachmaninoff"
+})
+MORNING_MOOD = r65_0("PEER GYNT OP.46 NO.1 (MORNING MOOD)", {
+  "grow a garden"
+})
+ETUDE_NO3_UN_SOSPIRO = r65_0("LISZT - ETUDE NO.3 (UN SOSPIRO)", {
+  "franz liszt"
+})
+SERENADE = r65_0("SCHUBERT - SERENADE", {
+  "franz liszt"
+})
+POLONAISE = r65_0("POLONAISE IN F SHARP MINOR OP.44", {
+  "frederic chopin"
+})
+VIENNA = r65_0("VIENNA", {
+  "billy joel"
+})
+ONE_SUMMERS_DAY = r65_0(r3_0("ONE SUMMER\'S DAY"), {
+  "spirited away",
+  "studio ghibli",
+  "joe hisaishi",
+  "one summers day"
+})
+LE_MONDE = r65_0("LE MONDE", {})
+JUDAS = r65_0("JUDAS", {
+  "lady gaga"
+})
+GYMONPEDIE_NO2 = r65_0("GYMNOPÉDIE NO.2", {
+  "satie"
+})
+LIKE_HIM_BEST = r65_0("LIKE HIM (BEST PART)", {
+  "chromakopia",
+  "tyler the creator"
+})
+WATERFALL = r65_0("WATERFALL", {
+  "toby fox"
+})
+KISS_THE_RAIN = r65_0("KISS THE RAIN", {
+  "yiruma"
+})
+KAMADO_TANJIRO_NO_UTA = r65_0(r3_0("KAMADO TANJIRO NO UTA"), {
+  "demon slayer"
+})
+ON_MY_WAY = r65_0("ON MY WAY", {
+  "alan walker",
+  "ncs",
+  "no copyright sounds"
+})
+A7_YEARS = r65_0("7 YEARS", {
+  "lukas graham"
+})
+PIANO_MAN = r65_0("PIANO MAN", {
+  "billy joel"
+})
+NIGHT_DANCER = r65_0("NIGHT DANCER", {
+  "imase"
+})
+LET_YOU_BREAK_MY_HEART_AGAIN = r65_0("LET YOU BREAK MY HEART AGAIN", {
+  "laufey"
+})
+WHAT_WAS_I_MADE_FOR = r65_0("WHAT WAS I MADE FOR", {
+  "billie eilish"
+})
+SPAWN = r65_0("SPAWN", {
+  "toby fox"
+})
+ALL_I_WANT_FOR_CHRISTMAS_IS_YOU = r65_0("ALL I WANT FOR CHRISTMAS IS YOU", {
+  "mariah carey"
+})
+IN_HELL_WE_LIVE = r65_0("IN HELL WE LIVE, LAMENT", {
+  "mili",
+  "limbus company"
+})
+SPOOKY_SCARY_SKELETONS = r65_0("SPOOKY SCARY SKELETONS", {
+  "halloween"
+})
+A_HOME_FOR_FLOWERS = r65_0("A HOME FOR FLOWERS", {})
+MONTAGEM_XONADA = r65_0("MONTAGEM XONADA", {
+  "MXZI",
+  "phonk",
+  "funk"
+})
+BLACK_KNIFE = r65_0("BLACK KNIFE", {
+  "toby fox"
+})
+RENAI_CIRCULATION = r65_0(r3_0("RENAI CIRCULATION"), {
+  "bakemonogatari"
+})
+CHIISANA_KOI_NO_UTA = r65_0(r3_0("CHIISANA KOI NO UTA"), {})
+WHERE_OUR_BLUE_IS = r65_0(r3_0("WHERE OUR BLUE IS"), {
+  "tatsuya kitani",
+  "jjk",
+  "jujutsu kaisen"
+})
+CHAMBER_OF_REFLECTION = r65_0("CHAMBER OF REFLECTION", {
+  "mac demarco"
+})
+SWAN_LAKE = r65_0("SWAN LAKE", {
+  "tchaikovsky"
+})
+BUTCHER_VANITY = r65_0("BUTCHER VANITY", {
+  "vane lily",
+  "forsaken",
+  "roblox"
+})
+THIS_IS_HALLOWEEN = r65_0("THIS IS HALLOWEEN", {})
+CANT_HELP_FALLING_IN_LOVE = r65_0("CAN\'T HELP FALLING IN LOVE", {
+  "elvis presley",
+  "cant help falling in love"
+})
+LIKE_HIM = r65_0("LIKE HIM", {
+  "tyler the creator",
+  "chromakopia"
+})
+CRUCIFIED = r65_0("CRUCIFIED", {
+  "army of lovers"
+})
+BLACK_CATCHER = r65_0("BLACK CATCHER", {
+  "black clover"
+})
+LOVELY = r65_0("LOVELY", {
+  "billie eilish",
+  "khalid"
+})
+HEY_KIDS = r65_0("HEY KIDS", {})
+SNOWMAN = r65_0("SNOWMAN", {
+  "christmas",
+  "sia"
+})
+PIXEL_PEEKER_POLKA = r65_0("PIXEL PEEKER POLKA (DON\'T TOUCH MY PIZZA)", {
+  "kevin macleod",
+  "dont touch my pizza"
+})
+FAST = r65_0("FAST", {
+  "juice wrld"
+})
+GYMNOPEDIE_NO3 = r65_0("GYMNOPÉDIE NO.3", {
+  "satie"
+})
+REFLECTIONS = r65_0(r3_0("REFLECTIONS"), {
+  "toshifumi hinata"
+})
+LOVE_STORY = r65_0("LOVE STORY", {
+  "indila"
+})
+HELLO_ADELE = r65_0("HELLO (ADELE)", {
+  "adele"
+})
+LET_IT_GO_X_LET_HER_GO = r65_0("LET IT GO X LET HER GO", {
+  "frozen"
+})
+I_WONDER = r65_0("I WONDER", {
+  "kanye west",
+  "graduation"
+})
+RANSOM = r65_0("RANSOM", {
+  "lil tecca"
+})
+LET_HER_GO = r65_0("LET HER GO", {
+  "passenger"
+})
+TIMELESS = r65_0("TIMELESS", {
+  "the weeknd",
+  "the weekend",
+  "playboi carti"
+})
+JUST_THE_TWO_OF_US = r65_0("JUST THE TWO OF US", {
+  "jazz"
+})
+TEK_IT = r65_0("TEK IT", {
+  "cafune"
+})
+FLY_MY_WINGS = r65_0("FLY, MY WINGS", {
+  "limbus company",
+  "mili",
+  "fly my wings"
+})
+AI_SCREAM = r65_0(r3_0("AI♡SCREAM!"), {
+  "aiscream",
+  "ai scream"
+})
+HOLLOW_KNIGHT_MAIN_THEME = r65_0("HOLLOW KNIGHT MAIN THEME", {})
+HIDE = r65_0("HIDE", {
+  "dorian concept",
+  "hide dorian concept"
+})
+LAST_GOODBYE = r65_0("LAST GOODBYE", {
+  "toby fox"
+})
+DAD_BATTLE = r65_0("DAD BATTLE (FNF)", {
+  "friday night funkin",
+  "kawai sprite"
+})
+YOUR_POWER = r65_0("YOUR POWER", {
+  "billie eilish"
+})
+WE_ARE_NUMBER_ON = r65_0("WE ARE NUMBER ONE", {})
+NEW_HOME = r65_0("NEW HOME", {})
+DIE_FOR_YOU = r65_0("DIE FOR YOU", {
+  "the weeknd"
+})
+DIRTMOUTH = r65_0("DIRTMOUTH", {
+  "hollow knight"
+})
+NERVES = r65_0("NERVES (FNF VS GARCELLO)", {
+  "friday night funkin"
+})
+SWEET_DREAMS = r65_0("SWEET DREAMS", {
+  "sweet dreams are made of this"
+})
+HERO = r65_0("HERO (LIMBUS COMPANY)", {
+  "mili"
+})
+SILLY_BILLY = r65_0("SILLY BILLY (FNF)", {
+  "friday night funkin"
+})
+VAN_GOGH = r65_0("VAN GOGH", {})
+GONE_ANGELS = r65_0("GONE ANGELS", {
+  "limbus company",
+  "mili"
+})
+ONE_OF_THE_GIRLS = r65_0("ONE OF THE GIRLS", {
+  "idol",
+  "the weeknd"
+})
+ROI = r65_0("ROI (VIDEOCLUB)", {})
+PASILYO = r65_0("PASILYO", {
+  "sunkissed lola"
+})
+ROBBERY = r65_0("ROBBERY", {
+  "juice wrld"
+})
+CHILDREN = r65_0("CHILDREN", {
+  "robert miles"
+})
+CONGRATULATIONS = r65_0("CONGRATULATIONS", {
+  "mac miller"
+})
+ITS_RAINING_SOMEWHERE_ELSE = r65_0("IT\'S RAINING SOMEWHERE ELSE", {
+  "its raining somewhere else",
+  "toby fox"
+})
+WE_NOT_LIKE_U = r65_0("WE NOT LIKE YOU", {
+  "nettspend"
+})
+FLIGHT = r65_0("FLIGHT (MAN OF STEEL)", {
+  "hans zimmer"
+})
+KEEP_UP = r65_0("KEEP UP (ODETARI)", {})
+A_TALE_OF_SIX = r65_0(r3_0("A TALE OF SIX TRILLION YEARS AND A NIGHT"), {
+  "Rokuchonen to Ichiya Monogatari",
+  "a tale of six trillion years and a night"
+})
+MULTO = r65_0("MULTO", {
+  "ghost",
+  "cup of joe"
+})
+YLANG_YLANG = r65_0("YLANG YLANG", {})
+LAST_CHRISTMAS = r65_0("LAST CHRISTMAS", {
+  "wham"
+})
+CREEPIN = r65_0("CREEPIN\'", {
+  "metro boomin",
+  "the weeknd",
+  "21 savage"
+})
+FEEL_GOOD_INC = r65_0("FEEL GOOD INC", {
+  "gorillaz"
+})
+ALL_STAR = r65_0("ALL STAR", {
+  "shrek",
+  "smash mouth"
+})
+SUPER_SMASH_BROS = r65_0("SUPER SMASH BROS. ULTIMATE", {
+  "super smash bros"
+})
+NEVER_SEE_ME_AGAIN = r65_0("NEVER SEE ME AGAIN", {
+  "kanye west"
+})
+BIRDLAND = r65_0("BIRDLAND", {
+  "jazz"
+})
+AMOUR_PLASTIQUE = r65_0("AMOUR PLASTIQUE", {
+  "napolean",
+  "theres nothing we can do",
+  "videoclub"
+})
+GEOMETRICAL_DOMINATOR = r65_0("GEOMETRICAL DOMINATOR", {
+  "gd",
+  "waterflame"
+})
+SLOW_DANCING_IN = r65_0("SLOW DANCING IN THE DARK", {
+  "joji"
+})
+HOME = r65_0("HOME (UNDERTALE)", {
+  "toby fox"
+})
+MRS_MAGIC = r65_0("MRS MAGIC", {
+  "strawberry guy"
+})
+CALL_OUT_MY_NAME = r65_0("CALL OUT MY NAME", {
+  "the weeknd"
+})
+GOLDEN_BROW = r65_0("GOLDEN BROWN", {
+  "the stranglers"
+})
+THE_REAL_SLIM_SHADY = r65_0("THE REAL SLIM SHADY", {
+  "eminem"
+})
+AROUND_THE_WORLD = r65_0("AROUND THE WORLD", {
+  "atc",
+  "la la la"
+})
+NEW_COMPUTERS = r65_0("ALL ROADS LEAD TO ROME", {
+  "girlfriends",
+  "new computers"
+})
+TIME = r65_0("TIME", {
+  "hans zimmer",
+  "inception"
+})
+THIS_IS_WHAT_SPACE = r65_0("THIS IS WHAT SPACE FEELS LIKE", {
+  "jvke"
+})
+PROPOSE = r65_0(r3_0("PROPOSE (9LANA)"), {
+  "Naishi no Pierced Earrings",
+  "propose",
+  "9lana",
+  "vocaloid"
+})
+BEAUTIFUL_IN_WHITE = r65_0("BEAUTIFUL IN WHITE", {
+  "westlife"
+})
+KISS_OF_DEATH = r65_0("KISS OF DEATH", {
+  "darling in the franxx",
+  "darling and the franxx"
+})
+TRANSCEDENTAL_ETUDE_4 = r65_0("TRANSCEDENTAL ETUDE NO.4 (MAZEPPA)", {
+  "franz liszt"
+})
+VOILA = r65_0("VOILÀ", {
+  "voila"
+})
+JINGLE_BELLS = r65_0("JINGLE BELLS", {
+  "holidays",
+  "christmas",
+  "one horse open sleigh"
+})
+SANTA_CLAUS_IS_COMING = r65_0("SANTA CLAUS IS COMING TO TOWN", {
+  "christmas",
+  "holidays"
+})
+SINKING_TOWN = r65_0(r3_0("SINKING TOWN"), {
+  "sinking town",
+  "shizumeru machi"
+})
+JINGLE_BELL_ROCK = r65_0("JINGLE BELL ROCK", {
+  "christmas",
+  "holidays"
+})
+LIFE_WILL_CHANGE = r65_0("LIFE WILL CHANGE (PERSONA 5)", {
+  "persona 5"
+})
+TREACHERY = r65_0("TREACHERY (BLEACH)", {})
+MERRY_CHRISTMAS_MR_LAWRENCE = r65_0("MERRY CHRISTMAS, MR LAWRENCE", {
+  "merry christmas mr lawrence",
+  "holidays"
+})
+DECK_THE_HALLS = r65_0("DECK THE HALLS", {
+  "holidays",
+  "christmas"
+})
+THE_ABYSS = r65_0("THE ABYSS", {
+  "the weeknd",
+  "lana del ray"
+})
+IN_THE_POOL = r65_0("IN THE POOL (CHAINSAW MAN)", {
+  "chainsaw man reze arc"
+})
+THANG_DIEN = r65_0("THANG DIEN", {
+  "justatea",
+  "justatee"
+})
+HERE_TO_STAY = r65_0("HERE TO STAY (BLEACH)", {})
+ONCE_UPON_A_DECEMBER = r65_0("ONCE UPON A DECEMBER", {
+  "anastasia",
+  "holidays",
+  "christmas"
+})
+LEAVE_THE_DOOR_OPEN = r65_0("LEAVE THE DOOR OPEN", {
+  "bruno mars"
+})
+IRIS_OUT = r65_0("IRIS OUT (CHAINSAW MAN)", {
+  "reze arc",
+  "chainsaw man reze arc"
+})
+DIED_IN_YOUR_ARMS = r65_0("DIED IN YOUR ARMS", {
+  "i just died in your arms tonight",
+  "cutting crew",
+  "die in your arms"
+})
+I_HATE_U_I_LOVE_U = r65_0("I HATE U, I LOVE U", {
+  "gnash",
+  "olivia obrien",
+  "olivia o\'brien"
+})
+SAITAMAS_THEME = r65_0("SAITAMA\'S THEME", {
+  "one punch man",
+  "saitamas theme sad",
+  "saitamas sad theme"
+})
+FLIGHT_OF_THE_BUMBLEBEE = r65_0("FLIGHT OF THE BUMBLEBEE", {})
+WE_WISH_YOU_A_MERRY = r65_0("WE WISH YOU A MERRY CHRISTMAS", {
+  "holidays",
+  "christmas"
+})
+THIS_IS_HOME = r65_0("THIS IS HOME", {
+  "cavetown"
+})
+THE_WINNER_TAKES_IT_ALL = r65_0("THE WINNER TAKES IT ALL", {
+  "abba"
+})
+THROUGH_PATCHES_OF_VIOLET = r65_0("THROUGH PATCHES OF VIOLET", {
+  "mili",
+  "limbus company"
+})
+BINKS_RUM = r65_0("BINKS\' RUM", {
+  "one piece",
+  "binks rum",
+  "binks sake"
+})
+local r67_0 = {}
+for r71_0, r72_0 in ipairs(r25_0:GetChildren()) do
+  local r75_0 = "IsA"
+  r75_0 = "TextButton"
+  local r73_0 = r72_0:[r75_0](r75_0)
+  if r73_0 then
+    r73_0 = LOOPRANDOM
+    if r72_0 ~= r73_0 then
+      r73_0 = PLAYRANDOM
+      if r72_0 ~= r73_0 then
+        table.insert(r67_0, r72_0)
+      end
+    end
+  end
+end
+table.sort(r67_0, function(r0_40, r1_40)
+  -- line: [0, 0] id: 40
+  return r0_40.Name:lower() < r1_40.Name:lower()
+end)
+for r71_0, r72_0 in ipairs(r67_0) do
+  local r73_0 = r71_0 + 3
+  r72_0.LayoutOrder = r73_0
+end
+MANGOMANGOMANGO = r65_0("MANGO MANGO MANGO", {})
+MANGOMANGOMANGO.LayoutOrder = #r67_0 + 1
+DEATH_WALTZ = r65_0("DEATH WALTZ (WARNING)", {})
+DEATH_WALTZ.LayoutOrder = #r67_0 + 1
+local r68_0 = {
+  {
+    button = INTERSTELLAR,
+    bpm = "104",
+    var = false,
+    url = "INTERSTELLAR",
+    [r70_0] = {
+      "epic",
+      "beautiful",
+      "movies/tv"
+    },
+  },
+  {
+    button = RUSHE,
+    bpm = "80",
+    var = false,
+    url = "RUSH_E",
+    [r71_0] = {
+      "memes"
+    },
+  },
+  {
+    button = GOLDENHOUR,
+    bpm = "94",
+    var = false,
+    url = "GOLDEN_HOUR",
+    [r72_0] = {
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = CUPID,
+    bpm = "120",
+    var = false,
+    url = "CUPID",
+    [r73_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = RATDANCE,
+    bpm = "120",
+    var = false,
+    url = "RAT_DANCE",
+    [r74_0] = {
+      "memes"
+    },
+  },
+  {
+    button = RUNAWAY,
+    bpm = "160",
+    var = false,
+    url = "RUNAWAY",
+    [r75_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = YOUR_REALITY,
+    bpm = "105",
+    var = false,
+    url = "YOUR_REALITY",
+    [r76_0] = {
+      "video games",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = ANOTHER_LOVE,
+    bpm = "123",
+    var = false,
+    url = "ANOTHER_LOVE",
+    [r77_0] = {
+      "sad",
+      "best",
+      "epic",
+      "beautiful",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = FINAL_DUET,
+    bpm = "84",
+    var = false,
+    url = "FINAL_DUET",
+    [r78_0] = {
+      "video games",
+      "omori"
+    },
+  },
+  {
+    button = EXPERIENCE,
+    bpm = "92",
+    var = false,
+    url = "EXPERIENCE",
+    [r79_0] = {
+      "epic",
+      "best",
+      "beautiful",
+      "peak"
+    },
+  },
+  {
+    button = CAN_YOU_HEAR,
+    bpm = "75",
+    var = false,
+    url = "CAN_YOU_HEAR",
+    [r80_0] = {
+      "epic",
+      "movies/tv"
+    },
+  },
+  {
+    button = HOWLS_MOVING_CASTLE,
+    bpm = "156",
+    var = false,
+    url = "HOWLS_MOVING_CASTLE",
+    [r81_0] = {
+      "anime/jpop",
+      "beautiful",
+      "movies/tv"
+    },
+  },
+  {
+    button = YOUNG_GIRL_A,
+    bpm = "130",
+    var = false,
+    url = "YOUNG_GIRL_A",
+    [r82_0] = {
+      "anime/jpop",
+      "sad",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = ARIA_MATH,
+    bpm = "84",
+    var = false,
+    url = "ARIA_MATH",
+    [r83_0] = {
+      "video games",
+      "minecraft",
+      "beautiful"
+    },
+  },
+  {
+    button = ALL_MY_FELLAS,
+    bpm = "160",
+    var = false,
+    url = "ALL_MY_FELLAS",
+    [r84_0] = {
+      "memes"
+    },
+  },
+  {
+    button = THICK_OF_IT,
+    bpm = "146",
+    var = false,
+    url = "THICK_OF_IT",
+    [r85_0] = {
+      "memes"
+    },
+  },
+  {
+    button = ROMANTIC_HOMICIDE,
+    bpm = "132",
+    var = false,
+    url = "ROMANTIC_HOMICIDE",
+    [r86_0] = {
+      "sad"
+    },
+  },
+  {
+    button = IF_I_AM_WITH_YOU,
+    bpm = "82",
+    var = false,
+    url = "IF_I_AM_WITH_YOU",
+    [r87_0] = {
+      "anime/jpop",
+      "best",
+      "beautiful",
+      "peak",
+      "movies/tv"
+    },
+  },
+  {
+    button = CRADLES,
+    bpm = "158",
+    var = false,
+    url = "CRADLES",
+    [r88_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = IDOL,
+    bpm = "166",
+    var = false,
+    url = "IDOL",
+    [r89_0] = {
+      "anime/jpop",
+      "best",
+      "movies/tv"
+    },
+  },
+  {
+    button = RIVER_FLOWS,
+    bpm = "137",
+    var = false,
+    url = "RIVER_FLOWS_IN_YOU",
+    [r90_0] = {
+      "sad"
+    },
+  },
+  {
+    button = NOCTURNE,
+    bpm = "62",
+    var = false,
+    url = "NOCTURNE",
+    [r91_0] = {
+      "classical",
+      "best"
+    },
+  },
+  {
+    button = ISABELLA,
+    bpm = "112",
+    var = false,
+    url = "ISABELLAS_LULLABY",
+    [r92_0] = {
+      "video games"
+    },
+  },
+  {
+    button = GIORNO,
+    bpm = "135",
+    var = false,
+    url = "GIORNO",
+    [r93_0] = {
+      "anime/jpop",
+      "memes",
+      "movies/tv"
+    },
+  },
+  {
+    button = GIVE_UP,
+    bpm = "113",
+    var = false,
+    url = "GIVE_UP",
+    [r94_0] = {
+      "memes",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = UNRAVEL,
+    bpm = "135",
+    var = false,
+    url = "UNRAVEL",
+    [r95_0] = {
+      "anime/jpop",
+      "beautiful",
+      "movies/tv"
+    },
+  },
+  {
+    button = WINTER_WIND,
+    bpm = "125",
+    var = false,
+    url = "WINTER_WIND",
+    [r96_0] = {
+      "classical"
+    },
+  },
+  {
+    button = SWEATER_WEATHER,
+    bpm = "124",
+    var = false,
+    url = "SWEATER_WEATHER",
+    [r97_0] = {
+      "sad"
+    },
+  },
+  {
+    button = VIVA_LA_VIDA,
+    bpm = "138",
+    var = false,
+    url = "VIVA_LA_VIDA",
+    [r98_0] = {
+      "epic",
+      "beautiful",
+      "best",
+      "peak"
+    },
+  },
+  {
+    button = M3,
+    bpm = "163",
+    var = false,
+    url = "WHAT_THE_FUCKK",
+    [r99_0] = {
+      "classical",
+      "best",
+      "peak"
+    },
+  },
+  {
+    button = NEVER_MEANT,
+    bpm = "66",
+    var = false,
+    url = "NEVER_MEANT",
+    [r100_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = AVENGERS,
+    bpm = "120",
+    var = false,
+    url = "AVENGERS",
+    [r101_0] = {
+      "epic",
+      "best",
+      "movies/tv"
+    },
+  },
+  {
+    button = BEETHOVEN_VIRUS,
+    bpm = "162",
+    var = false,
+    url = "BEETHOVEN_VIRUS",
+    [r102_0] = {
+      "classical",
+      "electronic",
+      "best",
+      "peak"
+    },
+  },
+  {
+    button = LA_CAMPANELLA,
+    bpm = "107",
+    var = false,
+    url = "LA_CAMPANELLA",
+    [r103_0] = {
+      "classical",
+      "best",
+      "peak",
+      "beautiful"
+    },
+  },
+  {
+    button = KEROSENE,
+    bpm = "116",
+    var = false,
+    url = "KEROSENE",
+    [r104_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = RACING_INTO,
+    bpm = "129",
+    var = false,
+    url = "RACING_INTO",
+    [r105_0] = {
+      "anime/jpop",
+      "best",
+      "beautiful"
+    },
+  },
+  {
+    button = SURVIVE,
+    bpm = "80",
+    var = false,
+    url = "SURVIVE",
+    [r106_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = MEGALOVANIA,
+    bpm = "120",
+    var = false,
+    url = "MEGALOVANIA",
+    [r107_0] = {
+      "video games",
+      "undertale",
+      "memes"
+    },
+  },
+  {
+    button = COCONUT,
+    bpm = "132",
+    var = false,
+    url = "COCONUT",
+    [r108_0] = {
+      "video games"
+    },
+  },
+  {
+    button = FADED,
+    bpm = "90",
+    var = false,
+    url = "FADED",
+    [r109_0] = {
+      "electronic",
+      "sad"
+    },
+  },
+  {
+    button = SOLAS,
+    bpm = "120",
+    var = false,
+    url = "SOLAS",
+    [r110_0] = {
+      "beautiful"
+    },
+  },
+  {
+    button = MARRIED,
+    bpm = "83",
+    var = false,
+    url = "MARRIED",
+    [r111_0] = {
+      "sad",
+      "movies/tv"
+    },
+  },
+  {
+    button = BAD_PIGGIES,
+    bpm = "156",
+    var = false,
+    url = "BAD_PIGGIES",
+    [r112_0] = {
+      "video games"
+    },
+  },
+  {
+    button = ASGORE,
+    bpm = "115",
+    var = false,
+    url = "ASGORE",
+    [r113_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = CARELESS,
+    bpm = "153",
+    var = false,
+    url = "CARELESS",
+    [r114_0] = {
+      "memes"
+    },
+  },
+  {
+    button = I_WANT,
+    bpm = "122",
+    var = false,
+    url = "I_WANT",
+    [r115_0] = {
+      "pop/hiphop",
+      "rock"
+    },
+  },
+  {
+    button = IM_STILL,
+    bpm = "177",
+    var = false,
+    url = "IM_STILL",
+    [r116_0] = {
+      "best",
+      "rock",
+      "movies/tv"
+    },
+  },
+  {
+    button = HELLO,
+    bpm = "105",
+    var = false,
+    url = "HELLO",
+    [r117_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = BAD_APPLE,
+    bpm = "138",
+    var = false,
+    url = "BAD_APPLE",
+    [r118_0] = {
+      "anime/jpop"
+    },
+  },
+  {
+    button = FR,
+    bpm = "82",
+    var = false,
+    url = "FR",
+    [r119_0] = {
+      "beautiful"
+    },
+  },
+  {
+    button = DIE_WITH,
+    bpm = "76",
+    var = false,
+    url = "DIE_WITH",
+    [r70_0] = {
+      "pop/hiphop",
+      "sad",
+      "beautiful",
+      "best",
+      "peak"
+    },
+  },
+  {
+    button = FALLEN_DOWN,
+    bpm = "110",
+    var = false,
+    url = "FALLEN_DOWN",
+    [r71_0] = {
+      "video games",
+      "undertale",
+      "beautiful"
+    },
+  },
+  {
+    button = ENIGMATIC,
+    bpm = "50",
+    var = false,
+    url = "ENIGMATIC",
+    [r72_0] = {
+      "video games",
+      "undertale",
+      "best",
+      "peak"
+    },
+  },
+  {
+    button = DEATH_WALTZ,
+    bpm = "210",
+    var = false,
+    url = "DEATH_WALTZ",
+    [r73_0] = {
+      "all"
+    },
+  },
+  {
+    button = MIKU,
+    bpm = "135",
+    var = false,
+    url = "MIKU",
+    [r74_0] = {
+      "anime/jpop"
+    },
+  },
+  {
+    button = A_THOUSAND,
+    bpm = "100",
+    var = false,
+    url = "A_THOUSAND",
+    [r75_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = SUGAR_PLUM,
+    bpm = "70",
+    var = false,
+    url = "SUGAR_PLUM",
+    [r76_0] = {
+      "classical",
+      "seasonal"
+    },
+  },
+  {
+    button = SPEED_OF,
+    bpm = "162",
+    var = false,
+    url = "SPEED_OF",
+    [r77_0] = {
+      "video games",
+      "electronic",
+      "epic",
+      "best",
+      "peak",
+      "geometry dash"
+    },
+  },
+  {
+    button = WET_HANDS,
+    bpm = "74",
+    var = false,
+    url = "WET_HANDS",
+    [r78_0] = {
+      "video games",
+      "minecraft",
+      "beautiful"
+    },
+  },
+  {
+    button = SWEDEN,
+    bpm = "44",
+    var = false,
+    url = "SWEDEN",
+    [r79_0] = {
+      "video games",
+      "minecraft"
+    },
+  },
+  {
+    button = SUBWOOFER,
+    bpm = "76",
+    var = false,
+    url = "SUBWOOFER",
+    [r80_0] = {
+      "video games",
+      "minecraft"
+    },
+  },
+  {
+    button = MICE_ON,
+    bpm = "56",
+    var = false,
+    url = "MICE_ON",
+    [r81_0] = {
+      "video games",
+      "minecraft",
+      "sad"
+    },
+  },
+  {
+    button = DRY_HANDS,
+    bpm = "90",
+    var = false,
+    url = "DRY_HANDS",
+    [r82_0] = {
+      "video games",
+      "minecraft",
+      "beautiful"
+    },
+  },
+  {
+    button = HAGGSTORM,
+    bpm = "102",
+    var = false,
+    url = "HAGGSTORM",
+    [r83_0] = {
+      "video games",
+      "minecraft"
+    },
+  },
+  {
+    button = LIVING_MICE,
+    bpm = "74",
+    var = false,
+    url = "LIVING_MICE",
+    [r84_0] = {
+      "video games",
+      "minecraft"
+    },
+  },
+  {
+    button = KEY,
+    bpm = "70",
+    var = false,
+    url = "KEY",
+    [r85_0] = {
+      "video games",
+      "minecraft",
+      "beautiful"
+    },
+  },
+  {
+    button = MOOG_CITY,
+    bpm = "116",
+    var = false,
+    url = "MOOG_CITY",
+    [r86_0] = {
+      "video games",
+      "minecraft",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = MINECRAFT,
+    bpm = "106",
+    var = false,
+    url = "MINECRAFT",
+    [r87_0] = {
+      "video games",
+      "minecraft"
+    },
+  },
+  {
+    button = UNDERTALE,
+    bpm = "100",
+    var = false,
+    url = "UNDERTALE",
+    [r88_0] = {
+      "video games",
+      "undertale",
+      "best",
+      "epic"
+    },
+  },
+  {
+    button = HOPES_DREAMS,
+    bpm = "170",
+    var = false,
+    url = "HOPES_DREAMS",
+    [r89_0] = {
+      "video games",
+      "undertale",
+      "best",
+      "epic",
+      "peak"
+    },
+  },
+  {
+    button = NYEH,
+    bpm = "150",
+    var = false,
+    url = "NYEH",
+    [r90_0] = {
+      "video games",
+      "undertale",
+      "best"
+    },
+  },
+  {
+    button = SPIDER_DANCE,
+    bpm = "115",
+    var = false,
+    url = "SPIDER_DANCE",
+    [r91_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = HEARTACHE,
+    bpm = "160",
+    var = false,
+    url = "HEARTACHE",
+    [r92_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = BATTLE_AGAINST,
+    bpm = "150",
+    var = false,
+    url = "BATTLE_AGAINST",
+    [r93_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = HIS_THEME,
+    bpm = "90",
+    var = false,
+    url = "HIS_THEME",
+    [r94_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = SNOWY,
+    bpm = "120",
+    var = false,
+    url = "SNOWY",
+    [r95_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = SPEAR_OF,
+    bpm = "130",
+    var = false,
+    url = "SPEAR_OF",
+    [r96_0] = {
+      "video games",
+      "undertale",
+      "best"
+    },
+  },
+  {
+    button = DOG_SONG,
+    bpm = "230",
+    var = false,
+    url = "DOG_SONG",
+    [r97_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = ONCE_UPON,
+    bpm = "65",
+    var = false,
+    url = "ONCE_UPON",
+    [r98_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = NOT_A_SLACKER,
+    bpm = "145",
+    var = false,
+    url = "NOT_A_SLACKER",
+    [r99_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = SHOP,
+    bpm = "77",
+    var = false,
+    url = "SHOP",
+    [r100_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = FINALE,
+    bpm = "190",
+    var = false,
+    url = "FINALE",
+    [r101_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = BY_YOUR_SIDE,
+    bpm = "88",
+    var = false,
+    url = "BY_YOUR_SIDE",
+    [r102_0] = {
+      "video games",
+      "omori"
+    },
+  },
+  {
+    button = WORLDS_END,
+    bpm = "152",
+    var = false,
+    url = "WORLDS_END",
+    [r103_0] = {
+      "video games",
+      "omori",
+      "best"
+    },
+  },
+  {
+    button = LOST_LIBRARY,
+    bpm = "62",
+    var = false,
+    url = "LOST_LIBRARY",
+    [r104_0] = {
+      "video games",
+      "omori"
+    },
+  },
+  {
+    button = BREADY,
+    bpm = "160",
+    var = false,
+    url = "BREADY",
+    [r105_0] = {
+      "video games",
+      "omori",
+      "best"
+    },
+  },
+  {
+    button = IT_MEANS,
+    bpm = "96",
+    var = false,
+    url = "IT_MEANS",
+    [r106_0] = {
+      "video games",
+      "omori"
+    },
+  },
+  {
+    button = UNDERWATER,
+    bpm = "160",
+    var = false,
+    url = "UNDERWATER",
+    [r107_0] = {
+      "video games",
+      "omori"
+    },
+  },
+  {
+    button = WHERE_WE,
+    bpm = "96",
+    var = false,
+    url = "WHERE_WE",
+    [r108_0] = {
+      "video games",
+      "omori"
+    },
+  },
+  {
+    button = MARI_BOSS,
+    bpm = "169",
+    var = false,
+    url = "MARI_BOSS",
+    [r109_0] = {
+      "video games",
+      "omori"
+    },
+  },
+  {
+    button = GOOD_MORNING,
+    bpm = "90",
+    var = false,
+    url = "GOOD_MORNING",
+    [r110_0] = {
+      "video games",
+      "omori"
+    },
+  },
+  {
+    button = FUR_ELISE,
+    bpm = "72",
+    var = false,
+    url = "FUR_ELISE",
+    [r111_0] = {
+      "classical"
+    },
+  },
+  {
+    button = MOONLIGHT,
+    bpm = "51",
+    var = false,
+    url = "MOONLIGHT",
+    [r112_0] = {
+      "classical"
+    },
+  },
+  {
+    button = FANTAISIE,
+    bpm = "168",
+    var = false,
+    url = "FANTAISIE",
+    [r113_0] = {
+      "classical"
+    },
+  },
+  {
+    button = DROWNING_LOVE,
+    bpm = "112",
+    var = false,
+    url = "DROWNING_LOVE",
+    [r114_0] = {
+      "beautiful",
+      "sad",
+      "best",
+      "peak",
+      "movies/tv"
+    },
+  },
+  {
+    button = CANON_D,
+    bpm = "100",
+    var = false,
+    url = "CANON_D",
+    [r115_0] = {
+      "classical"
+    },
+  },
+  {
+    button = FREEDOM_DIVE,
+    bpm = "220",
+    var = false,
+    url = "FREEDOM_DIVE",
+    [r116_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = STAY,
+    bpm = "85",
+    var = false,
+    url = "STAY",
+    [r117_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = TURKISH,
+    bpm = "92",
+    var = false,
+    url = "TURKISH",
+    [r118_0] = {
+      "classical"
+    },
+  },
+  {
+    button = SUPER_MARIOS,
+    bpm = "180",
+    var = false,
+    url = "SUPER_MARIOS",
+    [r119_0] = {
+      "video games",
+      "memes"
+    },
+  },
+  {
+    button = MII,
+    bpm = "114",
+    var = false,
+    url = "MII",
+    [r70_0] = {
+      "video games",
+      "memes"
+    },
+  },
+  {
+    button = LACRIMOSA,
+    bpm = "64",
+    var = false,
+    url = "LACRIMOSA",
+    [r71_0] = {
+      "classical",
+      "memes"
+    },
+  },
+  {
+    button = DESPACITO,
+    bpm = "89",
+    var = false,
+    url = "DESPACITO",
+    [r72_0] = {
+      "pop/hiphop",
+      "memes"
+    },
+  },
+  {
+    button = WE_DONT,
+    bpm = "103",
+    var = false,
+    url = "WE_DONT",
+    cat = {},
+  },
+  {
+    button = HUNGARIAN,
+    bpm = "130",
+    var = false,
+    url = "HUNGARIAN",
+    [r74_0] = {
+      "classical"
+    },
+  },
+  {
+    button = SKYFALL,
+    bpm = "70",
+    var = false,
+    url = "SKYFALL",
+    [r75_0] = {
+      "epic",
+      "best"
+    },
+  },
+  {
+    button = THE_ENTERTAINER,
+    bpm = "60",
+    var = false,
+    url = "THE_ENTERTAINER",
+    [r76_0] = {
+      "memes",
+      "best"
+    },
+  },
+  {
+    button = DONT_STOP,
+    bpm = "118",
+    var = false,
+    url = "DONT_STOP",
+    [r77_0] = {
+      "rock",
+      "best"
+    },
+  },
+  {
+    button = DREAM_ON,
+    bpm = "78",
+    var = false,
+    url = "DREAM_ON",
+    [r78_0] = {
+      "rock"
+    },
+  },
+  {
+    button = HIT_THE_ROAD,
+    bpm = "60",
+    var = false,
+    url = "HIT_THE_ROAD",
+    [r79_0] = {
+      "rock"
+    },
+  },
+  {
+    button = TOXIC,
+    bpm = "180",
+    var = false,
+    url = "TOXIC",
+    [r80_0] = {
+      "sad",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = UNDERSTAND,
+    bpm = "206",
+    var = false,
+    url = "UNDERSTAND",
+    [r81_0] = {
+      "sad"
+    },
+  },
+  {
+    button = SICK_OF_U,
+    bpm = "185",
+    var = false,
+    url = "SICK_OF_U",
+    [r82_0] = {
+      "sad"
+    },
+  },
+  {
+    button = IDGAF,
+    bpm = "196",
+    var = false,
+    url = "IDGAF",
+    [r83_0] = {
+      "sad"
+    },
+  },
+  {
+    button = EASY_ON_ME,
+    bpm = "73",
+    var = false,
+    url = "EASY_ON_ME",
+    [r84_0] = {
+      "",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = METAMORPH,
+    bpm = "180",
+    var = false,
+    url = "METAMORPH",
+    [r85_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = SWIMMING,
+    bpm = "165",
+    var = false,
+    url = "SWIMMING",
+    [r86_0] = {
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = DRAMAM,
+    bpm = "224",
+    var = false,
+    url = "DRAMAM",
+    [r87_0] = {
+      "beautiful"
+    },
+  },
+  {
+    button = LOST_UMB,
+    bpm = "133",
+    var = false,
+    url = "LOST_UMB",
+    [r88_0] = {
+      "electronic",
+      "anime/jpop"
+    },
+  },
+  {
+    button = LOVELY_B,
+    bpm = "150",
+    var = false,
+    url = "LOVELY_B",
+    [r89_0] = {
+      "memes",
+      "best"
+    },
+  },
+  {
+    button = TRAP_R,
+    bpm = "151",
+    var = false,
+    url = "TRAP_R",
+    [r90_0] = {
+      "memes",
+      "epic",
+      "best",
+      "beautiful"
+    },
+  },
+  {
+    button = MANGOMANGOMANGO,
+    bpm = "110",
+    var = false,
+    url = "MANGOMANGOMANGO",
+    [r91_0] = {
+      "peak"
+    },
+  },
+  {
+    button = DREAM_FL,
+    bpm = "150",
+    var = false,
+    url = "DREAM_FL",
+    [r92_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = LALALA,
+    bpm = "130",
+    var = false,
+    url = "LALALA",
+    [r93_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = THE_BEN,
+    bpm = "180",
+    var = false,
+    url = "THE_BEN",
+    [r94_0] = {
+      "classical",
+      "epic",
+      "best"
+    },
+  },
+  {
+    button = POKEMON,
+    bpm = "160",
+    var = false,
+    url = "POKEMON",
+    [r95_0] = {
+      "video games",
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = POKEMON_RED,
+    bpm = "180",
+    var = false,
+    url = "POKEMON_RED",
+    [r96_0] = {
+      "video games",
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = FLASHING,
+    bpm = "100",
+    var = false,
+    url = "FLASHING",
+    [r97_0] = {
+      "pop/hiphop",
+      "epic",
+      "beautiful"
+    },
+  },
+  {
+    button = ALL_GIRLS,
+    bpm = "85",
+    var = false,
+    url = "ALL_GIRLS",
+    [r98_0] = {
+      "pop/hiphop",
+      "sad",
+      "best"
+    },
+  },
+  {
+    button = SAVE_YOUR,
+    bpm = "120",
+    var = false,
+    url = "SAVE_YOUR",
+    [r99_0] = {
+      "pop/hiphop",
+      "sad"
+    },
+  },
+  {
+    button = LIGHTS,
+    bpm = "132",
+    var = false,
+    url = "LIGHTS",
+    [r100_0] = {
+      "anime/jpop"
+    },
+  },
+  {
+    button = THE_WORLD,
+    bpm = "96",
+    var = false,
+    url = "THE_WORLD",
+    [r101_0] = {
+      "anime/jpop",
+      "rock",
+      "movies/tv"
+    },
+  },
+  {
+    button = L,
+    bpm = "71",
+    var = false,
+    url = "L",
+    [r102_0] = {
+      "anime/jpop",
+      "memes",
+      "movies/tv"
+    },
+  },
+  {
+    button = BLOODY,
+    bpm = "100",
+    var = false,
+    url = "BLOODY",
+    [r103_0] = {
+      "pop/hiphop",
+      "epic",
+      "best"
+    },
+  },
+  {
+    button = SPACE_SONG,
+    bpm = "75",
+    var = false,
+    url = "SPACE_SONG",
+    [r104_0] = {
+      "sad",
+      "pop/hiphop",
+      "beautiful",
+      "epic",
+      "best"
+    },
+  },
+  {
+    button = HEATHENS,
+    bpm = "90",
+    var = false,
+    url = "HEATHENS",
+    [r105_0] = {
+      "sad"
+    },
+  },
+  {
+    button = VAMPIRE,
+    bpm = "135",
+    var = false,
+    url = "VAMPIRE",
+    [r106_0] = {
+      "pop/hiphop",
+      "sad",
+      "best"
+    },
+  },
+  {
+    button = MARY_ON,
+    bpm = "130",
+    var = false,
+    url = "MARY_ON",
+    [r107_0] = {
+      "rock"
+    },
+  },
+  {
+    button = RUNNING_UP,
+    bpm = "108",
+    var = false,
+    url = "RUNNING_UP",
+    [r108_0] = {
+      "sad",
+      "pop/hiphop",
+      "movies/tv"
+    },
+  },
+  {
+    button = DUMB_DUMB,
+    bpm = "118",
+    var = false,
+    url = "DUMB_DUMB",
+    [r109_0] = {
+      "memes"
+    },
+  },
+  {
+    button = MA_MEILLEUR,
+    bpm = "178",
+    var = false,
+    url = "MA_MEILLEUR",
+    [r110_0] = {
+      "movies/tv"
+    },
+  },
+  {
+    button = SUZUME,
+    bpm = "78",
+    var = false,
+    url = "SUZUME",
+    [r111_0] = {
+      "anime/jpop",
+      "best",
+      "beautiful",
+      "movies/tv"
+    },
+  },
+  {
+    button = CHRISTMAS_KIDS,
+    bpm = "152",
+    var = false,
+    url = "CHRISTMAS_KIDS",
+    [r112_0] = {
+      "sad"
+    },
+  },
+  {
+    button = DARK_BEACH,
+    bpm = "130",
+    var = false,
+    url = "DARK_BEACH",
+    [r113_0] = {
+      "sad",
+      "beautiful"
+    },
+  },
+  {
+    button = FUKASHIGI,
+    bpm = "90",
+    var = false,
+    url = "FUKASHIGI",
+    [r114_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = SPARKLE,
+    bpm = "192",
+    var = false,
+    url = "SPARKLE",
+    [r115_0] = {
+      "anime/jpop",
+      "best",
+      "beautiful",
+      "movies/tv"
+    },
+  },
+  {
+    button = SHIKAIRO,
+    bpm = "182",
+    var = false,
+    url = "SHIKAIRO",
+    [r116_0] = {
+      "anime/jpop",
+      "memes",
+      "best",
+      "movies/tv"
+    },
+  },
+  {
+    button = WASHING,
+    bpm = "114",
+    var = false,
+    url = "WASHING",
+    [r117_0] = {
+      "sad",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = CAN_YOU_HEAR_EPIC,
+    bpm = "102",
+    var = false,
+    url = "CAN_YOU_HEAR_EPIC",
+    [r118_0] = {
+      "epic",
+      "best",
+      "peak",
+      "movies/tv"
+    },
+  },
+  {
+    button = UNRAVEL_EPIC,
+    bpm = "132",
+    var = false,
+    url = "UNRAVEL_EPIC",
+    [r119_0] = {
+      "epic",
+      "best",
+      "beautiful",
+      "peak",
+      "movies/tv"
+    },
+  },
+  {
+    button = A_SKY_FULL,
+    bpm = "120",
+    var = false,
+    url = "A_SKY_FULL",
+    [r70_0] = {
+      "epic",
+      "pop/hiphop",
+      "electronic"
+    },
+  },
+  {
+    button = THE_NIGHTS,
+    bpm = "128",
+    var = false,
+    url = "THE_NIGHTS",
+    [r71_0] = {
+      "pop/hiphop",
+      "electronic",
+      "epic"
+    },
+  },
+  {
+    button = BIRDS_OF_A,
+    bpm = "105",
+    var = false,
+    url = "BIRDS_OF_A",
+    [r72_0] = {
+      "pop/hiphop",
+      "beautiful"
+    },
+  },
+  {
+    button = CANT_LET,
+    bpm = "160",
+    var = false,
+    url = "CANT_LET",
+    [r73_0] = {
+      "video games",
+      "electronic",
+      "geometry dash"
+    },
+  },
+  {
+    button = DEADLOCKED,
+    bpm = "140",
+    var = false,
+    url = "DEADLOCKED",
+    [r74_0] = {
+      "video games",
+      "electronic",
+      "geometry dash"
+    },
+  },
+  {
+    button = DUVET,
+    bpm = "91",
+    var = false,
+    url = "DUVET",
+    [r75_0] = {
+      "sad",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = FIVE_NIGHTS_1,
+    bpm = "108",
+    var = false,
+    url = "FIVE_NIGHTS_1",
+    [r76_0] = {
+      "video games",
+      "electronic",
+      "epic"
+    },
+  },
+  {
+    button = ITS_BEEN_SO,
+    bpm = "96",
+    var = false,
+    url = "ITS_BEEN_SO",
+    [r77_0] = {
+      "video games",
+      "electronic"
+    },
+  },
+  {
+    button = STEREO_MADNESS,
+    bpm = "160",
+    var = false,
+    url = "STEREO_MADNESS",
+    [r78_0] = {
+      "video games",
+      "electronic",
+      "geometry dash"
+    },
+  },
+  {
+    button = SUNFLOWER,
+    bpm = "90",
+    var = false,
+    url = "SUNFLOWER",
+    [r79_0] = {
+      "pop/hiphop",
+      "beautiful",
+      "best",
+      "movies/tv"
+    },
+  },
+  {
+    button = WAITING_FOR,
+    bpm = "129",
+    var = false,
+    url = "WAITING_FOR",
+    [r80_0] = {
+      "pop/hiphop",
+      "electronic",
+      "best",
+      "epic"
+    },
+  },
+  {
+    button = WAKE_ME,
+    bpm = "110",
+    var = false,
+    url = "WAKE_ME",
+    [r81_0] = {
+      "pop/hiphop",
+      "electronic"
+    },
+  },
+  {
+    button = GEOMETRY_DASH,
+    bpm = "128",
+    var = false,
+    url = "GEOMETRY_DASH",
+    [r82_0] = {
+      "video games",
+      "electronic",
+      "geometry dash"
+    },
+  },
+  {
+    button = ARUARIAN,
+    bpm = "80",
+    var = false,
+    url = "ARUARIAN",
+    [r83_0] = {
+      "beautiful"
+    },
+  },
+  {
+    button = DAYLIGHT,
+    bpm = "130",
+    var = false,
+    url = "DAYLIGHT",
+    [r84_0] = {
+      "beautiful",
+      "epic",
+      "best"
+    },
+  },
+  {
+    button = SHIAWASE,
+    bpm = "150",
+    var = false,
+    url = "SHIAWASE",
+    [r85_0] = {
+      "electronic",
+      "epic",
+      "beautiful",
+      "best",
+      "geometry dash"
+    },
+  },
+  {
+    button = EVERGREEN,
+    bpm = "120",
+    var = false,
+    url = "EVERGREEN",
+    [r86_0] = {
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = FREAKS,
+    bpm = "175",
+    var = false,
+    url = "FREAKS",
+    [r87_0] = {
+      "sad",
+      "rock",
+      "beautiful"
+    },
+  },
+  {
+    button = HERE_WITH,
+    bpm = "132",
+    var = false,
+    url = "HERE_WITH",
+    [r88_0] = {
+      "sad"
+    },
+  },
+  {
+    button = RESONANCE,
+    bpm = "70",
+    var = false,
+    url = "RESONANCE",
+    [r89_0] = {
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = INSANE,
+    bpm = "105",
+    var = false,
+    url = "INSANE",
+    [r90_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = LEVELS,
+    bpm = "122",
+    var = false,
+    url = "LEVELS",
+    [r91_0] = {
+      "electronic",
+      "levels",
+      "best"
+    },
+  },
+  {
+    button = MOOD,
+    bpm = "91",
+    var = false,
+    url = "MOOD",
+    [r92_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = SOMETHING_JUST,
+    bpm = "103",
+    var = false,
+    url = "SOMETHING_JUST",
+    [r93_0] = {
+      "pop/hiphop",
+      "sad",
+      "best",
+      "beautiful"
+    },
+  },
+  {
+    button = STRANGERS,
+    bpm = "170",
+    var = false,
+    url = "STRANGERS",
+    [r94_0] = {
+      "pop/hiphop",
+      "sad",
+      "best",
+      "beautiful"
+    },
+  },
+  {
+    button = TICKING,
+    bpm = "77",
+    var = false,
+    url = "TICKING",
+    [r95_0] = {
+      "epic",
+      "best",
+      "beautiful"
+    },
+  },
+  {
+    button = AFTER_DARK,
+    bpm = "140",
+    var = false,
+    url = "AFTER_DARK",
+    [r96_0] = {
+      "sad",
+      "beautiful"
+    },
+  },
+  {
+    button = ANYONE_CAN,
+    bpm = "100",
+    var = false,
+    url = "ANYONE_CAN",
+    [r97_0] = {
+      "sad"
+    },
+  },
+  {
+    button = BLUE,
+    bpm = "130",
+    var = false,
+    url = "BLUE",
+    [r98_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = CLOUD_9,
+    bpm = "128",
+    var = false,
+    url = "CLOUD_9",
+    [r99_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = DAMNED,
+    bpm = "95",
+    var = false,
+    url = "DAMNED",
+    [r100_0] = {
+      "video games"
+    },
+  },
+  {
+    button = ASTRONAMIA,
+    bpm = "120",
+    var = false,
+    url = "ASTRONAMIA",
+    [r101_0] = {
+      "memes",
+      "electronic"
+    },
+  },
+  {
+    button = COUNTING_STARS,
+    bpm = "105",
+    var = false,
+    url = "COUNTING_STARS",
+    [r102_0] = {
+      "pop/hiphop",
+      "sad"
+    },
+  },
+  {
+    button = SHAPE_OF,
+    bpm = "190",
+    var = false,
+    url = "SHAPE_OF",
+    [r103_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = ENEMY,
+    bpm = "77",
+    var = false,
+    url = "ENEMY",
+    [r104_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = FLARE,
+    bpm = "150",
+    var = false,
+    url = "FLARE",
+    [r105_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = THIS_IS_WHAT_WINTER,
+    bpm = "115",
+    var = false,
+    url = "THIS_IS_WHAT_WINTER",
+    [r106_0] = {
+      "beautiful",
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = HEAT_WAVE,
+    bpm = "81",
+    var = false,
+    url = "HEAT_WAVE",
+    [r107_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = HIGH_HOPES,
+    bpm = "164",
+    var = false,
+    url = "HIGH_HOPES",
+    [r108_0] = {
+      "pop/hiphop",
+      "epic"
+    },
+  },
+  {
+    button = HOUSE_OF,
+    bpm = "112",
+    var = false,
+    url = "HOUSE_OF",
+    [r109_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = IN_THE_NAME,
+    bpm = "134",
+    var = false,
+    url = "IN_THE_NAME",
+    [r110_0] = {
+      "pop/hiphop",
+      "electronic",
+      "best",
+      "epic",
+      "beautiful"
+    },
+  },
+  {
+    button = PAST_LIVES,
+    bpm = "110",
+    var = false,
+    url = "PAST_LIVES",
+    [r111_0] = {
+      "sad",
+      "beautiful"
+    },
+  },
+  {
+    button = SLAY,
+    bpm = "120",
+    var = false,
+    url = "SLAY",
+    [r112_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = SNOWFALL,
+    bpm = "96",
+    var = false,
+    url = "SNOWFALL",
+    [r113_0] = {
+      "beautiful",
+      "sad",
+      "best"
+    },
+  },
+  {
+    button = RISE_UP,
+    bpm = "82",
+    var = false,
+    url = "RISE_UP",
+    [r114_0] = {
+      "electronic",
+      "epic"
+    },
+  },
+  {
+    button = UNITY,
+    bpm = "110",
+    var = false,
+    url = "UNITY",
+    [r115_0] = {
+      "electronic",
+      "best"
+    },
+  },
+  {
+    button = MONODY,
+    bpm = "107",
+    var = false,
+    url = "MONODY",
+    [r116_0] = {
+      "electronic",
+      "epic",
+      "best"
+    },
+  },
+  {
+    button = THIS_IS_WHAT_HEARTBREAK,
+    bpm = "50",
+    var = false,
+    url = "THIS_IS_WHAT_HEARTBREAK",
+    [r117_0] = {
+      "sad",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = CANDYLAND,
+    bpm = "130",
+    var = false,
+    url = "CANDYLAND",
+    [r118_0] = {
+      "electronic",
+      "best",
+      "best"
+    },
+  },
+  {
+    button = AS_IT_WAS,
+    bpm = "174",
+    var = false,
+    url = "AS_IT_WAS",
+    [r119_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = CENTIMETER,
+    bpm = "140",
+    var = false,
+    url = "CENTIMETER",
+    [r70_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = DETROIT,
+    bpm = "60",
+    var = false,
+    url = "DETROIT",
+    [r71_0] = {
+      "video games",
+      "beautiful"
+    },
+  },
+  {
+    button = THE_GREAT_FAIRY,
+    bpm = "80",
+    var = false,
+    url = "THE_GREAT_FAIRY",
+    [r72_0] = {
+      "video games"
+    },
+  },
+  {
+    button = IMMORTAL,
+    bpm = "60",
+    var = false,
+    url = "IMMORTAL",
+    [r73_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = XO_TOUR,
+    bpm = "142",
+    var = false,
+    url = "XO_TOUR",
+    [r74_0] = {
+      "pop/hiphop",
+      "sad"
+    },
+  },
+  {
+    button = THE_ECSTASY_OF_GOLD,
+    bpm = "85",
+    var = false,
+    url = "THE_ECSTASY_OF_GOLD",
+    [r75_0] = {
+      "movies/tv",
+      "epic",
+      "beautiful"
+    },
+  },
+  {
+    button = BLUE_YUNG,
+    bpm = "92",
+    var = false,
+    url = "BLUE_YUNG",
+    [r76_0] = {
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = HES_A_PIRATE,
+    bpm = "207",
+    var = false,
+    url = "HES_A_PIRATE",
+    [r77_0] = {
+      "epic",
+      "best",
+      "movies/tv"
+    },
+  },
+  {
+    button = ITS_RAINING,
+    bpm = "120",
+    var = false,
+    url = "ITS_RAINING",
+    [r78_0] = {
+      "memes"
+    },
+  },
+  {
+    button = LET_ME_LOVE,
+    bpm = "100",
+    var = false,
+    url = "LET_ME_LOVE",
+    [r79_0] = {
+      "pop/hiphop",
+      "best",
+      "beautiful"
+    },
+  },
+  {
+    button = HAPPIER,
+    bpm = "100",
+    var = false,
+    url = "HAPPIER",
+    [r80_0] = {
+      "pop/hiphop",
+      "sad",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = SANS,
+    bpm = "120",
+    var = false,
+    url = "SANS",
+    [r81_0] = {
+      "video games",
+      "undertale",
+      "memes"
+    },
+  },
+  {
+    button = THE_SLAUGHTER_CONT,
+    bpm = "150",
+    var = false,
+    url = "THE_SLAUGHTER_CONT",
+    [r82_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = SONG_THAT_MIGHT,
+    bpm = "120",
+    var = false,
+    url = "SONG_THAT_MIGHT",
+    [r83_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = ASSUMPTIONS,
+    bpm = "126",
+    var = false,
+    url = "ASSUMPTIONS",
+    [r84_0] = {
+      "pop/hiphop",
+      "memes",
+      "electronic"
+    },
+  },
+  {
+    button = DEATH_BED,
+    bpm = "120",
+    var = false,
+    url = "DEATH_BED",
+    [r85_0] = {
+      "pop/hiphop",
+      "sad",
+      "beautiful"
+    },
+  },
+  {
+    button = DAWN_OF,
+    bpm = "72",
+    var = false,
+    url = "DAWN_OF",
+    [r86_0] = {
+      "video games"
+    },
+  },
+  {
+    button = ELEVATOR_JAM,
+    bpm = "146",
+    var = false,
+    url = "ELEVATOR_JAM",
+    [r87_0] = {
+      "video games"
+    },
+  },
+  {
+    button = ELEVATOR_JAM_2,
+    bpm = "146",
+    var = false,
+    url = "ELEVATOR_JAM_2",
+    [r88_0] = {
+      "video games",
+      "epic",
+      "best"
+    },
+  },
+  {
+    button = HERE_I_COME,
+    bpm = "144",
+    var = false,
+    url = "HERE_I_COME",
+    [r89_0] = {
+      "video games"
+    },
+  },
+  {
+    button = MONTAGEM_TOMADA,
+    bpm = "120",
+    var = false,
+    url = "MONTAGEM_TOMADA",
+    [r90_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = NOTION,
+    bpm = "160",
+    var = false,
+    url = "NOTION",
+    [r91_0] = {
+      "rock",
+      "sad"
+    },
+  },
+  {
+    button = RISES_THE,
+    bpm = "127",
+    var = false,
+    url = "RISES_THE",
+    [r92_0] = {
+      "sad",
+      "beautiful"
+    },
+  },
+  {
+    button = HIMITSU_KOI_GOKORO,
+    bpm = "165",
+    var = false,
+    url = "HIMITSU_KOI_GOKORO",
+    [r93_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = LENAI,
+    bpm = "131",
+    var = false,
+    url = "LENAI",
+    [r94_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = IDOL_EPIC,
+    bpm = "166",
+    var = false,
+    url = "IDOL_EPIC",
+    [r95_0] = {
+      "anime/jpop",
+      "epic",
+      "best",
+      "movies/tv"
+    },
+  },
+  {
+    button = ALL_THE_STARS,
+    bpm = "120",
+    var = false,
+    url = "ALL_THE_STARS",
+    [r96_0] = {
+      "pop/hiphop",
+      "beautiful",
+      "best",
+      "movies/tv"
+    },
+  },
+  {
+    button = HOPE,
+    bpm = "146",
+    var = false,
+    url = "HOPE",
+    [r97_0] = {
+      "pop/hiphop",
+      "sad",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = ENTRY_OF_THE,
+    bpm = "220",
+    var = false,
+    url = "ENTRY_OF_THE",
+    [r98_0] = {
+      "classical",
+      "memes"
+    },
+  },
+  {
+    button = LUTHER,
+    bpm = "128",
+    var = false,
+    url = "LUTHER",
+    [r99_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = HOWLS_MOVING_CASTLE_2,
+    bpm = "130",
+    var = false,
+    url = "HOWLS_MOVING_CASTLE_2",
+    [r100_0] = {
+      "anime/jpop",
+      "beautiful",
+      "best",
+      "epic",
+      "peak",
+      "movies/tv"
+    },
+  },
+  {
+    button = MAGICAL_CURE,
+    bpm = "120",
+    var = false,
+    url = "MAGICAL_CURE",
+    [r101_0] = {
+      "anime/jpop"
+    },
+  },
+  {
+    button = NOT_LIKE_US,
+    bpm = "101",
+    var = false,
+    url = "NOT_LIKE_US",
+    [r102_0] = {
+      "pop/hiphop",
+      "memes"
+    },
+  },
+  {
+    button = PEACHES,
+    bpm = "92",
+    var = false,
+    url = "PEACHES",
+    [r103_0] = {
+      "video games",
+      "movies/tv"
+    },
+  },
+  {
+    button = PRAYER,
+    bpm = "147",
+    var = false,
+    url = "PRAYER",
+    [r104_0] = {
+      "beautiful",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = SEE_YOU_AGAIN,
+    bpm = "70",
+    var = false,
+    url = "SEE_YOU_AGAIN",
+    [r105_0] = {
+      "pop/hiphop",
+      "sad",
+      "beautiful"
+    },
+  },
+  {
+    button = GANGSTAS_PARADISE,
+    bpm = "80",
+    var = false,
+    url = "GANGSTAS_PARADISE",
+    [r106_0] = {
+      "pop/hiphop",
+      "memes",
+      "beautiful",
+      "best",
+      "epic",
+      "peak"
+    },
+  },
+  {
+    button = ERIKA,
+    bpm = "120",
+    var = false,
+    url = "ERIKA",
+    [r107_0] = {
+      "memes"
+    },
+  },
+  {
+    button = ITS_JUST_A_BURNING,
+    bpm = "74",
+    var = false,
+    url = "ITS_JUST_A_BURNING",
+    [r108_0] = {
+      "creepy/weirdcore",
+      "memes",
+      "sad"
+    },
+  },
+  {
+    button = ALL_I_WANT_IS_YOU,
+    bpm = "143",
+    var = false,
+    url = "ALL_I_WANT_IS_YOU",
+    [r109_0] = {
+      "pop/hiphop",
+      "sad",
+      "best",
+      "electronic"
+    },
+  },
+  {
+    button = SOVIET_UNION_ANTHEM,
+    bpm = "80",
+    var = false,
+    url = "SOVIET_UNION_ANTHEM",
+    [r110_0] = {
+      "memes"
+    },
+  },
+  {
+    button = UNTITLED,
+    bpm = "25",
+    var = false,
+    url = "UNTITLED",
+    [r111_0] = {
+      "video games",
+      "memes",
+      "sad",
+      "creepy/weirdcore"
+    },
+  },
+  {
+    button = WEDDING_MARCH,
+    bpm = "115",
+    var = false,
+    url = "WEDDING_MARCH",
+    [r112_0] = {
+      "memes",
+      "beautiful",
+      "classical"
+    },
+  },
+  {
+    button = WHY_DID_I_SAY,
+    bpm = "113",
+    var = false,
+    url = "WHY_DID_I_SAY",
+    cat = {},
+  },
+  {
+    button = WII_SPORTS_TITLE,
+    bpm = "115",
+    var = false,
+    url = "WII_SPORTS_TITLE",
+    [r114_0] = {
+      "video games",
+      "memes",
+      "epic"
+    },
+  },
+  {
+    button = YOUNG_GIRL_A_2,
+    bpm = "130",
+    var = false,
+    url = "YOUNG_GIRL_A_2",
+    [r115_0] = {
+      "anime/jpop",
+      "sad",
+      "epic",
+      "best",
+      "beautiful",
+      "peak"
+    },
+  },
+  {
+    button = BLINDING_LIGHTS,
+    bpm = "171",
+    var = false,
+    url = "BLINDING_LIGHTS",
+    [r116_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = GOOFY_AHH,
+    bpm = "120",
+    var = false,
+    url = "GOOFY_AHH",
+    [r117_0] = {
+      "memes",
+      "epic",
+      "best",
+      "beautiful",
+      "peak"
+    },
+  },
+  {
+    button = GRAVITY_FALLS,
+    bpm = "120",
+    var = false,
+    url = "GRAVITY_FALLS",
+    [r118_0] = {
+      "memes",
+      "best",
+      "movies/tv"
+    },
+  },
+  {
+    button = GYPSY_WOMAN,
+    bpm = "120",
+    var = false,
+    url = "GYPSY_WOMAN",
+    [r119_0] = {
+      "memes",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = I_LIKE_THE_WAY_YOU,
+    bpm = "151",
+    var = false,
+    url = "I_LIKE_THE_WAY_YOU",
+    [r70_0] = {
+      "pop/hiphop",
+      "sad",
+      "best",
+      "beautiful"
+    },
+  },
+  {
+    button = ISOLATION,
+    bpm = "100",
+    var = false,
+    url = "ISOLATION",
+    [r71_0] = {
+      "best",
+      "epic",
+      "video games",
+      "peak",
+      "geometry dash"
+    },
+  },
+  {
+    button = KAWAIKUTEGOMEN,
+    bpm = "160",
+    var = false,
+    url = "KAWAIKUTEGOMEN",
+    [r72_0] = {
+      "anime/jpop",
+      "best"
+    },
+  },
+  {
+    button = LIGHT_SWITCH,
+    bpm = "184",
+    var = false,
+    url = "LIGHT_SWITCH",
+    [r73_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = SPECTRE,
+    bpm = "128",
+    var = false,
+    url = "SPECTRE",
+    [r74_0] = {
+      "electronic",
+      "memes",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = SUPER_IDOL,
+    bpm = "136",
+    var = false,
+    url = "SUPER_IDOL",
+    [r75_0] = {
+      "memes"
+    },
+  },
+  {
+    button = THATS_WHAT_I_WANT,
+    bpm = "85",
+    var = false,
+    url = "THATS_WHAT_I_WANT",
+    [r76_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = THE_AMAZING_DIGITAL,
+    bpm = "110",
+    var = false,
+    url = "THE_AMAZING_DIGITAL",
+    [r77_0] = {
+      "best",
+      "movies/tv"
+    },
+  },
+  {
+    button = JOCELYN_FLORES,
+    bpm = "136",
+    var = false,
+    url = "JOCELYN_FLORES",
+    [r78_0] = {
+      "sad",
+      "beautiful"
+    },
+  },
+  {
+    button = FLY_ME_TO_THE_MOON,
+    bpm = "140",
+    var = false,
+    url = "FLY_ME_TO_THE_MOON",
+    [r79_0] = {
+      "classical",
+      "beautiful"
+    },
+  },
+  {
+    button = BAD_HABIT,
+    bpm = "80",
+    var = false,
+    url = "BAD_HABIT",
+    [r80_0] = {
+      "pop/hiphop",
+      "sad"
+    },
+  },
+  {
+    button = SOMEBODY_THAT_I_USED,
+    bpm = "120",
+    var = false,
+    url = "SOMEBODY_THAT_I_USED",
+    [r81_0] = {
+      "pop/hiphop",
+      "sad"
+    },
+  },
+  {
+    button = LEVAN_POLKKA,
+    bpm = "135",
+    var = false,
+    url = "LEVAN_POLKKA",
+    [r82_0] = {
+      "memes"
+    },
+  },
+  {
+    button = MY_ORDINARY_LIFE,
+    bpm = "130",
+    var = false,
+    url = "MY_ORDINARY_LIFE",
+    [r83_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = RUINS,
+    bpm = "138",
+    var = false,
+    url = "RUINS",
+    [r84_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = STEREO_HEARTS,
+    bpm = "96",
+    var = false,
+    url = "STEREO_HEARTS",
+    [r85_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = STRANGER_THINGS,
+    bpm = "80",
+    var = false,
+    url = "STRANGER_THINGS",
+    [r86_0] = {
+      "movies/tv"
+    },
+  },
+  {
+    button = HH,
+    bpm = "150",
+    var = false,
+    url = "HH",
+    [r87_0] = {
+      "memes",
+      "peak"
+    },
+  },
+  {
+    button = A505,
+    bpm = "140",
+    var = false,
+    url = "505",
+    [r88_0] = {
+      "rock",
+      "sad"
+    },
+  },
+  {
+    button = BELIEVER,
+    bpm = "188",
+    var = false,
+    url = "BELIEVER",
+    [r89_0] = {
+      "rock",
+      "pop/hiphop",
+      "epic"
+    },
+  },
+  {
+    button = CLUBSTEP,
+    bpm = "128",
+    var = false,
+    url = "CLUBSTEP",
+    [r90_0] = {
+      "video games",
+      "electronic",
+      "geometry dash"
+    },
+  },
+  {
+    button = EXPERIENCE_FLOWS,
+    bpm = "85",
+    var = false,
+    url = "EXPERIENCE_FLOWS",
+    [r91_0] = {
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = FIELD_OF_MEMORIES,
+    bpm = "130",
+    var = false,
+    url = "FIELD_OF_MEMORIES",
+    [r92_0] = {
+      "video games",
+      "electronic",
+      "epic"
+    },
+  },
+  {
+    button = SKELETAL_SHENANIGANS,
+    bpm = "158",
+    var = false,
+    url = "SKELETAL_SHENANIGANS",
+    [r93_0] = {
+      "video games",
+      "electronic",
+      "geometry dash"
+    },
+  },
+  {
+    button = GODS_PLAN,
+    bpm = "130",
+    var = false,
+    url = "GODS_PLAN",
+    [r94_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = HOTLINE_BLING,
+    bpm = "100",
+    var = false,
+    url = "HOTLINE_BLING",
+    [r95_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = I_REALLY_WANT_TO_STAY,
+    bpm = "128",
+    var = false,
+    url = "I_REALLY_WANT_TO_STAY",
+    [r96_0] = {
+      "movies/tv",
+      "pop/hiphop",
+      "beautiful",
+      "electronic"
+    },
+  },
+  {
+    button = ICARUS,
+    bpm = "100",
+    var = false,
+    url = "ICARUS",
+    [r97_0] = {
+      "beautiful"
+    },
+  },
+  {
+    button = LAVENDER_TOWN,
+    bpm = "120",
+    var = false,
+    url = "LAVENDER_TOWN",
+    [r98_0] = {
+      "video games",
+      "memes",
+      "creepy/weirdcore"
+    },
+  },
+  {
+    button = ALONE,
+    bpm = "142",
+    var = false,
+    url = "ALONE",
+    [r99_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = FRIENDS,
+    bpm = "95",
+    var = false,
+    url = "FRIENDS",
+    [r100_0] = {
+      "pop/hiphop",
+      "electronic"
+    },
+  },
+  {
+    button = MIDDLE_OF_THE_NIGHT,
+    bpm = "93",
+    var = false,
+    url = "MIDDLE_OF_THE_NIGHT",
+    [r101_0] = {
+      "pop/hiphop",
+      "epic",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = A99DOT9,
+    bpm = "180",
+    var = false,
+    url = "99DOT9",
+    [r102_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = MY_EYES,
+    bpm = "120",
+    var = false,
+    url = "MY_EYES",
+    [r103_0] = {
+      "pop/hiphop",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = CRAB_RAVE,
+    bpm = "125",
+    var = false,
+    url = "CRAB_RAVE",
+    [r104_0] = {
+      "memes",
+      "electronic",
+      "epic"
+    },
+  },
+  {
+    button = ONE_DANCE,
+    bpm = "108",
+    var = false,
+    url = "ONE_DANCE",
+    [r105_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = RAIN,
+    bpm = "77",
+    var = false,
+    url = "RAIN",
+    [r106_0] = {
+      "beautiful",
+      "best",
+      "epic"
+    },
+  },
+  {
+    button = RUSH_OF_LIFE,
+    bpm = "122",
+    var = false,
+    url = "RUSH_OF_LIFE",
+    [r107_0] = {
+      "beautiful",
+      "epic",
+      "best",
+      "peak"
+    },
+  },
+  {
+    button = THE_SEARCH,
+    bpm = "120",
+    var = false,
+    url = "THE_SEARCH",
+    [r108_0] = {
+      "pop/hiphop",
+      "epic",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = MICHAEL_MYERS,
+    bpm = "144",
+    var = false,
+    url = "MICHAEL_MYERS",
+    [r109_0] = {
+      "memes",
+      "creepy/weirdcore"
+    },
+  },
+  {
+    button = YUUSHA,
+    bpm = "208",
+    var = false,
+    url = "YUUSHA",
+    [r110_0] = {
+      "anime/jpop"
+    },
+  },
+  {
+    button = CAROL_OF_THE_BELLS_EPIC,
+    bpm = "135",
+    var = false,
+    url = "CAROL_OF_THE_BELLS_EPIC",
+    [r111_0] = {
+      "classical",
+      "epic",
+      "beautiful",
+      "best",
+      "seasonal"
+    },
+  },
+  {
+    button = CAROL_OF_THE_BELLS,
+    bpm = "50",
+    var = false,
+    url = "CAROL_OF_THE_BELLS",
+    [r112_0] = {
+      "classical",
+      "beautiful",
+      "best",
+      "seasonal"
+    },
+  },
+  {
+    button = CLAIR_DE_LUNE,
+    bpm = "48",
+    var = false,
+    url = "CLAIR_DE_LUNE",
+    [r113_0] = {
+      "classical",
+      "beautiful"
+    },
+  },
+  {
+    button = OLD_TOWN_ROAD,
+    bpm = "69",
+    var = false,
+    url = "OLD_TOWN_ROAD",
+    [r114_0] = {
+      "pop/hiphop",
+      "memes"
+    },
+  },
+  {
+    button = HATSUNE_MIKU_NO_GEKISHOU,
+    bpm = "200",
+    var = false,
+    url = "HATSUNE_MIKU_NO_GEKISHOU",
+    [r115_0] = {
+      "anime/jpop",
+      "best",
+      "epic"
+    },
+  },
+  {
+    button = AUTUMN,
+    bpm = "80",
+    var = false,
+    url = "AUTUMN",
+    [r116_0] = {
+      "classical"
+    },
+  },
+  {
+    button = WINTER,
+    bpm = "136",
+    var = false,
+    url = "WINTER",
+    [r117_0] = {
+      "classical",
+      "best",
+      "beautiful",
+      "epic",
+      "peak"
+    },
+  },
+  {
+    button = SPRING,
+    bpm = "100",
+    var = false,
+    url = "SPRING",
+    [r118_0] = {
+      "classical",
+      "video games",
+      "memes",
+      "best"
+    },
+  },
+  {
+    button = SUMMER,
+    bpm = "150",
+    var = false,
+    url = "SUMMER",
+    [r119_0] = {
+      "classical",
+      "epic",
+      "best",
+      "beautiful",
+      "peak"
+    },
+  },
+  {
+    button = TAKE_ON_ME,
+    bpm = "169",
+    var = false,
+    url = "TAKE_ON_ME",
+    [r70_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = BIG_FISH,
+    bpm = "71",
+    var = false,
+    url = "BIG_FISH",
+    [r71_0] = {
+      "beautiful"
+    },
+  },
+  {
+    button = NOPE_YOUR_TOO_LATE,
+    bpm = "118",
+    var = false,
+    url = "NOPE_YOUR_TOO_LATE",
+    [r72_0] = {
+      "rock",
+      "sad"
+    },
+  },
+  {
+    button = INVISIBLE,
+    bpm = "82",
+    var = false,
+    url = "INVISIBLE",
+    [r73_0] = {
+      "electronic",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = PASSACAGLIA,
+    bpm = "130",
+    var = false,
+    url = "PASSACAGLIA",
+    [r74_0] = {
+      "classical",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = HAZY_MOON,
+    bpm = "120",
+    var = false,
+    url = "HAZY_MOON",
+    [r75_0] = {
+      "anime/jpop",
+      "beautiful"
+    },
+  },
+  {
+    button = TIME_BACK,
+    bpm = "120",
+    var = false,
+    url = "TIME_BACK",
+    [r76_0] = {
+      "movies/tv"
+    },
+  },
+  {
+    button = TEST_DRIVE,
+    bpm = "120",
+    var = false,
+    url = "TEST_DRIVE",
+    [r77_0] = {
+      "epic",
+      "movies/tv"
+    },
+  },
+  {
+    button = TAKE_FIVE,
+    bpm = "166",
+    var = false,
+    url = "TAKE_FIVE",
+    cat = {},
+  },
+  {
+    button = HEART_AFIRE,
+    bpm = "100",
+    var = false,
+    url = "HEART_AFIRE",
+    [r79_0] = {
+      "epic",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = LIEBESTRAUM_NO3,
+    bpm = "152",
+    var = false,
+    url = "LIEBESTRAUM_NO3",
+    [r80_0] = {
+      "classical"
+    },
+  },
+  {
+    button = TORRENT,
+    bpm = "190",
+    var = false,
+    url = "TORRENT",
+    [r81_0] = {
+      "classical",
+      "epic",
+      "best",
+      "peak"
+    },
+  },
+  {
+    button = REVOLUTIONARY,
+    bpm = "140",
+    var = false,
+    url = "REVOLUTIONARY",
+    [r82_0] = {
+      "classical",
+      "best"
+    },
+  },
+  {
+    button = WALTZ_IN_C_MINOR,
+    bpm = "120",
+    var = false,
+    url = "WALTZ_IN_C_MINOR",
+    [r83_0] = {
+      "classical"
+    },
+  },
+  {
+    button = PRELUDE_OP28,
+    bpm = "42",
+    var = false,
+    url = "PRELUDE_OP28",
+    [r84_0] = {
+      "classical"
+    },
+  },
+  {
+    button = DIES_IRAE,
+    bpm = "160",
+    var = false,
+    url = "DIES_IRAE",
+    [r85_0] = {
+      "classical",
+      "best",
+      "peak",
+      "epic"
+    },
+  },
+  {
+    button = PRELUDE_NO2,
+    bpm = "145",
+    var = false,
+    url = "PRELUDE_NO2",
+    [r86_0] = {
+      "classical"
+    },
+  },
+  {
+    button = SYMPHONY_NO5,
+    bpm = "120",
+    var = false,
+    url = "SYMPHONY_NO5",
+    [r87_0] = {
+      "classical"
+    },
+  },
+  {
+    button = PATHETIQUE,
+    bpm = "31",
+    var = false,
+    url = "PATHETIQUE",
+    [r88_0] = {
+      "classical"
+    },
+  },
+  {
+    button = COMPTINE_DUN_AUTRE_ETE,
+    bpm = "95",
+    var = false,
+    url = "COMPTINE_DUN_AUTRE_ETE",
+    [r89_0] = {
+      "classical",
+      "beautiful"
+    },
+  },
+  {
+    button = DIE_IRAE_III,
+    bpm = "160",
+    var = false,
+    url = "DIE_IRAE_III",
+    [r90_0] = {
+      "classical"
+    },
+  },
+  {
+    button = DIES_IRAE_III_2,
+    bpm = "160",
+    var = false,
+    url = "DIES_IRAE_III_2",
+    [r91_0] = {
+      "classical",
+      "epic",
+      "best",
+      "peak"
+    },
+  },
+  {
+    button = PLANT_VS_ZOMBIES,
+    bpm = "100",
+    var = false,
+    url = "PLANT_VS_ZOMBIES",
+    [r92_0] = {
+      "video games",
+      "memes"
+    },
+  },
+  {
+    button = LOVE,
+    bpm = "68",
+    var = false,
+    url = "LOVE",
+    [r93_0] = {
+      "sad"
+    },
+  },
+  {
+    button = STRESSED_OUT,
+    bpm = "170",
+    var = false,
+    url = "STRESSED_OUT",
+    [r94_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = CLOCKS,
+    bpm = "132",
+    var = false,
+    url = "CLOCKS",
+    [r95_0] = {
+      "rock"
+    },
+  },
+  {
+    button = GLASSY_SKY,
+    bpm = "68",
+    var = false,
+    url = "GLASSY_SKY",
+    [r96_0] = {
+      "anime/jpop",
+      "sad",
+      "movies/tv"
+    },
+  },
+  {
+    button = PAYPHONE,
+    bpm = "110",
+    var = false,
+    url = "PAYPHONE",
+    [r97_0] = {
+      "pop/hiphop",
+      "sad",
+      "best",
+      "beautiful"
+    },
+  },
+  {
+    button = FOR_THE_DAMAGED_CODA,
+    bpm = "140",
+    var = false,
+    url = "FOR_THE_DAMAGED_CODA",
+    [r98_0] = {
+      "sad",
+      "memes",
+      "epic"
+    },
+  },
+  {
+    button = PARADISE,
+    bpm = "125",
+    var = false,
+    url = "PARADISE",
+    [r99_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = PLEAD,
+    bpm = "120",
+    var = false,
+    url = "PLEAD",
+    [r100_0] = {
+      "video games",
+      "electronic"
+    },
+  },
+  {
+    button = READY_OR_NOT,
+    bpm = "160",
+    var = false,
+    url = "READY_OR_NOT",
+    [r101_0] = {
+      "video games",
+      "electronic"
+    },
+  },
+  {
+    button = FOR_THE_DAMAGED_CODA_2,
+    bpm = "150",
+    var = false,
+    url = "FOR_THE_DAMAGED_CODA_2",
+    [r102_0] = {
+      "sad",
+      "memes",
+      "epic",
+      "best",
+      "peak"
+    },
+  },
+  {
+    button = A7_WEEKS_3_DAYS,
+    bpm = "130",
+    var = false,
+    url = "7_WEEKS_3_DAYS",
+    [r103_0] = {
+      "creepy/weirdcore"
+    },
+  },
+  {
+    button = SEE_YOU_AGAIN_CHARLIE,
+    bpm = "60",
+    var = false,
+    url = "SEE_YOU_AGAIN_CHARLIE",
+    [r104_0] = {
+      "pop/hiphop",
+      "sad",
+      "beautiful"
+    },
+  },
+  {
+    button = ANNIHILATE,
+    bpm = "146",
+    var = false,
+    url = "ANNIHILATE",
+    [r105_0] = {
+      "pop/hiphop",
+      "movies/tv"
+    },
+  },
+  {
+    button = MY_HEART_WILL_GO_ON,
+    bpm = "90",
+    var = false,
+    url = "MY_HEART_WILL_GO_ON",
+    [r106_0] = {
+      "sad",
+      "movies/tv",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = NUMBERS,
+    bpm = "100",
+    var = false,
+    url = "NUMBERS",
+    [r107_0] = {
+      "creepy/weirdcore"
+    },
+  },
+  {
+    button = NYAN_CAT,
+    bpm = "140",
+    var = false,
+    url = "NYAN_CAT",
+    [r108_0] = {
+      "memes",
+      "best"
+    },
+  },
+  {
+    button = OVERTAKEN,
+    bpm = "105",
+    var = false,
+    url = "OVERTAKEN",
+    [r109_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = GURENGE,
+    bpm = "135",
+    var = false,
+    url = "GURENGE",
+    [r110_0] = {
+      "anime/jpop",
+      "movies/tv",
+      "best",
+      "epic",
+      "beautiful",
+      "peak"
+    },
+  },
+  {
+    button = CROSSING_FIELD,
+    bpm = "179",
+    var = false,
+    url = "CROSSING_FIELD",
+    [r111_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = UNTIL_I_FOUND_YOU,
+    bpm = "101",
+    var = false,
+    url = "UNTIL_I_FOUND_YOU",
+    [r112_0] = {
+      "pop/hiphop",
+      "sad",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = OLD_DOLL,
+    bpm = "100",
+    var = false,
+    url = "OLD_DOLL",
+    [r113_0] = {
+      "creepy/weirdcore"
+    },
+  },
+  {
+    button = WE_ARE,
+    bpm = "168",
+    var = false,
+    url = "WE_ARE",
+    [r114_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = RIGHTEOUS,
+    bpm = "160",
+    var = false,
+    url = "RIGHTEOUS",
+    [r115_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = SILHOUETTE,
+    bpm = "185",
+    var = false,
+    url = "SILHOUETTE",
+    [r116_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = LET_IT_HAPPEN,
+    bpm = "120",
+    var = false,
+    url = "LET_IT_HAPPEN",
+    [r117_0] = {
+      "rock",
+      "beautiful"
+    },
+  },
+  {
+    button = BEANIE,
+    bpm = "135",
+    var = false,
+    url = "BEANIE",
+    [r118_0] = {
+      "sad"
+    },
+  },
+  {
+    button = ALTALE,
+    bpm = "90",
+    var = false,
+    url = "ALTALE",
+    [r119_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = LET_ME_DOWN_SLOWLY,
+    bpm = "75",
+    var = false,
+    url = "LET_ME_DOWN_SLOWLY",
+    [r70_0] = {
+      "sad"
+    },
+  },
+  {
+    button = RUSH_C,
+    bpm = "60",
+    var = false,
+    url = "RUSH_C",
+    cat = {},
+  },
+  {
+    button = RUSH_F,
+    bpm = "60",
+    var = false,
+    url = "RUSH_F",
+    cat = {},
+  },
+  {
+    button = RUSH_G,
+    bpm = "60",
+    var = false,
+    url = "RUSH_G",
+    cat = {},
+  },
+  {
+    button = BEAUTIFUL_THINGS,
+    bpm = "70",
+    var = false,
+    url = "BEAUTIFUL_THINGS",
+    [r74_0] = {
+      "rock",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = OBLIVION,
+    bpm = "156",
+    var = false,
+    url = "OBLIVION",
+    [r75_0] = {
+      "rock",
+      "beautiful"
+    },
+  },
+  {
+    button = A_CYBERS_WORLD,
+    bpm = "117",
+    var = false,
+    url = "A_CYBERS_WORLD",
+    [r76_0] = {
+      "deltarune",
+      "video games",
+      "best"
+    },
+  },
+  {
+    button = DEXTER_BLOOD_THEME,
+    bpm = "82",
+    var = false,
+    url = "DEXTER_BLOOD_THEME",
+    [r77_0] = {
+      "movies/tv"
+    },
+  },
+  {
+    button = PASSO_BEM_SOLTO,
+    bpm = "120",
+    var = false,
+    url = "PASSO_BEM_SOLTO",
+    [r78_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = MINGLE,
+    bpm = "105",
+    var = false,
+    url = "MINGLE",
+    [r79_0] = {
+      "creepy/weirdcore",
+      "movies/tv"
+    },
+  },
+  {
+    button = LUX_AETERNA,
+    bpm = "70",
+    var = false,
+    url = "LUX_AETERNA",
+    [r80_0] = {
+      "movies/tv"
+    },
+  },
+  {
+    button = FIELD_OF_HOPES_AND_DREAMS,
+    bpm = "125",
+    var = false,
+    url = "FIELD_OF_HOPES_AND_DREAMS",
+    [r81_0] = {
+      "deltarune",
+      "video games"
+    },
+  },
+  {
+    button = CHAOS_KING,
+    bpm = "148",
+    var = false,
+    url = "CHAOS_KING",
+    [r82_0] = {
+      "deltarune",
+      "video games"
+    },
+  },
+  {
+    button = BIG_SHOT,
+    bpm = "280",
+    var = false,
+    url = "BIG_SHOT",
+    [r83_0] = {
+      "deltarune",
+      "video games"
+    },
+  },
+  {
+    button = THE_WORLD_REVOLVING,
+    bpm = "190",
+    var = false,
+    url = "THE_WORLD_REVOLVING",
+    [r84_0] = {
+      "deltarune",
+      "video games",
+      "best"
+    },
+  },
+  {
+    button = RUDE_BUSTER,
+    bpm = "140",
+    var = false,
+    url = "RUDE_BUSTER",
+    [r85_0] = {
+      "deltarune",
+      "video games",
+      "best"
+    },
+  },
+  {
+    button = TIME_FLOWS_EVER_ONWARD,
+    bpm = "100",
+    var = false,
+    url = "TIME_FLOWS_EVER_ONWARD",
+    [r86_0] = {
+      "movies/tv",
+      "anime/jpop"
+    },
+  },
+  {
+    button = IDEA_10,
+    bpm = "170",
+    var = false,
+    url = "IDEA_10",
+    [r87_0] = {
+      "beautiful"
+    },
+  },
+  {
+    button = CREEP,
+    bpm = "100",
+    var = false,
+    url = "CREEP",
+    [r88_0] = {
+      "rock",
+      "sad"
+    },
+  },
+  {
+    button = MASTER_OF_PUPPETS,
+    bpm = "220",
+    var = false,
+    url = "MASTER_OF_PUPPETS",
+    [r89_0] = {
+      "rock"
+    },
+  },
+  {
+    button = NOTHING_ELSE_MATTERS,
+    bpm = "75",
+    var = false,
+    url = "NOTHING_ELSE_MATTERS",
+    [r90_0] = {
+      "rock",
+      "sad"
+    },
+  },
+  {
+    button = MY_LOVE_ALL_MINE,
+    bpm = "57",
+    var = false,
+    url = "MY_LOVE_ALL_MINE",
+    [r91_0] = {
+      "sad",
+      "best"
+    },
+  },
+  {
+    button = NO_SURPRISES,
+    bpm = "80",
+    var = false,
+    url = "NO_SURPRISES",
+    [r92_0] = {
+      "rock",
+      "sad"
+    },
+  },
+  {
+    button = ORDER,
+    bpm = "170",
+    var = false,
+    url = "ORDER",
+    [r93_0] = {
+      "video games",
+      "best"
+    },
+  },
+  {
+    button = RUNAWAY_AURORA,
+    bpm = "90",
+    var = false,
+    url = "RUNAWAY_AURORA",
+    [r94_0] = {
+      "sad",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = IM_NOT_THE_ONLY_ONE,
+    bpm = "80",
+    var = false,
+    url = "IM_NOT_THE_ONLY_ONE",
+    [r95_0] = {
+      "pop/hiphop",
+      "sad"
+    },
+  },
+  {
+    button = UNSTOPPABLE,
+    bpm = "85",
+    var = false,
+    url = "UNSTOPPABLE",
+    [r96_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = ZOMBIE,
+    bpm = "164",
+    var = false,
+    url = "ZOMBIE",
+    [r97_0] = {
+      "rock"
+    },
+  },
+  {
+    button = MY_CASTLE_TOWN,
+    bpm = "136",
+    var = false,
+    url = "MY_CASTLE_TOWN",
+    [r98_0] = {
+      "video games",
+      "deltarune"
+    },
+  },
+  {
+    button = SCARLET_FOREST,
+    bpm = "122",
+    var = false,
+    url = "SCARLET_FOREST",
+    [r99_0] = {
+      "video games",
+      "deltarune"
+    },
+  },
+  {
+    button = THE_LEGEND,
+    bpm = "110",
+    var = false,
+    url = "THE_LEGEND",
+    [r100_0] = {
+      "video games",
+      "deltarune"
+    },
+  },
+  {
+    button = ATTACK_OF_THE_KILLER_QUEEN,
+    bpm = "144",
+    var = false,
+    url = "ATTACK_OF_THE_KILLER_QUEEN",
+    [r101_0] = {
+      "video games",
+      "deltarune",
+      "best"
+    },
+  },
+  {
+    button = BELLA_CIAO,
+    bpm = "136",
+    var = false,
+    url = "BELLA_CIAO",
+    [r102_0] = {
+      "movies/tv",
+      "best"
+    },
+  },
+  {
+    button = DAISY_BELL,
+    bpm = "120",
+    var = false,
+    url = "DAISY_BELL",
+    [r103_0] = {
+      "creepy/weirdcore"
+    },
+  },
+  {
+    button = ORDINARY,
+    bpm = "168",
+    var = false,
+    url = "ORDINARY",
+    [r104_0] = {
+      "pop/hiphop",
+      "sad",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = ETHEREAL,
+    bpm = "132",
+    var = false,
+    url = "ETHEREAL",
+    [r105_0] = {
+      "beautiful",
+      "best",
+      "peak"
+    },
+  },
+  {
+    button = BOHEMIAN_RHAPSODY,
+    bpm = "80",
+    var = false,
+    url = "BOHEMIAN_RHAPSODY",
+    [r106_0] = {
+      "rock"
+    },
+  },
+  {
+    button = RIPTIDE,
+    bpm = "90",
+    var = false,
+    url = "RIPTIDE",
+    [r107_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = SAILOR_SONG,
+    bpm = "83",
+    var = false,
+    url = "SAILOR_SONG",
+    [r108_0] = {
+      "sad"
+    },
+  },
+  {
+    button = GIMME_GIMME_GIMME,
+    bpm = "116",
+    var = false,
+    url = "GIMME_GIMME_GIMME",
+    [r109_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = BARBIE_GIRL,
+    bpm = "136",
+    var = false,
+    url = "BARBIE_GIRL",
+    [r110_0] = {
+      "movies/tv",
+      "memes"
+    },
+  },
+  {
+    button = WHAT_IS_LOVE,
+    bpm = "120",
+    var = false,
+    url = "WHAT_IS_LOVE",
+    [r111_0] = {
+      "pop/hiphop",
+      "electronic"
+    },
+  },
+  {
+    button = DRAGOSTEA_DIN_TEI,
+    bpm = "130",
+    var = false,
+    url = "DRAGOSTEA_DIN_TEI",
+    [r112_0] = {
+      "pop/hiphop",
+      "electronic",
+      "memes"
+    },
+  },
+  {
+    button = STAYIN_ALIVE,
+    bpm = "103",
+    var = false,
+    url = "STAYIN_ALIVE",
+    [r113_0] = {
+      "pop/hiphop",
+      "rock",
+      "movies/tv"
+    },
+  },
+  {
+    button = CLOSE_EYES,
+    bpm = "114",
+    var = false,
+    url = "CLOSE_EYES",
+    [r114_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = BOOM_BOOM_BOOM_BOOM,
+    bpm = "120",
+    var = false,
+    url = "BOOM_BOOM_BOOM_BOOM",
+    [r115_0] = {
+      "pop/hiphop",
+      "memes"
+    },
+  },
+  {
+    button = FUNK_ESTRANHO,
+    bpm = "111",
+    var = false,
+    url = "FUNK_ESTRANHO",
+    [r116_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = GUREN_NO_YUMIYA,
+    bpm = "176",
+    var = false,
+    url = "GUREN_NO_YUMIYA",
+    [r117_0] = {
+      "movies/tv",
+      "anime/jpop",
+      "epic"
+    },
+  },
+  {
+    button = IDEA_1,
+    bpm = "160",
+    var = false,
+    url = "IDEA_1",
+    [r118_0] = {
+      "classical"
+    },
+  },
+  {
+    button = COMEDY,
+    bpm = "88",
+    var = false,
+    url = "COMEDY",
+    [r119_0] = {
+      "movies/tv",
+      "anime/jpop"
+    },
+  },
+  {
+    button = LET_IT_GO,
+    bpm = "74",
+    var = false,
+    url = "LET_IT_GO",
+    [r70_0] = {
+      "movies/tv",
+      "memes",
+      "best"
+    },
+  },
+  {
+    button = BETTER_OFF_ALONE,
+    bpm = "130",
+    var = false,
+    url = "BETTER_OFF_ALONE",
+    [r71_0] = {
+      "electronic",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = MY_WAR,
+    bpm = "140",
+    var = false,
+    url = "MY_WAR",
+    [r72_0] = {
+      "movies/tv",
+      "anime/jpop"
+    },
+  },
+  {
+    button = AFRICA,
+    bpm = "90",
+    var = false,
+    url = "AFRICA",
+    [r73_0] = {
+      "electronic",
+      "memes"
+    },
+  },
+  {
+    button = KICK_BACK,
+    bpm = "204",
+    var = false,
+    url = "KICK_BACK",
+    [r74_0] = {
+      "movies/tv",
+      "anime/jpop"
+    },
+  },
+  {
+    button = REVENGE,
+    bpm = "120",
+    var = false,
+    url = "REVENGE",
+    [r75_0] = {
+      "video games",
+      "video games",
+      "memes",
+      "best"
+    },
+  },
+  {
+    button = SPECIALZ,
+    bpm = "117",
+    var = false,
+    url = "SPECIALZ",
+    [r76_0] = {
+      "movies/tv",
+      "anime/jpop"
+    },
+  },
+  {
+    button = F1,
+    bpm = "110",
+    var = false,
+    url = "F1",
+    [r77_0] = {
+      "movies/tv"
+    },
+  },
+  {
+    button = MONTAGEM_CORAL,
+    bpm = "130",
+    var = false,
+    url = "MONTAGEM_CORAL",
+    [r78_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = RUNNING_IN_THE_90S,
+    bpm = "160",
+    var = false,
+    url = "RUNNING_IN_THE_90S",
+    [r79_0] = {
+      "electronic",
+      "memes",
+      "best"
+    },
+  },
+  {
+    button = A_CRUEL_ANGELS_THESIS,
+    bpm = "76",
+    var = false,
+    url = "A_CRUEL_ANGELS_THESIS",
+    [r80_0] = {
+      "movies/tv",
+      "anime/jpop",
+      "best"
+    },
+  },
+  {
+    button = BLUEBIRD,
+    bpm = "145",
+    var = false,
+    url = "BLUEBIRD",
+    [r81_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = IM_INVINCIBLE,
+    bpm = "192",
+    var = false,
+    url = "IM_INVINCIBLE",
+    [r82_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = LAMOUR_TOUJOURS,
+    bpm = "160",
+    var = false,
+    url = "LAMOUR_TOUJOURS",
+    [r83_0] = {
+      "sad",
+      "memes"
+    },
+  },
+  {
+    button = CRAZY_FROG,
+    bpm = "130",
+    var = false,
+    url = "CRAZY_FROG",
+    [r84_0] = {
+      "memes",
+      "electronic"
+    },
+  },
+  {
+    button = YOUR_GAZE,
+    bpm = "144",
+    var = false,
+    url = "YOUR_GAZE",
+    [r85_0] = {
+      "anime/jpop",
+      "movies/tv",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = SHINZOU_WO_SASEGEYO,
+    bpm = "80",
+    var = false,
+    url = "SHINZOU_WO_SASEGEYO",
+    [r86_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = A2_PHUT_HON,
+    bpm = "130",
+    var = false,
+    url = "2_PHUT_HON",
+    [r87_0] = {
+      "electronic",
+      "best"
+    },
+  },
+  {
+    button = I_CANT_HANDLE_CHANGE,
+    bpm = "120",
+    var = false,
+    url = "I_CANT_HANDLE_CHANGE",
+    [r88_0] = {
+      "sad",
+      "rock"
+    },
+  },
+  {
+    button = HANA_NI_NATTE,
+    bpm = "200",
+    var = false,
+    url = "HANA_NI_NATTE",
+    [r89_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = IDEA_9,
+    bpm = "195",
+    var = false,
+    url = "IDEA_9",
+    [r90_0] = {
+      "classical"
+    },
+  },
+  {
+    button = IDEA_22,
+    bpm = "120",
+    var = false,
+    url = "IDEA_22",
+    [r91_0] = {
+      "classical"
+    },
+  },
+  {
+    button = A90210,
+    bpm = "70",
+    var = false,
+    url = "A90210",
+    [r92_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = I_BROKE_A_STRING,
+    bpm = "120",
+    var = false,
+    url = "I_BROKE_A_STRING",
+    [r93_0] = {
+      "beautiful",
+      "best",
+      "epic"
+    },
+  },
+  {
+    button = THE_BEGINNING,
+    bpm = "150",
+    var = false,
+    url = "THE_BEGINNING",
+    [r94_0] = {
+      "beautiful"
+    },
+  },
+  {
+    button = GYMNOPEDIE_NO1,
+    bpm = "54",
+    var = false,
+    url = "GYMNOPEDIE_NO1",
+    [r95_0] = {
+      "classical"
+    },
+  },
+  {
+    button = CRY_FOR_ME_MICHITA,
+    bpm = "92",
+    var = false,
+    url = "CRY_FOR_ME_MICHITA",
+    [r96_0] = {
+      "beautiful",
+      "sad"
+    },
+  },
+  {
+    button = DARK_IS_THE_NIGHT,
+    bpm = "120",
+    var = false,
+    url = "DARK_IS_THE_NIGHT",
+    [r97_0] = {
+      "sad"
+    },
+  },
+  {
+    button = MY_WAY,
+    bpm = "80",
+    var = false,
+    url = "MY_WAY",
+    cat = {},
+  },
+  {
+    button = STILL_DRE,
+    bpm = "92",
+    var = false,
+    url = "STILL_DRE",
+    [r99_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = THE_BLUE_DANUBE,
+    bpm = "120",
+    var = false,
+    url = "THE_BLUE_DANUBE",
+    [r100_0] = {
+      "classical"
+    },
+  },
+  {
+    button = NEVER_BE_ALONE,
+    bpm = "105",
+    var = false,
+    url = "NEVER_BE_ALONE",
+    [r101_0] = {
+      "video games"
+    },
+  },
+  {
+    button = RUDER_BUSTER,
+    bpm = "130",
+    var = false,
+    url = "RUDER_BUSTER",
+    [r102_0] = {
+      "video games",
+      "deltarune"
+    },
+  },
+  {
+    button = LOVER_IS_A_DAY,
+    bpm = "90",
+    var = false,
+    url = "LOVER_IS_A_DAY",
+    cat = {},
+  },
+  {
+    button = DANDELIONS,
+    bpm = "100",
+    var = false,
+    url = "DANDELIONS",
+    cat = {},
+  },
+  {
+    button = MY_KIND_OF_WOMAN,
+    bpm = "90",
+    var = false,
+    url = "MY_KIND_OF_WOMAN",
+    cat = {},
+  },
+  {
+    button = WHEN_I_MET_YOU,
+    bpm = "70",
+    var = false,
+    url = "WHEN_I_MET_YOU",
+    cat = {},
+  },
+  {
+    button = SADNESS_AND_SORROW,
+    bpm = "75",
+    var = false,
+    url = "SADNESS_AND_SORROW",
+    [r107_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = THIS_IS_WHAT_FALLING_IN_LOVE,
+    bpm = "80",
+    var = false,
+    url = "THIS_IS_WHAT_FALLING_IN_LOVE",
+    [r108_0] = {
+      "beautiful",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = CHA_LA_HEAD_CHA_LA,
+    bpm = "154",
+    var = false,
+    url = "CHA_LA_HEAD_CHA_LA",
+    [r109_0] = {
+      "anime/jpop",
+      "movies/tv",
+      "best"
+    },
+  },
+  {
+    button = UWA_SO_TEMPERATE,
+    bpm = "130",
+    var = false,
+    url = "UWA_SO_TEMPERATE",
+    [r110_0] = {
+      "undertale",
+      "video games"
+    },
+  },
+  {
+    button = WE_WERE_ANGELS,
+    bpm = "148",
+    var = false,
+    url = "WE_WERE_ANGELS",
+    [r111_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = WIEGE,
+    bpm = "75",
+    var = false,
+    url = "WIEGE",
+    [r112_0] = {
+      "movies/tv"
+    },
+  },
+  {
+    button = DEPARTURE,
+    bpm = "150",
+    var = false,
+    url = "DEPARTURE",
+    [r113_0] = {
+      "movies/tv",
+      "anime/jpop"
+    },
+  },
+  {
+    button = RUE_DES_TROIS_FRERES,
+    bpm = "120",
+    var = false,
+    url = "RUE_DES_TROIS_FRERES",
+    [r114_0] = {
+      "classical"
+    },
+  },
+  {
+    button = ITS_TV_TIME,
+    bpm = "148",
+    var = false,
+    url = "ITS_TV_TIME",
+    [r115_0] = {
+      "deltarune",
+      "video games"
+    },
+  },
+  {
+    button = CONCERTO_OP30_NO3,
+    bpm = "150",
+    var = false,
+    url = "CONCERTO_OP30_NO3",
+    [r116_0] = {
+      "classical"
+    },
+  },
+  {
+    button = MORNING_MOOD,
+    bpm = "72",
+    var = false,
+    url = "MORNING_MOOD",
+    [r117_0] = {
+      "classical",
+      "memes",
+      "video games"
+    },
+  },
+  {
+    button = ETUDE_NO3_UN_SOSPIRO,
+    bpm = "25",
+    var = false,
+    url = "ETUDE_NO3_UN_SOSPIRO",
+    [r118_0] = {
+      "classical"
+    },
+  },
+  {
+    button = SERENADE,
+    bpm = "58",
+    var = false,
+    url = "SERENADE",
+    [r119_0] = {
+      "classical"
+    },
+  },
+  {
+    button = POLONAISE,
+    bpm = "100",
+    var = false,
+    url = "POLONAISE",
+    [r70_0] = {
+      "classical"
+    },
+  },
+  {
+    button = VIENNA,
+    bpm = "120",
+    var = false,
+    url = "VIENNA",
+    cat = {},
+  },
+  {
+    button = ONE_SUMMERS_DAY,
+    bpm = "78",
+    var = false,
+    url = "ONE_SUMMERS_DAY",
+    [r72_0] = {
+      "beautiful",
+      "movies/tv",
+      "anime/jpop"
+    },
+  },
+  {
+    button = LE_MONDE,
+    bpm = "100",
+    var = false,
+    url = "LE_MONDE",
+    [r73_0] = {
+      "best"
+    },
+  },
+  {
+    button = JUDAS,
+    bpm = "130",
+    var = false,
+    url = "JUDAS",
+    [r74_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = GYMONPEDIE_NO2,
+    bpm = "48",
+    var = false,
+    url = "GYMONPEDIE_NO2",
+    [r75_0] = {
+      "classical"
+    },
+  },
+  {
+    button = LIKE_HIM_BEST,
+    bpm = "94",
+    var = false,
+    url = "LIKE_HIM_BEST",
+    [r76_0] = {
+      "beautiful",
+      "best",
+      "peak",
+      "pop/hiphop",
+      "epic"
+    },
+  },
+  {
+    button = WATERFALL,
+    bpm = "70",
+    var = false,
+    url = "WATERFALL",
+    [r77_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = KISS_THE_RAIN,
+    bpm = "58",
+    var = false,
+    url = "KISS_THE_RAIN",
+    cat = {},
+  },
+  {
+    button = KAMADO_TANJIRO_NO_UTA,
+    bpm = "151",
+    var = false,
+    url = "KAMADO_TANJIRO_NO_UTA",
+    [r79_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = ON_MY_WAY,
+    bpm = "85",
+    var = false,
+    url = "ON_MY_WAY",
+    [r80_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = A7_YEARS,
+    bpm = "60",
+    var = false,
+    url = "A7_YEARS",
+    [r81_0] = {
+      "pop/hiphop",
+      "sad",
+      "best"
+    },
+  },
+  {
+    button = PIANO_MAN,
+    bpm = "80",
+    var = false,
+    url = "PIANO_MAN",
+    [r82_0] = {
+      ""
+    },
+  },
+  {
+    button = NIGHT_DANCER,
+    bpm = "118",
+    var = false,
+    url = "NIGHT_DANCER",
+    [r83_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = LET_YOU_BREAK_MY_HEART_AGAIN,
+    bpm = "73",
+    var = false,
+    url = "LET_YOU_BREAK_MY_HEART_AGAIN",
+    [r84_0] = {
+      "sad"
+    },
+  },
+  {
+    button = WHAT_WAS_I_MADE_FOR,
+    bpm = "80",
+    var = false,
+    url = "WHAT_WAS_I_MADE_FOR",
+    [r85_0] = {
+      "movies/tv",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = SPAWN,
+    bpm = "140",
+    var = false,
+    url = "SPAWN",
+    [r86_0] = {
+      "deltarune",
+      "video games"
+    },
+  },
+  {
+    button = ALL_I_WANT_FOR_CHRISTMAS_IS_YOU,
+    bpm = "70",
+    var = false,
+    url = "ALL_I_WANT_FOR_CHRISTMAS_IS_YOU",
+    [r87_0] = {
+      "pop/hiphop",
+      "seasonal"
+    },
+  },
+  {
+    button = IN_HELL_WE_LIVE,
+    bpm = "65",
+    var = false,
+    url = "IN_HELL_WE_LIVE",
+    [r88_0] = {
+      "video games"
+    },
+  },
+  {
+    button = SPOOKY_SCARY_SKELETONS,
+    bpm = "225",
+    var = false,
+    url = "SPOOKY_SCARY_SKELETONS",
+    [r89_0] = {
+      "creepy/weirdcore",
+      "best"
+    },
+  },
+  {
+    button = A_HOME_FOR_FLOWERS,
+    bpm = "54",
+    var = false,
+    url = "A_HOME_FOR_FLOWERS",
+    [r90_0] = {
+      "omori",
+      "video games"
+    },
+  },
+  {
+    button = MONTAGEM_XONADA,
+    bpm = "130",
+    var = false,
+    url = "MONTAGEM_XONADA",
+    [r91_0] = {
+      "electronic"
+    },
+  },
+  {
+    button = BLACK_KNIFE,
+    bpm = "148",
+    var = false,
+    url = "BLACK_KNIFE",
+    [r92_0] = {
+      "deltarune",
+      "video games"
+    },
+  },
+  {
+    button = RENAI_CIRCULATION,
+    bpm = "120",
+    var = false,
+    url = "RENAI_CIRCULATION",
+    [r93_0] = {
+      "anime/jpop",
+      "memes",
+      "peak",
+      "best"
+    },
+  },
+  {
+    button = CHIISANA_KOI_NO_UTA,
+    bpm = "100",
+    var = false,
+    url = "CHIISANA_KOI_NO_UTA",
+    [r94_0] = {
+      "anime/jpop",
+      "movies/tv",
+      "best"
+    },
+  },
+  {
+    button = WHERE_OUR_BLUE_IS,
+    bpm = "152",
+    var = false,
+    url = "WHERE_OUR_BLUE_IS",
+    [r95_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = CHAMBER_OF_REFLECTION,
+    bpm = "128",
+    var = false,
+    url = "CHAMBER_OF_REFLECTION",
+    [r96_0] = {
+      "sad",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = SWAN_LAKE,
+    bpm = "100",
+    var = false,
+    url = "SWAN_LAKE",
+    [r97_0] = {
+      "classical"
+    },
+  },
+  {
+    button = BUTCHER_VANITY,
+    bpm = "142",
+    var = false,
+    url = "BUTCHER_VANITY",
+    [r98_0] = {
+      "video games"
+    },
+  },
+  {
+    button = THIS_IS_HALLOWEEN,
+    bpm = "160",
+    var = false,
+    url = "THIS_IS_HALLOWEEN",
+    [r99_0] = {
+      "creepy/weirdcore"
+    },
+  },
+  {
+    button = CANT_HELP_FALLING_IN_LOVE,
+    bpm = "120",
+    var = false,
+    url = "CANT_HELP_FALLING_IN_LOVE",
+    [r100_0] = {
+      ""
+    },
+  },
+  {
+    button = LIKE_HIM,
+    bpm = "94",
+    var = false,
+    url = "LIKE_HIM",
+    [r101_0] = {
+      "pop/hiphop",
+      "beautiful",
+      "best"
+    },
+  },
+  {
+    button = CRUCIFIED,
+    bpm = "144",
+    var = false,
+    url = "CRUCIFIED",
+    [r102_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = BLACK_CATCHER,
+    bpm = "88",
+    var = false,
+    url = "BLACK_CATCHER",
+    [r103_0] = {
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = LOVELY,
+    bpm = "115",
+    var = false,
+    url = "LOVELY",
+    [r104_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = HEY_KIDS,
+    bpm = "87",
+    var = false,
+    url = "HEY_KIDS",
+    [r105_0] = {
+      "creepy/weirdcore"
+    },
+  },
+  {
+    button = SNOWMAN,
+    bpm = "105",
+    var = false,
+    url = "SNOWMAN",
+    [r106_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = PIXEL_PEEKER_POLKA,
+    bpm = "145",
+    var = false,
+    url = "PIXEL_PEEKER_POLKA",
+    [r107_0] = {
+      "memes"
+    },
+  },
+  {
+    button = FAST,
+    bpm = "86",
+    var = false,
+    url = "FAST",
+    [r108_0] = {
+      "pop/hiphop",
+      "sad"
+    },
+  },
+  {
+    button = GYMNOPEDIE_NO3,
+    bpm = "48",
+    var = false,
+    url = "GYMNOPEDIE_NO3",
+    [r109_0] = {
+      "classical"
+    },
+  },
+  {
+    button = REFLECTIONS,
+    bpm = "104",
+    var = false,
+    url = "REFLECTIONS",
+    [r110_0] = {
+      "anime/jpop",
+      "best"
+    },
+  },
+  {
+    button = LOVE_STORY,
+    bpm = "180",
+    var = false,
+    url = "LOVE_STORY",
+    [r111_0] = {
+      ""
+    },
+  },
+  {
+    button = HELLO_ADELE,
+    bpm = "85",
+    var = false,
+    url = "HELLO_ADELE",
+    [r112_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = LET_IT_GO_X_LET_HER_GO,
+    bpm = "120",
+    var = false,
+    url = "LET_IT_GO_X_LET_HER_GO",
+    [r113_0] = {
+      ""
+    },
+  },
+  {
+    button = I_WONDER,
+    bpm = "90",
+    var = false,
+    url = "I_WONDER",
+    [r114_0] = {
+      "pop/hiphop",
+      "beautiful"
+    },
+  },
+  {
+    button = RANSOM,
+    bpm = "180",
+    var = false,
+    url = "RANSOM",
+    [r115_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = LET_HER_GO,
+    bpm = "120",
+    var = false,
+    url = "LET_HER_GO",
+    [r116_0] = {
+      "memes",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = TIMELESS,
+    bpm = "120",
+    var = false,
+    url = "TIMELESS",
+    [r117_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = JUST_THE_TWO_OF_US,
+    bpm = "120",
+    var = false,
+    url = "JUST_THE_TWO_OF_US",
+    [r118_0] = {
+      ""
+    },
+  },
+  {
+    button = TEK_IT,
+    bpm = "147",
+    var = false,
+    url = "TEK_IT",
+    [r119_0] = {
+      ""
+    },
+  },
+  {
+    button = FLY_MY_WINGS,
+    bpm = "72",
+    var = false,
+    url = "FLY_MY_WINGS",
+    [r70_0] = {
+      "video games"
+    },
+  },
+  {
+    button = AI_SCREAM,
+    bpm = "135",
+    var = false,
+    url = "AI_SCREAM",
+    [r71_0] = {
+      "anime/jpop"
+    },
+  },
+  {
+    button = HOLLOW_KNIGHT_MAIN_THEME,
+    bpm = "55",
+    var = false,
+    url = "HOLLOW_KNIGHT_MAIN_THEME",
+    [r72_0] = {
+      "video games"
+    },
+  },
+  {
+    button = HIDE,
+    bpm = "100",
+    var = false,
+    url = "HIDE",
+    [r73_0] = {
+      "beautiful"
+    },
+  },
+  {
+    button = LAST_GOODBYE,
+    bpm = "180",
+    var = false,
+    url = "LAST_GOODBYE",
+    [r74_0] = {
+      "undertale",
+      "video games",
+      "best",
+      "epic",
+      "peak"
+    },
+  },
+  {
+    button = DAD_BATTLE,
+    bpm = "180",
+    var = false,
+    url = "DAD_BATTLE",
+    [r75_0] = {
+      "video games"
+    },
+  },
+  {
+    button = YOUR_POWER,
+    bpm = "130",
+    var = false,
+    url = "YOUR_POWER",
+    [r76_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = WE_ARE_NUMBER_ON,
+    bpm = "168",
+    var = false,
+    url = "WE_ARE_NUMBER_ON",
+    [r77_0] = {
+      "memes"
+    },
+  },
+  {
+    button = NEW_HOME,
+    bpm = "100",
+    var = false,
+    url = "NEW_HOME",
+    cat = {},
+  },
+  {
+    button = DIE_FOR_YOU,
+    bpm = "66",
+    var = false,
+    url = "DIE_FOR_YOU",
+    [r79_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = DIRTMOUTH,
+    bpm = "87",
+    var = false,
+    url = "DIRTMOUTH",
+    [r80_0] = {
+      "video games"
+    },
+  },
+  {
+    button = NERVES,
+    bpm = "100",
+    var = false,
+    url = "NERVES",
+    [r81_0] = {
+      "video games"
+    },
+  },
+  {
+    button = SWEET_DREAMS,
+    bpm = "125",
+    var = false,
+    url = "SWEET_DREAMS",
+    [r82_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = HERO,
+    bpm = "220",
+    var = false,
+    url = "HERO",
+    [r83_0] = {
+      "video games",
+      "best"
+    },
+  },
+  {
+    button = SILLY_BILLY,
+    bpm = "173",
+    var = false,
+    url = "SILLY_BILLY",
+    [r84_0] = {
+      "video games"
+    },
+  },
+  {
+    button = VAN_GOGH,
+    bpm = "110",
+    var = false,
+    url = "VAN_GOGH",
+    [r85_0] = {
+      "classical",
+      "beautiful"
+    },
+  },
+  {
+    button = GONE_ANGELS,
+    bpm = "188",
+    var = false,
+    url = "GONE_ANGELS",
+    [r86_0] = {
+      "video games"
+    },
+  },
+  {
+    button = ONE_OF_THE_GIRLS,
+    bpm = "88",
+    var = false,
+    url = "ONE_OF_THE_GIRLS",
+    [r87_0] = {
+      "pop/hiphop",
+      "movies/tv"
+    },
+  },
+  {
+    button = ROI,
+    bpm = "110",
+    var = false,
+    url = "ROI",
+    [r88_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = PASILYO,
+    bpm = "125",
+    var = false,
+    url = "PASILYO",
+    cat = {},
+  },
+  {
+    button = ROBBERY,
+    bpm = "80",
+    var = false,
+    url = "ROBBERY",
+    [r90_0] = {
+      "pop/hiphop",
+      "sad"
+    },
+  },
+  {
+    button = CHILDREN,
+    bpm = "137",
+    var = false,
+    url = "CHILDREN",
+    [r91_0] = {
+      "electronic",
+      "sad",
+      "best"
+    },
+  },
+  {
+    button = CONGRATULATIONS,
+    bpm = "60",
+    var = false,
+    url = "CONGRATULATIONS",
+    [r92_0] = {
+      "beautiful",
+      "sad"
+    },
+  },
+  {
+    button = ITS_RAINING_SOMEWHERE_ELSE,
+    bpm = "96",
+    var = false,
+    url = "ITS_RAINING_SOMEWHERE_ELSE",
+    [r93_0] = {
+      "video games",
+      "undertale"
+    },
+  },
+  {
+    button = WE_NOT_LIKE_U,
+    bpm = "155",
+    var = false,
+    url = "WE_NOT_LIKE_U",
+    [r94_0] = {
+      "pop/hiphop",
+      "memes"
+    },
+  },
+  {
+    button = FLIGHT,
+    bpm = "80",
+    var = false,
+    url = "FLIGHT",
+    [r95_0] = {
+      "movies/tv"
+    },
+  },
+  {
+    button = KEEP_UP,
+    bpm = "135",
+    var = false,
+    url = "KEEP_UP",
+    [r96_0] = {
+      "pop/hiphop",
+      "electronic"
+    },
+  },
+  {
+    button = A_TALE_OF_SIX,
+    bpm = "165",
+    var = false,
+    url = "A_TALE_OF_SIX",
+    [r97_0] = {
+      "electronic",
+      "anime/jpop",
+      "movies/tv"
+    },
+  },
+  {
+    button = MULTO,
+    bpm = "104",
+    var = false,
+    url = "MULTO",
+    [r98_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = YLANG_YLANG,
+    bpm = "71",
+    var = false,
+    url = "YLANG_YLANG",
+    [r99_0] = {
+      "sad",
+      "beautiful",
+      "memes",
+      "best"
+    },
+  },
+  {
+    button = LAST_CHRISTMAS,
+    bpm = "120",
+    var = false,
+    url = "LAST_CHRISTMAS",
+    [r100_0] = {
+      "pop/hiphop",
+      "best",
+      "seasonal"
+    },
+  },
+  {
+    button = CREEPIN,
+    bpm = "98",
+    var = false,
+    url = "CREEPIN",
+    [r101_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = FEEL_GOOD_INC,
+    bpm = "100",
+    var = false,
+    url = "FEEL_GOOD_INC",
+    [r102_0] = {
+      "pop/hiphop",
+      "rock",
+      "best"
+    },
+  },
+  {
+    button = ALL_STAR,
+    bpm = "100",
+    var = false,
+    url = "ALL_STAR",
+    [r103_0] = {
+      "movies/tv",
+      "memes"
+    },
+  },
+  {
+    button = SUPER_SMASH_BROS,
+    bpm = "145",
+    var = false,
+    url = "SUPER_SMASH_BROS",
+    [r104_0] = {
+      "video games"
+    },
+  },
+  {
+    button = NEVER_SEE_ME_AGAIN,
+    bpm = "178",
+    var = false,
+    url = "NEVER_SEE_ME_AGAIN",
+    [r105_0] = {
+      "pop/hiphop",
+      "best"
+    },
+  },
+  {
+    button = BIRDLAND,
+    bpm = "155",
+    var = false,
+    url = "BIRDLAND",
+    cat = {},
+  },
+  {
+    button = AMOUR_PLASTIQUE,
+    bpm = "120",
+    var = false,
+    url = "AMOUR_PLASTIQUE",
+    [r107_0] = {
+      "sad",
+      "memes"
+    },
+  },
+  {
+    button = GEOMETRICAL_DOMINATOR,
+    bpm = "80",
+    var = false,
+    url = "GEOMETRICAL_DOMINATOR",
+    [r108_0] = {
+      "video games",
+      "electronic",
+      "geometry dash"
+    },
+  },
+  {
+    button = SLOW_DANCING_IN,
+    bpm = "89",
+    var = false,
+    url = "SLOW_DANCING_IN",
+    [r109_0] = {
+      "sad",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = HOME,
+    bpm = "115",
+    var = false,
+    url = "HOME",
+    [r110_0] = {
+      "undertale",
+      "video games"
+    },
+  },
+  {
+    button = MRS_MAGIC,
+    bpm = "120",
+    var = false,
+    url = "MRS_MAGIC",
+    cat = {},
+  },
+  {
+    button = CALL_OUT_MY_NAME,
+    bpm = "67",
+    var = false,
+    url = "CALL_OUT_MY_NAME",
+    [r112_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = GOLDEN_BROW,
+    bpm = "94",
+    var = false,
+    url = "GOLDEN_BROW",
+    [r113_0] = {
+      "rock"
+    },
+  },
+  {
+    button = THE_REAL_SLIM_SHADY,
+    bpm = "105",
+    var = false,
+    url = "THE_REAL_SLIM_SHADY",
+    [r114_0] = {
+      "pop/hiphop"
+    },
+  },
+  {
+    button = AROUND_THE_WORLD,
+    bpm = "121",
+    var = false,
+    url = "AROUND_THE_WORLD",
+    [r115_0] = {
+      "electronic",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = NEW_COMPUTERS,
+    bpm = "120",
+    var = false,
+    url = "NEW_COMPUTERS",
+    [r116_0] = {
+      "memes",
+      "best"
+    },
+  },
+  {
+    button = TIME,
+    bpm = "60",
+    var = false,
+    url = "TIME",
+    [r117_0] = {
+      "movies/tv",
+      "beautiful",
+      "epic"
+    },
+  },
+  {
+    button = THIS_IS_WHAT_SPACE,
+    bpm = "130",
+    var = false,
+    url = "THIS_IS_WHAT_SPACE",
+    [r118_0] = {
+      "beautiful",
+      "pop/hiphop"
+    },
+  },
+  {
+    button = PROPOSE,
+    bpm = "126",
+    var = false,
+    url = "PROPOSE",
+    [r119_0] = {
+      "anime/jpop",
+      "best",
+      "epic",
+      "new"
+    },
+  },
+  {
+    button = BEAUTIFUL_IN_WHITE,
+    bpm = "120",
+    var = false,
+    url = "BEAUTIFUL_IN_WHITE",
+    [r70_0] = {
+      "new"
+    },
+  },
+  {
+    button = KISS_OF_DEATH,
+    bpm = "122",
+    var = false,
+    url = "KISS_OF_DEATH",
+    [r71_0] = {
+      "anime/jpop",
+      "beautiful",
+      "best",
+      "epic",
+      "movies/tv",
+      "new"
+    },
+  },
+  {
+    button = TRANSCEDENTAL_ETUDE_4,
+    bpm = "120",
+    var = false,
+    url = "TRANSCEDENTAL_ETUDE_4",
+    [r72_0] = {
+      "classical",
+      "best",
+      "epic",
+      "new"
+    },
+  },
+  {
+    button = VOILA,
+    bpm = "102",
+    var = false,
+    url = "VOILA",
+    [r73_0] = {
+      "new"
+    },
+  },
+  {
+    button = JINGLE_BELLS,
+    bpm = "110",
+    var = false,
+    url = "JINGLE_BELLS",
+    [r74_0] = {
+      "seasonal",
+      "new"
+    },
+  },
+  {
+    button = SANTA_CLAUS_IS_COMING,
+    bpm = "120",
+    var = false,
+    url = "SANTA_CLAUS_IS_COMING",
+    [r75_0] = {
+      "seasonal",
+      "new"
+    },
+  },
+  {
+    button = SINKING_TOWN,
+    bpm = "125",
+    var = false,
+    url = "SINKING_TOWN",
+    [r76_0] = {
+      "anime/jpop",
+      "best",
+      "new"
+    },
+  },
+  {
+    button = JINGLE_BELL_ROCK,
+    bpm = "138",
+    var = false,
+    url = "JINGLE_BELL_ROCK",
+    [r77_0] = {
+      "seasonal",
+      "rock",
+      "best",
+      "new"
+    },
+  },
+  {
+    button = LIFE_WILL_CHANGE,
+    bpm = "130",
+    var = false,
+    url = "LIFE_WILL_CHANGE",
+    [r78_0] = {
+      "video games",
+      "anime/jpop",
+      "new"
+    },
+  },
+  {
+    button = TREACHERY,
+    bpm = "90",
+    var = false,
+    url = "TREACHERY",
+    [r79_0] = {
+      "anime/jpop",
+      "movies/tv",
+      "epic",
+      "best",
+      "new"
+    },
+  },
+  {
+    button = MERRY_CHRISTMAS_MR_LAWRENCE,
+    bpm = "102",
+    var = false,
+    url = "MERRY_CHRISTMAS_MR_LAWRENCE",
+    [r80_0] = {
+      "anime/jpop",
+      "new"
+    },
+  },
+  {
+    button = DECK_THE_HALLS,
+    bpm = "144",
+    var = false,
+    url = "DECK_THE_HALLS",
+    [r81_0] = {
+      "seasonal",
+      "beautiful",
+      "new"
+    },
+  },
+  {
+    button = THE_ABYSS,
+    bpm = "70",
+    var = false,
+    url = "THE_ABYSS",
+    [r82_0] = {
+      "pop/hiphop",
+      "new"
+    },
+  },
+  {
+    button = IN_THE_POOL,
+    bpm = "91",
+    var = false,
+    url = "IN_THE_POOL",
+    [r83_0] = {
+      "anime/jpop",
+      "movies/tv",
+      "new"
+    },
+  },
+  {
+    button = THANG_DIEN,
+    bpm = "120",
+    var = false,
+    url = "THANG_DIEN",
+    [r84_0] = {
+      "new"
+    },
+  },
+  {
+    button = HERE_TO_STAY,
+    bpm = "70",
+    var = false,
+    url = "HERE_TO_STAY",
+    [r85_0] = {
+      "anime/jpop",
+      "movies/tv",
+      "new"
+    },
+  },
+  {
+    button = ONCE_UPON_A_DECEMBER,
+    bpm = "120",
+    var = false,
+    url = "ONCE_UPON_A_DECEMBER",
+    [r86_0] = {
+      "seasonal",
+      "movies/tv",
+      "new"
+    },
+  },
+  {
+    button = LEAVE_THE_DOOR_OPEN,
+    bpm = "74",
+    var = false,
+    url = "LEAVE_THE_DOOR_OPEN",
+    [r87_0] = {
+      "pop/hiphop",
+      "new"
+    },
+  },
+  {
+    button = IRIS_OUT,
+    bpm = "135",
+    var = false,
+    url = "IRIS_OUT",
+    [r88_0] = {
+      "anime/jpop",
+      "movies/tv",
+      "new"
+    },
+  },
+  {
+    button = DIED_IN_YOUR_ARMS,
+    bpm = "123",
+    var = false,
+    url = "DIED_IN_YOUR_ARMS",
+    [r89_0] = {
+      "rock",
+      "sad",
+      "new"
+    },
+  },
+  {
+    button = I_HATE_U_I_LOVE_U,
+    bpm = "90",
+    var = false,
+    url = "I_HATE_U_I_LOVE_U",
+    [r90_0] = {
+      "pop/hiphop",
+      "sad",
+      "new"
+    },
+  },
+  {
+    button = SAITAMAS_THEME,
+    bpm = "84",
+    var = false,
+    url = "SAITAMAS_THEME",
+    [r91_0] = {
+      "anime/jpop",
+      "movies/tv",
+      "sad",
+      "beautiful",
+      "new"
+    },
+  },
+  {
+    button = FLIGHT_OF_THE_BUMBLEBEE,
+    bpm = "190",
+    var = false,
+    url = "FLIGHT_OF_THE_BUMBLEBEE",
+    [r92_0] = {
+      "classical",
+      "new"
+    },
+  },
+  {
+    button = WE_WISH_YOU_A_MERRY,
+    bpm = "160",
+    var = false,
+    url = "WE_WISH_YOU_A_MERRY",
+    [r93_0] = {
+      "seasonal",
+      "new"
+    },
+  },
+  {
+    button = THIS_IS_HOME,
+    bpm = "130",
+    var = false,
+    url = "THIS_IS_HOME",
+    [r94_0] = {
+      "new"
+    },
+  },
+  {
+    button = THE_WINNER_TAKES_IT_ALL,
+    bpm = "126",
+    var = false,
+    url = "THE_WINNER_TAKES_IT_ALL",
+    [r95_0] = {
+      "pop/hiphop",
+      "new"
+    },
+  },
+  {
+    button = THROUGH_PATCHES_OF_VIOLET,
+    bpm = "160",
+    var = false,
+    url = "THROUGH_PATCHES_OF_VIOLET",
+    [r96_0] = {
+      "video games",
+      "electronic",
+      "new"
+    },
+  },
+  {
+    button = BINKS_RUM,
+    bpm = "120",
+    var = false,
+    url = "BINKS_RUM",
+    [r97_0] = {
+      "anime/jpop",
+      "movies/tv",
+      "new"
+    },
+  }
+}
+local r119_0 = "cat"
+r119_0 = "cat"
+r119_0 = "cat"
+r119_0 = "cat"
+r119_0 = "cat"
+r119_0 = "cat"
+r119_0 = "cat"
+r119_0 = "cat"
+r119_0 = "cat"
+r119_0 = "cat"
+r119_0 = "cat"
+local r97_0 = "cat"
+for r72_0, r73_0 in ipairs(r68_0) do
+  local r76_0 = r73_0.button.Name
+  print("song loaded: " .. r76_0)
+end
+for r72_0, r73_0 in ipairs(r68_0) do
+  local r76_0 = "SetAttribute"
+  r76_0 = "OriginalLayoutOrder"
+  r73_0.button:[r76_0](r76_0, r73_0.button.LayoutOrder)
+end
+local r69_0 = {
+  "new",
+  "peak",
+  "best",
+  "epic",
+  "beautiful",
+  "video games",
+  "movies/tv",
+  "memes",
+  "classical",
+  "pop/hiphop",
+  "anime/jpop",
+  "seasonal",
+  "sad",
+  "electronic",
+  "rock",
+  "creepy/weirdcore",
+  "undertale",
+  "deltarune",
+  "geometry dash",
+  "minecraft",
+  "omori"
+}
+for r73_0, r74_0 in ipairs(r68_0) do
+  local r75_0 = ipairs
+  local r76_0 = r74_0.cat
+  for r78_0, r79_0 in r75_0(r76_0) do
+    local r82_0 = "GetAttribute"
+    r82_0 = "AlternateNames"
+    local r80_0 = r74_0.button:[r82_0](r82_0) or ""
+    local r81_0 = {}
+    if r80_0 ~= "" then
+      r82_0 = string.split(r80_0, ",")
+      r81_0 = r82_0
+    end
+    table.insert(r81_0, r79_0)
+    local r84_0 = "SetAttribute"
+    r84_0 = "AlternateNames"
+    r74_0.button:[r84_0](r84_0, table.concat(r81_0, ","))
+  end
+end
+local r70_0 = false
+local r71_0 = {}
+local r72_0 = {}
+local r73_0 = {}
+print("initiating buttons")
+print("fetching songs")
+local r74_0 = Instance.new("TextLabel")
+r74_0.Name = "customnotice"
+r74_0.Parent = r25_0
+r74_0.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+r74_0.BorderColor3 = Color3.fromRGB(64, 68, 90)
+r74_0.BorderSizePixel = 4
+r74_0.Size = UDim2.new(0, 175, 0, 75)
+r74_0.Font = Enum.Font.SourceSansBold
+r74_0.Text = r3_0("unsupported executor")
+r74_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+r74_0.TextSize = 25
+r74_0.TextWrapped = true
+local r75_0 = {}
+local r76_0 = {}
+local r77_0 = Instance.new("TextButton")
+r77_0.Parent = r22_0
+r77_0.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+r77_0.BorderColor3 = Color3.fromRGB(64, 68, 90)
+r77_0.BorderSizePixel = 2
+r77_0.Size = UDim2.new(0, 100, 0, 25)
+r77_0.Font = Enum.Font.SourceSansBold
+r77_0.Text = r3_0("utilities") .. " ▲"
+r77_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+r77_0.TextSize = 18
+r77_0.LayoutOrder = 1
+r5_0(r77_0)
+local r78_0 = Instance.new("TextButton")
+r78_0.Parent = r22_0
+r78_0.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+r78_0.BorderColor3 = Color3.fromRGB(64, 68, 90)
+r78_0.BorderSizePixel = 2
+r78_0.Size = UDim2.new(0, 100, 0, 25)
+r78_0.Font = Enum.Font.SourceSansBold
+r78_0.Text = r3_0("categories") .. " ▲"
+r78_0.TextColor3 = Color3.fromRGB(255, 255, 255)
+r78_0.TextSize = 18
+r78_0.LayoutOrder = 100
+r5_0(r78_0)
+local r79_0 = false
+local r80_0 = false
+r77_0.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 39
+  r80_0 = not r80_0
+  for r3_39, r4_39 in ipairs(r76_0) do
+    r4_39.Visible = r80_0
+  end
+  if r80_0 then
+    r77_0.Text = r3_0("utilities") .. " ▼"
+  else
+    r77_0.Text = r3_0("utilities") .. " ▲"
+  end
+end)
+r78_0.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 9
+  r79_0 = not r79_0
+  for r3_9, r4_9 in ipairs(r75_0) do
+    r4_9.Visible = r79_0
+  end
+  if r79_0 then
+    r78_0.Text = r3_0("categories") .. " ▼"
+  else
+    r78_0.Text = r3_0("categories") .. " ▲"
+  end
+end)
+local function r81_0(r0_13, r1_13, r2_13)
+  -- line: [0, 0] id: 13
+  local r3_13 = Instance.new("TextButton")
+  r3_13.Parent = r22_0
+  r3_13.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+  r3_13.BorderColor3 = Color3.fromRGB(64, 68, 90)
+  r3_13.BorderSizePixel = 2
+  r3_13.Size = UDim2.new(0, 100, 0, 25)
+  r3_13.Font = Enum.Font.SourceSans
+  r3_13.Text = r0_13
+  r3_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+  r3_13.TextSize = 14
+  r3_13.Visible = false
+  r5_0(r3_13)
+  if r1_13 == "cat" then
+    table.insert(r75_0, r3_13)
+    r3_13.LayoutOrder = #r75_0 + 101
+  elseif r1_13 == "utils" then
+    table.insert(r76_0, r3_13)
+    r3_13.LayoutOrder = #r76_0 + 1
+  end
+  return r3_13
+end
+local function r82_0()
+  -- line: [0, 0] id: 61
+  for r3_61, r4_61 in ipairs(r68_0) do
+    r4_61.button.Visible = false
+    r4_61.button.LayoutOrder = r4_61.button:GetAttribute("OriginalLayoutOrder") or r4_61.button.LayoutOrder
+  end
+  for r3_61, r4_61 in ipairs(r71_0) do
+    r4_61.buttonFrame.Visible = false
+    r4_61.buttonFrame.LayoutOrder = r4_61.buttonFrame:GetAttribute("OriginalLayoutOrder") or r4_61.buttonFrame.LayoutOrder
+  end
+  for r3_61, r4_61 in ipairs(r73_0) do
+    r4_61.Visible = false
+  end
+  removePlaylistArrows()
+  PLAYRANDOM.Visible = false
+  LOOPRANDOM.Visible = false
+  PLAYPLAYLISTBUTTON.Visible = false
+  SHUFFLEPLAYLISTBUTTON.Visible = false
+  if NEWSONGBUTTON then
+    NEWSONGBUTTON.Visible = false
+  end
+  if r74_0 then
+    r74_0.Visible = false
+  end
+end
+local function r83_0()
+  -- line: [0, 0] id: 37
+  for r3_37, r4_37 in ipairs(r68_0) do
+    if r4_37.var == true then
+      if table.find(r73_0, r4_37.button) then
+        r40_0.Image = r9_0
+      else
+        r40_0.Image = r8_0
+      end
+      if table.find(r72_0, r4_37) then
+        r41_0.Image = r11_0
+      else
+        r41_0.Image = r10_0
+      end
+    end
+  end
+  for r3_37, r4_37 in ipairs(r71_0) do
+    if r4_37.var == true then
+      if table.find(r73_0, r4_37.buttonFrame) then
+        r40_0.Image = r9_0
+      else
+        r40_0.Image = r8_0
+      end
+      if table.find(r72_0, r4_37) then
+        r41_0.Image = r11_0
+      else
+        r41_0.Image = r10_0
+      end
+    end
+  end
+end
+local function r84_0(r0_27)
+  -- line: [0, 0] id: 27
+  if not STOPLOOP then
+    local r1_27 = Instance.new("TextButton", r31_0)
+    r1_27.BorderSizePixel = 4
+    r1_27.TextSize = 25
+    r1_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+    r1_27.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+    r1_27.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+    r1_27.Size = UDim2.new(0, 125, 0, 27)
+    r1_27.Name = "stoploop"
+    r1_27.BorderColor3 = Color3.fromRGB(64, 68, 90)
+    local r2_27 = nil
+    if r0_27 == "looprandom" then
+      r2_27 = r3_0("stoploopingsongs")
+    elseif r0_27 == "playlist" then
+      r2_27 = r3_0("stopplayingplaylist")
+    else
+      r2_27 = r3_0("stoploopingsongs")
+    end
+    r1_27.Text = r2_27
+    r1_27.LayoutOrder = 4
+    r5_0(r1_27)
+    r1_27.MouseButton1Click:Connect(function()
+      -- line: [0, 0] id: 28
+      playingall = false
+      r1_27:Destroy()
+      stopPlayingSongs()
+      r1_27 = nil
+    end)
+    -- close: r1_27
+  end
+end
+local function r85_0(r0_16)
+  -- line: [0, 0] id: 16
+  local r1_16 = Instance.new("TextLabel")
+  r1_16.Parent = r42_0
+  r1_16.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+  r1_16.BorderSizePixel = 0
+  r1_16.Size = UDim2.new(0, 0, 0, 21)
+  r1_16.Font = Enum.Font.SourceSans
+  r1_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+  r1_16.TextSize = 14
+  r1_16.Text = r0_16:lower()
+  r1_16.TextXAlignment = Enum.TextXAlignment.Center
+  r1_16.Size = UDim2.new(0, r4_0:GetTextSize(r0_16, r1_16.TextSize, r1_16.Font, Vector2.new(math.huge, 21)).X + 12, 0, 21)
+  local r4_16 = Instance.new("UICorner")
+  r4_16.CornerRadius = UDim.new(0, 21)
+  r4_16.Parent = r1_16
+end
+local function r86_0()
+  -- line: [0, 0] id: 31
+  for r3_31, r4_31 in ipairs(r42_0:GetChildren()) do
+    if r4_31:IsA("TextLabel") then
+      r4_31:Destroy()
+    end
+  end
+  for r3_31, r4_31 in ipairs(r68_0) do
+    if r4_31.var == true then
+      for r10_31, r11_31 in ipairs((r4_31.button:GetAttribute("AlternateNames") or ""):split(",")) do
+        if r11_31 ~= "" then
+          r85_0(r11_31)
+        end
+      end
+    end
+  end
+  r42_0.Size = UDim2.new(r42_0.Size.X.Scale, r42_0.Size.X.Offset, 0, r43_0.AbsoluteContentSize.Y)
+end
+local r87_0 = r81_0(r3_0("custom songs") .. " (0)", "utils")
+r87_0.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 15
+  r25_0.CanvasPosition = Vector2.new(0, 0)
+  r82_0()
+  for r3_15, r4_15 in ipairs(r71_0) do
+    r4_15.buttonFrame.Visible = true
+  end
+  NEWSONGBUTTON.Visible = true
+  r74_0.Visible = true
+end)
+function updatecustomcount()
+  -- line: [0, 0] id: 59
+  r87_0.Text = r3_0("custom songs") .. " (" .. tostring(#r71_0) .. ")"
+end
+local r88_0 = r81_0(r3_0("favourites"), "utils")
+r88_0.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 73
+  r25_0.CanvasPosition = Vector2.new(0, 0)
+  r82_0()
+  for r3_73, r4_73 in ipairs(r73_0) do
+    r4_73.Visible = true
+  end
+  r74_0.Visible = true
+end)
+function updatefavcount()
+  -- line: [0, 0] id: 30
+  r88_0.Text = r3_0("favourites") .. " (" .. tostring(#r73_0) .. ")"
+end
+updatefavcount()
+local function r89_0()
+  -- line: [0, 0] id: 25
+  for r3_25, r4_25 in ipairs(r68_0) do
+    r4_25.button.LayoutOrder = r4_25.button:GetAttribute("OriginalLayoutOrder") or r4_25.button.LayoutOrder
+  end
+  for r3_25, r4_25 in ipairs(r71_0) do
+    r4_25.buttonFrame.LayoutOrder = r4_25.buttonFrame:GetAttribute("OriginalLayoutOrder") or r4_25.buttonFrame.LayoutOrder
+  end
+  for r3_25, r4_25 in ipairs(r72_0) do
+    local r5_25 = r4_25.button or r4_25.buttonFrame
+    if r5_25 then
+      r5_25.LayoutOrder = r3_25 + 3
+    end
+  end
+end
+local r90_0 = {}
+local function r91_0(r0_70, r1_70, r2_70)
+  -- line: [0, 0] id: 70
+  local r3_70 = r0_70:IsA("Frame")
+  local r4_70 = nil
+  local r5_70 = nil
+  local r6_70 = nil
+  if r3_70 then
+    r4_70 = r0_70:FindFirstChild("button")
+    r5_70 = r0_70:FindFirstChild("ImageButton")
+    r6_70 = r0_70
+    if r5_70 then
+      r5_70.Visible = false
+    end
+    if r4_70 then
+      r4_70.Position = UDim2.new(0, 0, 0, 0)
+      r4_70.Size = UDim2.new(0, 108, 1, 0)
+      r5_0(r4_70)
+    end
+  else
+    r6_70 = Instance.new("Frame")
+    r6_70.Name = "playlistWrapper"
+    r6_70.Parent = r0_70.Parent
+    r6_70.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+    r6_70.BorderColor3 = Color3.fromRGB(64, 68, 90)
+    r6_70.BorderSizePixel = 4
+    r6_70.Size = UDim2.new(0, 175, 0, 35)
+    r6_70.LayoutOrder = r0_70.LayoutOrder
+    r4_70 = r0_70
+    r4_70.Parent = r6_70
+    r4_70.Position = UDim2.new(0, 0, 0, 0)
+    r4_70.Size = UDim2.new(0, 145, 1, 0)
+    r4_70.BorderSizePixel = 0
+    task.wait()
+    r5_0(r4_70)
+  end
+  local r7_70 = nil
+  if r3_70 and r5_70 then
+    r7_70 = Instance.new("Frame")
+    r7_70.Name = "deleteContainer"
+    r7_70.Parent = r6_70
+    r7_70.BackgroundTransparency = 1
+    r7_70.Position = UDim2.new(0, 108, 0, 0)
+    r7_70.Size = UDim2.new(0, 37, 1, 0)
+    r5_70.Parent = r7_70
+    r5_70.Position = UDim2.new(0, 5, 0.5, -13.5)
+    r5_70.Size = UDim2.new(0, 27, 0, 27)
+  end
+  local r8_70 = Instance.new("Frame")
+  r8_70.Name = "arrows"
+  r8_70.Parent = r6_70
+  r8_70.BackgroundTransparency = 1
+  local r9_70 = UDim2.new
+  local r10_70 = 0
+  local r11_70 = nil	-- notice: implicit variable refs by block#[12]
+  if r3_70 then
+    r11_70 = 145
+    if not r11_70 then
+      ::label_159::
+      r11_70 = 145
+    end
+  else
+    goto label_159	-- block#11 is visited secondly
+  end
+  r8_70.Position = r9_70(r10_70, r11_70, 0, 0)
+  r8_70.Size = UDim2.new(0, 30, 1, 0)
+  r9_70 = Instance.new("TextButton")
+  r9_70.Parent = r8_70
+  r9_70.BackgroundColor3 = Color3.fromRGB(96, 102, 121)
+  r9_70.BorderSizePixel = 0
+  r9_70.Size = UDim2.new(1, 0, 0.5, -2)
+  r9_70.Position = UDim2.new(0, 0, 0, 0)
+  r9_70.Text = "��"
+  r9_70.TextColor3 = Color3.fromRGB(255, 255, 255)
+  r9_70.TextScaled = true
+  r9_70.Font = Enum.Font.SourceSansBold
+  r10_70 = Instance.new("TextButton")
+  r10_70.Parent = r8_70
+  r10_70.BackgroundColor3 = Color3.fromRGB(96, 102, 121)
+  r10_70.BorderSizePixel = 0
+  r10_70.Size = UDim2.new(1, 0, 0.5, -2)
+  r10_70.Position = UDim2.new(0, 0, 0.5, 2)
+  r10_70.Text = "��"
+  r10_70.TextColor3 = Color3.fromRGB(255, 255, 255)
+  r10_70.TextScaled = true
+  r10_70.Font = Enum.Font.SourceSansBold
+  r11_70 = table.insert
+  local r12_70 = r90_0
+  local r13_70 = {
+    wrapper = r6_70,
+  }
+  local r14_70 = nil	-- notice: implicit variable refs by block#[15]
+  if r3_70 then
+    r14_70 = r6_70
+    if r14_70 then
+      ::label_265::
+      r14_70 = r4_70
+    end
+  else
+    goto label_265	-- block#14 is visited secondly
+  end
+  r13_70.original = r14_70
+  r13_70.isCustom = r3_70
+  r13_70.deleteButton = r5_70
+  r13_70.deleteBtnContainer = r7_70
+  r11_70(r12_70, r13_70)
+  r6_70.LayoutOrder = r2_70 + 3
+  r9_70.MouseButton1Click:Connect(function()
+    -- line: [0, 0] id: 71
+    if r2_70 > 1 then
+      r72_0[r2_70 - 1] = r72_0[r2_70]
+      r72_0[r2_70] = r72_0[r2_70 - 1]
+      refreshPlaylistView()
+    end
+  end)
+  r10_70.MouseButton1Click:Connect(function()
+    -- line: [0, 0] id: 72
+    if r2_70 < #r72_0 then
+      r72_0[r2_70 + 1] = r72_0[r2_70]
+      r72_0[r2_70] = r72_0[r2_70 + 1]
+      refreshPlaylistView()
+    end
+  end)
+end
+function removePlaylistArrows()
+  -- line: [0, 0] id: 75
+  for r3_75, r4_75 in ipairs(r90_0) do
+    if r4_75.wrapper and r4_75.wrapper.Parent then
+      if r4_75.isCustom then
+        local r5_75 = r4_75.wrapper:FindFirstChild("button")
+        if r5_75 then
+          r5_75.Position = UDim2.new(0, 0, 0, 0)
+          r5_75.Size = UDim2.new(0, 135, 0, 35)
+          r5_75.TextSize = 27
+          r5_0(r5_75)
+        end
+        if r4_75.deleteButton and r4_75.wrapper then
+          r4_75.deleteButton.Parent = r4_75.wrapper
+          r4_75.deleteButton.Position = UDim2.new(0.816999972, 0, 0.115000002, 0)
+          r4_75.deleteButton.Size = UDim2.new(0, 27, 0, 27)
+          r4_75.deleteButton.Visible = true
+        end
+        local r6_75 = r4_75.wrapper:FindFirstChild("arrows")
+        if r6_75 then
+          r6_75:Destroy()
+        end
+        if r4_75.deleteBtnContainer then
+          r4_75.deleteBtnContainer:Destroy()
+        end
+      else
+        r4_75.original.Parent = r25_0
+        r4_75.original.Size = UDim2.new(0, 175, 0, 35)
+        r4_75.original.BorderSizePixel = 4
+        r4_75.original.TextSize = 27
+        r5_0(r4_75.original)
+        r4_75.wrapper:Destroy()
+      end
+    end
+  end
+  r90_0 = {}
+end
+function refreshPlaylistView()
+  -- line: [0, 0] id: 57
+  removePlaylistArrows()
+  r82_0()
+  r89_0()
+  for r3_57, r4_57 in ipairs(r72_0) do
+    local r5_57 = r4_57.button or r4_57.buttonFrame
+    if r5_57 then
+      r5_57.Visible = true
+      r91_0(r5_57, r4_57, r3_57)
+    end
+  end
+  PLAYPLAYLISTBUTTON.Visible = true
+  SHUFFLEPLAYLISTBUTTON.Visible = true
+end
+local r92_0 = r81_0(r3_0("playlist") .. " (0)", "utils")
+local function r93_0()
+  -- line: [0, 0] id: 41
+  r92_0.Text = r3_0("playlist") .. " (" .. tostring(#r72_0) .. ")"
+end
+PLAYPLAYLISTBUTTON = r65_0(r3_0("playplaylist"))
+PLAYPLAYLISTBUTTON.LayoutOrder = 1
+SHUFFLEPLAYLISTBUTTON = r65_0(r3_0("shuffleplaylist"))
+SHUFFLEPLAYLISTBUTTON.LayoutOrder = 1
+SHUFFLEPLAYLISTBUTTON.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 5
+  if playingall then
+    return 
+  end
+  if #r72_0 <= 1 then
+    r6_0:SendNotification("Error", r3_0("playlisttooshort"), 5)
+    r13_0("7383525713", 0.5)
+    return 
+  end
+  playingall = true
+  r84_0("playlist")
+  local r0_5 = {}
+  local function r1_5()
+    -- line: [0, 0] id: 6
+    if #r72_0 <= #r0_5 then
+      r0_5 = {}
+    end
+    repeat
+      local r0_6 = math.random(1, #r72_0)
+    until not table.find(r0_5, r72_0[r0_6])
+    table.insert(r0_5, r72_0[r0_6])
+    return r72_0[r0_6]
+  end
+  while wait(0.5) do
+    local r2_5 = r1_5()
+    if not playingall then
+      return 
+    end
+    disable()
+    r2_5.var = true
+    local r3_5 = nil
+    if not r2_5.button then
+      r3_5 = r2_5.buttonFrame.button.Text
+    else
+      r3_5 = r2_5.button.Text
+    end
+    r83_0()
+    r32_0.Text = r3_5
+    r33_0.Text = tostring(r2_5.bpm)
+    r86_0()
+    playbuttonclicked()
+  end
+end)
+PLAYPLAYLISTBUTTON.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 19
+  if playingall then
+    return 
+  end
+  if #r72_0 <= 1 then
+    r6_0:SendNotification("Error", r3_0("playlisttooshort"), 5)
+    r13_0("7383525713", 0.5)
+    return 
+  end
+  playingall = true
+  r84_0("playlist")
+  local r0_19 = {}
+  local r1_19 = 1
+  local function r2_19()
+    -- line: [0, 0] id: 20
+    if #r72_0 < r1_19 then
+      r1_19 = 1
+    end
+    r1_19 = r1_19 + 1
+    return r72_0[r1_19]
+  end
+  while wait(0.5) do
+    local r3_19 = r2_19()
+    if not playingall then
+      return 
+    end
+    disable()
+    r3_19.var = true
+    local r4_19 = nil
+    if not r3_19.button then
+      r4_19 = r3_19.buttonFrame.button.Text
+    else
+      r4_19 = r3_19.button.Text
+    end
+    r83_0()
+    r32_0.Text = r4_19
+    r33_0.Text = tostring(r3_19.bpm)
+    r86_0()
+    playbuttonclicked()
+  end
+end)
+r92_0.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 38
+  r25_0.CanvasPosition = Vector2.new(0, 0)
+  refreshPlaylistView()
+end)
+r41_0.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 60
+  local r0_60 = nil	-- notice: implicit variable refs by block#[6]
+  local r1_60 = nil	-- notice: implicit variable refs by block#[7, 14, 15]
+  for r5_60, r6_60 in ipairs(r68_0) do
+    if r6_60.var == true then
+      local r7_60 = table.find(r72_0, r6_60)
+      if r7_60 then
+        r1_60 = r7_60
+        break
+      else
+        r0_60 = r6_60
+        table.insert(r72_0, r6_60)
+        break
+      end
+    end
+  end
+  if not r0_60 and not r1_60 then
+    for r5_60, r6_60 in ipairs(r71_0) do
+      if r6_60.var == true then
+        local r7_60 = table.find(r72_0, r6_60)
+        if r7_60 then
+          r1_60 = r7_60
+          break
+        else
+          r0_60 = r6_60
+          table.insert(r72_0, r6_60)
+          break
+        end
+      end
+    end
+  end
+  if r1_60 then
+    table.remove(r72_0, r1_60)
+  end
+  r93_0()
+  r83_0()
+  if PLAYPLAYLISTBUTTON.Visible then
+    refreshPlaylistView()
+  end
+end)
+r81_0(r3_0("other"), "utils").MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 22
+  r25_0.CanvasPosition = Vector2.new(0, 0)
+  r82_0()
+  PLAYRANDOM.Visible = true
+  LOOPRANDOM.Visible = true
+end)
+r81_0(r3_0("all") .. " (" .. tostring(#r68_0) .. ")", "cat").MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 14
+  r25_0.CanvasPosition = Vector2.new(0, 0)
+  r82_0()
+  for r3_14, r4_14 in ipairs(r68_0) do
+    r4_14.button.Visible = true
+  end
+  PLAYRANDOM.Visible = true
+  LOOPRANDOM.Visible = true
+end)
+for r99_0, r100_0 in pairs(r69_0) do
+  local r101_0 = {}
+  local r102_0 = ipairs
+  local r103_0 = r68_0
+  for r105_0, r106_0 in r102_0(r103_0) do
+    local r107_0 = ipairs
+    local r108_0 = r106_0.cat
+    for r110_0, r111_0 in r107_0(r108_0) do
+      if r111_0 == r100_0 then
+        table.insert(r101_0, r106_0.button.Name)
+      end
+    end
+  end
+  r103_0 = r3_0(r100_0)
+  local r105_0 = tostring(#r101_0)
+  r102_0 = r81_0(r103_0 .. " (" .. r105_0 .. ")", "cat")
+  local r104_0 = "ar"
+  r103_0 = _G.languages[r104_0]
+  if r103_0 then
+    r103_0 = "creepy/weirdcore"
+    if r100_0 == r103_0 then
+      r104_0 = " ("
+      r105_0 = tostring(#r101_0)
+      local r106_0 = ")"
+      local r107_0 = " مخيف/weirdcore"
+      r103_0 = "u{200E}" .. r104_0 .. r105_0 .. r106_0 .. r107_0
+      r102_0.Text = r103_0
+    else
+      r103_0 = "anime/jpop"
+      if r100_0 == r103_0 then
+        r104_0 = " ("
+        r105_0 = tostring(#r101_0)
+        local r106_0 = ")"
+        local r107_0 = "�نمي/J-pop"
+        r103_0 = "u{200E}" .. r104_0 .. r105_0 .. r106_0 .. r107_0
+        r102_0.Text = r103_0
+      end
+    end
+  end
+  r102_0.MouseButton1Click:Connect(function()
+    -- line: [0, 0] id: 64
+    r82_0()
+    r25_0.CanvasPosition = Vector2.new(0, 0)
+    for r3_64, r4_64 in ipairs(r68_0) do
+      r4_64.button.Visible = false
+      for r8_64, r9_64 in ipairs(r4_64.cat) do
+        if r9_64 == r100_0 then
+          r4_64.button.Visible = true
+        end
+      end
+    end
+  end)
+  -- close: r99_0
+end
+function disable()
+  -- line: [0, 0] id: 34
+  for r3_34, r4_34 in ipairs(r68_0) do
+    r4_34.var = false
+  end
+  for r3_34, r4_34 in ipairs(r71_0) do
+    r4_34.var = false
+  end
+end
+disable()
+songisplaying = false
+function playbuttonclicked()
+  -- line: [0, 0] id: 62
+  if songisplaying then
+    r6_0:SendNotification("Error", r3_0("songplayingerror"), 1)
+    r13_0("7383525713", 0.5)
+    return 
+  end
+  songisplaying = true
+  bpm = tonumber(r33_0.Text)
+  if bpm == 0 or false then
+    SendNotification("Error", r3_0("invalidbpm"), 3)
+    r13_0("7383525713", 0.5)
+    return 
+  end
+  local r0_62 = false
+  local r1_62 = false
+  task.spawn(function()
+    -- line: [0, 0] id: 63
+    local r0_63 = false
+    for r4_63, r5_63 in pairs(r68_0) do
+      if r0_63 == false and r5_63.var == true then
+        r1_62 = game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/SONGS/" .. r5_63.url, true)
+        r0_63 = true
+      end
+    end
+    if not r0_63 then
+      for r4_63, r5_63 in ipairs(r71_0) do
+        if r5_63.var == true then
+          r0_62 = true
+          songcode = readfile(r5_63.file)
+          if loadstring(songcode) then
+            print("script is good")
+            r1_62 = songcode
+          else
+            print("invalid script")
+            r6_0:SendNotification("Error", r3_0("brokensongscript"), 5)
+            r13_0("7383525713", 0.5)
+          end
+        end
+      end
+    end
+  end)
+  if r0_62 ~= true then
+    if r55_0 == true then
+      loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/midi_spoof_loader.lua", true))()
+    else
+      loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/loader_main.lua", true))()
+    end
+  end
+  repeat
+    wait()
+  until r1_62
+  loadstring(r1_62)()
+  repeat
+    wait()
+  until _G.STOPIT == true
+end
+r34_0.MouseButton1Click:Connect(playbuttonclicked)
+for r99_0, r100_0 in ipairs(r68_0) do
+  r100_0.button.MouseButton1Click:Connect(function()
+    -- line: [0, 0] id: 58
+    disable()
+    r100_0.var = true
+    r32_0.Text = r100_0.button.Text
+    r33_0.Text = r100_0.bpm
+    r86_0()
+    r31_0.CanvasPosition = Vector2.new(0, 0)
+    r83_0()
+  end)
+  -- close: r99_0
+end
+PLAYRANDOM.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 66
+  local r1_66 = (function()
+    -- line: [0, 0] id: 67
+    return r68_0[math.random(1, #r68_0)]
+  end)()
+  disable()
+  r1_66.var = true
+  r32_0.Text = r1_66.button.Name
+  r33_0.Text = r1_66.bpm
+  r86_0()
+  r83_0()
+  playbuttonclicked()
+end)
+playingall = false
+LOOPRANDOM.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 42
+  if playingall then
+    return 
+  end
+  playingall = true
+  r84_0("looprandom")
+  local r0_42 = {}
+  local function r1_42()
+    -- line: [0, 0] id: 43
+    if #r68_0 <= #r0_42 then
+      r0_42 = {}
+    end
+    repeat
+      local r0_43 = math.random(1, #r68_0)
+    until not table.find(r0_42, r68_0[r0_43].button.Name)
+    table.insert(r0_42, r68_0[r0_43].button.Name)
+    return r68_0[r0_43]
+  end
+  while wait(1) do
+    local r2_42 = r1_42()
+    if not playingall then
+      return 
+    end
+    disable()
+    r2_42.var = true
+    r32_0.Text = r2_42.button.Name
+    r33_0.Text = r2_42.bpm
+    r86_0()
+    r83_0()
+    playbuttonclicked()
+  end
+end)
+r25_0.CanvasPosition = Vector2.new(0, 0)
+r82_0()
+for r99_0, r100_0 in ipairs(r68_0) do
+  local r101_0 = r100_0.button
+  local r102_0 = "Visible"
+  local r103_0 = true
+  r101_0[r102_0] = r103_0
+end
+PLAYRANDOM.Visible = true
+LOOPRANDOM.Visible = true
+local function r96_0(r0_8, r1_8, r2_8)
+  -- line: [0, 0] id: 8
+  print("Running test: " .. r0_8)
+  local r3_8, r4_8 = pcall(r2_8)
+  if r3_8 then
+    print(r0_8 .. " passed")
+    return true
+  end
+  print(r0_8 .. " failed: " .. r4_8)
+  return false
+end
+if (function()
+  -- line: [0, 0] id: 47
+  local r0_47 = r96_0("makefolder", {}, function()
+    -- line: [0, 0] id: 52
+    makefolder("TALENTLESS_makefolder")
+    assert(isfolder("TALENTLESS_makefolder"), "Did not create the folder")
+  end)
+  if true then
+    r0_47 = r0_47
+  end
+  if r96_0("listfiles", {}, function()
+    -- line: [0, 0] id: 50
+    assert(0 < #listfiles(""), "Did not return a list of files")
+  end) then
+    r0_47 = r0_47
+  end
+  if r96_0("writefile", {}, function()
+    -- line: [0, 0] id: 49
+    writefile("TALENTLESS_makefolder/writefile.txt", "success")
+    testfile = listfiles("./TALENTLESS_makefolder")[1]
+    assert(readfile(testfile) == "success", "Did not write the file")
+  end) then
+    r0_47 = r0_47
+  end
+  if r96_0("listfiles2", {}, function()
+    -- line: [0, 0] id: 51
+    assert(0 < #listfiles("./TALENTLESS_makefolder"), "Did not return a list of files")
+  end) then
+    r0_47 = r0_47
+  end
+  r0_47 = r96_0("delfile", {}, function()
+    -- line: [0, 0] id: 48
+    delfile(testfile)
+    assert(not isfile(testfile), "Did not delete the file")
+  end)
+  if r0_47 then
+    r0_47 = r0_47
+  end
+  return r0_47
+end)() == true then
+  local r100_0 = "this executor supports custom songs"
+  print(r100_0)
+  r74_0:Destroy()
+end
+local function r99_0(r0_65)
+  -- line: [0, 0] id: 65
+  local r1_65 = Instance.new("Frame")
+  local r2_65 = Instance.new("TextButton")
+  local r3_65 = Instance.new("ImageButton")
+  r1_65.Name = "customsongframe"
+  r1_65.Parent = r25_0
+  r1_65.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+  r1_65.BorderColor3 = Color3.fromRGB(64, 68, 90)
+  r1_65.BorderSizePixel = 4
+  r1_65.Size = UDim2.new(0, 175, 0, 35)
+  r1_65.SizeConstraint = Enum.SizeConstraint.RelativeYY
+  r1_65.LayoutOrder = #r67_0 + 1
+  r1_65.Visible = false
+  r1_65:SetAttribute("OriginalLayoutOrder", #r67_0 + 1)
+  r2_65.Name = "button"
+  r2_65.Parent = r1_65
+  r2_65.BackgroundTransparency = 1
+  r2_65.Size = UDim2.new(0, 135, 0, 35)
+  r2_65.Font = Enum.Font.SourceSansBold
+  r2_65.Text = r0_65
+  r2_65.TextColor3 = Color3.fromRGB(255, 255, 255)
+  r2_65.TextSize = 27
+  r2_65.TextWrapped = true
+  r5_0(r2_65)
+  r3_65.Parent = r1_65
+  r3_65.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+  r3_65.BackgroundTransparency = 1
+  r3_65.BorderColor3 = Color3.fromRGB(0, 0, 0)
+  r3_65.BorderSizePixel = 0
+  r3_65.Position = UDim2.new(0.816999972, 0, 0.115000002, 0)
+  r3_65.Size = UDim2.new(0, 27, 0, 27)
+  r3_65.Image = "http://www.roblox.com/asset/?id=6121397347"
+  local r4_65 = Instance.new("ImageButton")
+  r4_65.Parent = r2_65
+  r4_65.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+  r4_65.BackgroundTransparency = 1
+  r4_65.BorderColor3 = Color3.fromRGB(0, 0, 0)
+  r4_65.BorderSizePixel = 0
+  r4_65.AnchorPoint = Vector2.new(0, 0.5)
+  r4_65.Position = UDim2.new(0, 0, 0.5, 0)
+  r4_65.Size = UDim2.new(0, 25, 0, 25)
+  r4_65.Image = r8_0
+  r4_65.Visible = false
+  r4_65.Name = "favButton"
+  return {
+    button = r2_65,
+    delbutton = r3_65,
+    frame = r1_65,
+  }
+end
+local r100_0 = r65_0
+r100_0 = r100_0("+", {})
+NEWSONGBUTTON = r100_0
+r100_0 = NEWSONGBUTTON
+r100_0.TextSize = 30
+r100_0 = NEWSONGBUTTON
+r100_0.Visible = false
+r100_0 = print
+r100_0("loaded NEWSONGBUTTON")
+r100_0 = NEWSONGBUTTON
+r100_0 = r100_0.MouseButton1Click
+r100_0:Connect(function()
+  -- line: [0, 0] id: 74
+  loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/add_song.lua", true))()
+end)
+r100_0 = {}
+function updateSongs()
+  -- line: [0, 0] id: 10
+  for r4_10, r5_10 in ipairs(listfiles("")) do
+    print(tostring(r5_10))
+    if r70_0 == false and string.find(tostring(r5_10), "TALENTLESS_CUSTOM_SONGS") then
+      r70_0 = true
+      print("custom songs folder found")
+    end
+  end
+  print("searching for custom song files...")
+  if r70_0 then
+    for r4_10, r5_10 in ipairs(listfiles("./TALENTLESS_CUSTOM_SONGS")) do
+      local r0_10 = false
+      print("song file found: " .. tostring(r5_10))
+      local r6_10 = tostring(r5_10)
+      if not table.find(r100_0, r6_10) then
+        if r6_10:match("%.txt$") then
+          print("its a txt file, continuing")
+          table.insert(r100_0, r6_10)
+          local r7_10 = r6_10:gsub("\\", "/"):match(".*/([^/]+)%.txt$") or "Error"
+          print("song name: " .. r7_10)
+          local r8_10 = r99_0(r7_10)
+          local r9_10 = r8_10.button
+          local r10_10 = r8_10.delbutton
+          local r11_10 = r8_10.frame
+          local r12_10 = readfile(r5_10):match("bpm%s*=%s*(%d+)") or "error"
+          print("songbpm found: " .. r12_10)
+          table.insert(r71_0, {
+            buttonFrame = r11_10,
+            bpm = r12_10,
+            var = false,
+            file = r5_10,
+          })
+          r11_10.Visible = false
+          print("created song button for " .. r7_10)
+          r9_10.MouseButton1Click:Connect(function()
+            -- line: [0, 0] id: 12
+            print("clicked!")
+            disable()
+            for r3_12, r4_12 in ipairs(r71_0) do
+              if r4_12.buttonFrame == r11_10 then
+                r4_12.var = true
+              end
+            end
+            r83_0()
+            r32_0.Text = r7_10
+            r33_0.Text = r12_10
+          end)
+          local r13_10 = 0.5
+          local r14_10 = 0
+          r10_10.MouseButton1Click:Connect(function()
+            -- line: [0, 0] id: 11
+            local r0_11 = tick()
+            if r0_11 - r14_10 <= r13_10 then
+              print("double-click detected. deleting song...")
+              delfile(r6_10)
+              r11_10:Destroy()
+              for r4_11, r5_11 in ipairs(r71_0) do
+                if r5_11.buttonFrame == r11_10 then
+                  r71_0[table.find(r71_0, r5_11)] = nil
+                  break
+                end
+              end
+              table.remove(r100_0, table.find(r100_0, r6_10))
+              updatecustomcount()
+              r13_0("18595195017", 0.5)
+              r6_0:SendNotification("Success", r3_0("songdeleted"), 5)
+            else
+              print("Single-click detected. Showing notification...")
+              r13_0("18595195017", 0.5)
+              r6_0:SendNotification("Info", r3_0("doubleclickdelete"), 3)
+            end
+            r14_10 = r0_11
+          end)
+          updatecustomcount()
+          -- close: r7_10
+        else
+          print("song already added, skipping")
+        end
+      else
+        print("its not a txt, skipping")
+      end
+      -- close: r6_10
+    end
+  end
+end
+for r104_0, r105_0 in ipairs(r25_0:GetChildren()) do
+  local r108_0 = "IsA"
+  r108_0 = "TextButton"
+  local r106_0 = r105_0:[r108_0](r108_0)
+  if r106_0 then
+    r106_0 = r105_0.Text
+    local r107_0 = "error"
+    if r106_0 == r107_0 then
+      r108_0 = "Destroy"
+      r105_0:[r108_0]()
+    end
+  end
+end
+wait(0.5)
+updateSongs()
+local r101_0 = {}
+local function r102_0()
+  -- line: [0, 0] id: 33
+  local r0_33 = nil	-- notice: implicit variable refs by block#[3]
+  local r1_33 = nil	-- notice: implicit variable refs by block#[13]
+  if isfile("TALENTLESS_FAV_SONGS.txt") then
+    r0_33 = true
+    r1_33 = readfile("TALENTLESS_FAV_SONGS.txt")
+  else
+    r0_33 = false
+  end
+  if r0_33 then
+    local r2_33 = {}
+    for r6_33, r7_33 in ipairs(r68_0) do
+      table.insert(r2_33, {
+        button = r7_33.button,
+        name = r7_33.button.Text,
+      })
+    end
+    for r6_33, r7_33 in ipairs(r71_0) do
+      local r8_33 = r7_33.buttonFrame and r7_33.buttonFrame:FindFirstChildOfClass("TextButton")
+      if r8_33 then
+        table.insert(r2_33, {
+          button = r7_33.buttonFrame,
+          name = r8_33.Text,
+        })
+      end
+    end
+    for r6_33 in r1_33:gmatch("[^\r\n]+") do
+      if r6_33 ~= "" then
+        local r7_33 = table.find(r101_0, r6_33)
+        if not r7_33 then
+          r7_33 = ipairs
+          for r10_33, r11_33 in r7_33(r2_33) do
+            if r11_33.name == r6_33 then
+              table.insert(r73_0, r11_33.button)
+            end
+          end
+          table.insert(r101_0, r6_33)
+        end
+      end
+    end
+  end
+  updatefavcount()
+end
+local function r103_0(r0_32)
+  -- line: [0, 0] id: 32
+  if not isfile("TALENTLESS_FAV_SONGS.txt") then
+    writefile("TALENTLESS_FAV_SONGS.txt", "")
+  end
+  local r1_32 = readfile("TALENTLESS_FAV_SONGS.txt")
+  local r2_32 = false
+  for r6_32 in r1_32:gmatch("[^\r\n]+") do
+    if r6_32 == r0_32 then
+      r2_32 = true
+      break
+    end
+  end
+  if not r2_32 then
+    writefile("TALENTLESS_FAV_SONGS.txt", r1_32 .. "\n" .. r0_32)
+  end
+  r102_0()
+end
+wait(0.5)
+r102_0()
+local function r104_0(r0_56)
+  -- line: [0, 0] id: 56
+  if not isfile("TALENTLESS_FAV_SONGS.txt") then
+    return 
+  end
+  local r1_56 = readfile("TALENTLESS_FAV_SONGS.txt")
+  local r2_56 = {}
+  for r6_56 in r1_56:gmatch("[^\r\n]+") do
+    if r6_56 ~= "" and r6_56 ~= r0_56 then
+      table.insert(r2_56, r6_56)
+    end
+  end
+  writefile("TALENTLESS_FAV_SONGS.txt", table.concat(r2_56, "\n"))
+  for r6_56, r7_56 in ipairs(r101_0) do
+    if r7_56 == r0_56 then
+      table.remove(r101_0, r6_56)
+      break
+    end
+  end
+  for r6_56, r7_56 in ipairs(r73_0) do
+    if r7_56:IsA("Frame") then
+      local r8_56 = r7_56 and r7_56:FindFirstChildOfClass("TextButton")
+      if r8_56 and r8_56.Text == r0_56 then
+        table.remove(r73_0, r6_56)
+        break
+      end
+    elseif r7_56.Text == r0_56 then
+      table.remove(r73_0, r6_56)
+      break
+    end
+  end
+  r83_0()
+  r102_0()
+end
+r40_0.MouseButton1Click:Connect(function()
+  -- line: [0, 0] id: 78
+  for r3_78, r4_78 in ipairs(r68_0) do
+    if r4_78.var == true then
+      if not table.find(r73_0, r4_78.button) then
+        r103_0(r4_78.button.Text)
+        r102_0()
+      else
+        r104_0(r4_78.button.Text)
+        r102_0()
+      end
+    end
+  end
+  for r3_78, r4_78 in ipairs(r71_0) do
+    if r4_78.var == true then
+      if not table.find(r73_0, r4_78.buttonFrame) then
+        r103_0(r4_78.buttonFrame.button.Text)
+        r102_0()
+      else
+        r104_0(r4_78.buttonFrame.button.Text)
+        r102_0()
+      end
+    end
+  end
+  r83_0()
+end)
+print("\n\n\n\n __ __|   \\     |      ____|   \\  | __ __|  |      ____|   ___|   ___|\n    |    _ \\    |      __|      \\ |    |    |      __|   \\___ \\ \\___ \\\n    |   ___ \\   |      |      |\\  |    |    |      |           |      |\n   _| _/    _\\ _____| _____| _| \\_|   _|   _____| _____| _____/ _____/\n\n\n\n")
+print("Copyright (C) 2025 hellohellohell012321")
+loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/logger.lua", true))()
