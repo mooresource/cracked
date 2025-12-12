@@ -1,0 +1,410 @@
+local Players = game:GetService("Players")
+local RS = game:GetService("ReplicatedStorage")
+local TweenService = game:GetService("TweenService")
+local LP = Players.LocalPlayer
+
+local gui = Instance.new("ScreenGui")
+gui.Name = "RemoteExplorer"
+gui.ResetOnSpawn = false
+gui.Parent = LP:WaitForChild("PlayerGui")
+
+local toggleBtn = Instance.new("TextButton")
+toggleBtn.Size = UDim2.new(0, 50, 0, 50)
+toggleBtn.Position = UDim2.new(0, 10, 0.5, -25)
+toggleBtn.BackgroundColor3 = Color3.fromRGB(60, 140, 220)
+toggleBtn.Text = "📡"
+toggleBtn.TextSize = 24
+toggleBtn.Font = Enum.Font.GothamBold
+toggleBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+toggleBtn.AutoButtonColor = false
+toggleBtn.Visible = false
+toggleBtn.Parent = gui
+
+local toggleCorner = Instance.new("UICorner")
+toggleCorner.CornerRadius = UDim.new(0, 12)
+toggleCorner.Parent = toggleBtn
+
+local toggleShadow = Instance.new("ImageLabel")
+toggleShadow.Name = "Shadow"
+toggleShadow.BackgroundTransparency = 1
+toggleShadow.Position = UDim2.new(0, -10, 0, -10)
+toggleShadow.Size = UDim2.new(1, 20, 1, 20)
+toggleShadow.ZIndex = 0
+toggleShadow.Image = "rbxasset://textures/ui/Controls/shadow.png"
+toggleShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+toggleShadow.ImageTransparency = 0.5
+toggleShadow.ScaleType = Enum.ScaleType.Slice
+toggleShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+toggleShadow.Parent = toggleBtn
+
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0, 450, 0, 520)
+frame.Position = UDim2.new(0.5, -225, 0.5, -260)
+frame.BackgroundColor3 = Color3.fromRGB(20, 20, 25)
+frame.Active = true
+frame.Draggable = true
+frame.Parent = gui
+
+local frameCorner = Instance.new("UICorner")
+frameCorner.CornerRadius = UDim.new(0, 12)
+frameCorner.Parent = frame
+
+local frameShadow = Instance.new("ImageLabel")
+frameShadow.Name = "Shadow"
+frameShadow.BackgroundTransparency = 1
+frameShadow.Position = UDim2.new(0, -15, 0, -15)
+frameShadow.Size = UDim2.new(1, 30, 1, 30)
+frameShadow.ZIndex = 0
+frameShadow.Image = "rbxasset://textures/ui/Controls/shadow.png"
+frameShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+frameShadow.ImageTransparency = 0.5
+frameShadow.ScaleType = Enum.ScaleType.Slice
+frameShadow.SliceCenter = Rect.new(10, 10, 118, 118)
+frameShadow.Parent = frame
+
+local bar = Instance.new("Frame")
+bar.Size = UDim2.new(1, 0, 0, 45)
+bar.BackgroundColor3 = Color3.fromRGB(30, 35, 45)
+bar.Parent = frame
+
+local barCorner = Instance.new("UICorner")
+barCorner.CornerRadius = UDim.new(0, 12)
+barCorner.Parent = bar
+
+local barGradient = Instance.new("UIGradient")
+barGradient.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(45, 50, 65)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(30, 35, 45))
+}
+barGradient.Rotation = 90
+barGradient.Parent = bar
+
+local barFix = Instance.new("Frame")
+barFix.Size = UDim2.new(1, 0, 0, 12)
+barFix.Position = UDim2.new(0, 0, 1, -12)
+barFix.BackgroundColor3 = Color3.fromRGB(30, 35, 45)
+barFix.BorderSizePixel = 0
+barFix.Parent = bar
+
+local titleContainer = Instance.new("Frame")
+titleContainer.Size = UDim2.new(1, -100, 1, 0)
+titleContainer.BackgroundTransparency = 1
+titleContainer.Parent = bar
+
+local icon = Instance.new("TextLabel")
+icon.Size = UDim2.new(0, 30, 0, 30)
+icon.Position = UDim2.new(0, 10, 0.5, -15)
+icon.BackgroundTransparency = 1
+icon.Text = "📡"
+icon.TextSize = 20
+icon.Parent = titleContainer
+
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1, -50, 1, 0)
+title.Position = UDim2.new(0, 45, 0, 0)
+title.BackgroundTransparency = 1
+title.Text = "Remote Explorer"
+title.TextColor3 = Color3.fromRGB(240, 240, 245)
+title.TextSize = 18
+title.TextXAlignment = Enum.TextXAlignment.Left
+title.Font = Enum.Font.GothamBold
+title.Parent = titleContainer
+
+local btnContainer = Instance.new("Frame")
+btnContainer.Size = UDim2.new(0, 80, 0, 30)
+btnContainer.Position = UDim2.new(1, -90, 0.5, -15)
+btnContainer.BackgroundTransparency = 1
+btnContainer.Parent = bar
+
+local refreshBtn = Instance.new("TextButton")
+refreshBtn.Size = UDim2.new(0, 35, 0, 30)
+refreshBtn.Position = UDim2.new(0, 0, 0, 0)
+refreshBtn.BackgroundColor3 = Color3.fromRGB(60, 140, 220)
+refreshBtn.Text = "↻"
+refreshBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+refreshBtn.Font = Enum.Font.GothamBold
+refreshBtn.TextSize = 20
+refreshBtn.AutoButtonColor = false
+refreshBtn.Parent = btnContainer
+
+local refreshCorner = Instance.new("UICorner")
+refreshCorner.CornerRadius = UDim.new(0, 8)
+refreshCorner.Parent = refreshBtn
+
+local closeBtn = Instance.new("TextButton")
+closeBtn.Size = UDim2.new(0, 35, 0, 30)
+closeBtn.Position = UDim2.new(0, 45, 0, 0)
+closeBtn.BackgroundColor3 = Color3.fromRGB(220, 60, 70)
+closeBtn.Text = "×"
+closeBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+closeBtn.Font = Enum.Font.GothamBold
+closeBtn.TextSize = 24
+closeBtn.AutoButtonColor = false
+closeBtn.Parent = btnContainer
+
+local closeCorner = Instance.new("UICorner")
+closeCorner.CornerRadius = UDim.new(0, 8)
+closeCorner.Parent = closeBtn
+
+local function addHoverEffect(btn, normalColor, hoverColor)
+    btn.MouseEnter:Connect(function()
+        TweenService:Create(btn, TweenInfo.new(0.2), {BackgroundColor3 = hoverColor}):Play()
+    end)
+    btn.MouseLeave:Connect(function()
+        TweenService:Create(btn, TweenInfo.new(0.2), {BackgroundColor3 = normalColor}):Play()
+    end)
+end
+
+addHoverEffect(refreshBtn, Color3.fromRGB(60, 140, 220), Color3.fromRGB(70, 160, 240))
+addHoverEffect(closeBtn, Color3.fromRGB(220, 60, 70), Color3.fromRGB(240, 80, 90))
+addHoverEffect(toggleBtn, Color3.fromRGB(60, 140, 220), Color3.fromRGB(70, 160, 240))
+
+closeBtn.MouseButton1Click:Connect(function()
+    local shrinkTween = TweenService:Create(frame, TweenInfo.new(0.3, Enum.EasingStyle.Back, Enum.EasingDirection.In), {
+        Size = UDim2.new(0, 0, 0, 0),
+        Position = UDim2.new(0.5, 0, 0.5, 0)
+    })
+    shrinkTween:Play()
+    shrinkTween.Completed:Connect(function()
+        frame.Visible = false
+        frame.Size = UDim2.new(0, 450, 0, 520)
+        frame.Position = UDim2.new(0.5, -225, 0.5, -260)
+        toggleBtn.Visible = true
+        TweenService:Create(toggleBtn, TweenInfo.new(0.3, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+            Size = UDim2.new(0, 50, 0, 50)
+        }):Play()
+    end)
+end)
+
+toggleBtn.MouseButton1Click:Connect(function()
+    TweenService:Create(toggleBtn, TweenInfo.new(0.2, Enum.EasingStyle.Back, Enum.EasingDirection.In), {
+        Size = UDim2.new(0, 0, 0, 0)
+    }):Play()
+    task.wait(0.2)
+    toggleBtn.Visible = false
+    toggleBtn.Size = UDim2.new(0, 50, 0, 50)
+    frame.Visible = true
+    TweenService:Create(frame, TweenInfo.new(0.3, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+        Size = UDim2.new(0, 450, 0, 520)
+    }):Play()
+end)
+
+local searchContainer = Instance.new("Frame")
+searchContainer.Size = UDim2.new(1, -30, 0, 38)
+searchContainer.Position = UDim2.new(0, 15, 0, 60)
+searchContainer.BackgroundColor3 = Color3.fromRGB(30, 30, 35)
+searchContainer.Parent = frame
+
+local searchCorner = Instance.new("UICorner")
+searchCorner.CornerRadius = UDim.new(0, 10)
+searchCorner.Parent = searchContainer
+
+local searchIcon = Instance.new("TextLabel")
+searchIcon.Size = UDim2.new(0, 30, 1, 0)
+searchIcon.Position = UDim2.new(0, 5, 0, 0)
+searchIcon.BackgroundTransparency = 1
+searchIcon.Text = "🔍"
+searchIcon.TextSize = 16
+searchIcon.Parent = searchContainer
+
+local search = Instance.new("TextBox")
+search.Size = UDim2.new(1, -45, 1, 0)
+search.Position = UDim2.new(0, 40, 0, 0)
+search.Text = ""
+search.BackgroundTransparency = 1
+search.TextColor3 = Color3.fromRGB(220, 220, 225)
+search.PlaceholderText = "Search remotes..."
+search.PlaceholderColor3 = Color3.fromRGB(100, 100, 110)
+search.Font = Enum.Font.Gotham
+search.TextSize = 14
+search.TextXAlignment = Enum.TextXAlignment.Left
+search.ClearTextOnFocus = false
+search.Parent = searchContainer
+
+local scroll = Instance.new("ScrollingFrame")
+scroll.Size = UDim2.new(1, -30, 1, -118)
+scroll.Position = UDim2.new(0, 15, 0, 108)
+scroll.ScrollBarThickness = 6
+scroll.BackgroundTransparency = 1
+scroll.ScrollingDirection = Enum.ScrollingDirection.Y
+scroll.AutomaticCanvasSize = Enum.AutomaticSize.Y
+scroll.BorderSizePixel = 0
+scroll.ScrollBarImageColor3 = Color3.fromRGB(80, 80, 90)
+scroll.Parent = frame
+
+local list = Instance.new("UIListLayout")
+list.Parent = scroll
+list.Padding = UDim.new(0, 8)
+
+local function getPath(obj)
+    local path = obj.Name
+    local parent = obj.Parent
+    while parent and parent ~= game do
+        path = parent.Name .. "." .. path
+        parent = parent.Parent
+    end
+    return path
+end
+
+local rows = {}
+
+local function addRow(remote)
+    local row = Instance.new("Frame")
+    row.Size = UDim2.new(1, -12, 0, 60)
+    row.BackgroundColor3 = Color3.fromRGB(28, 30, 38)
+    row.Parent = scroll
+
+    local rowCorner = Instance.new("UICorner")
+    rowCorner.CornerRadius = UDim.new(0, 8)
+    rowCorner.Parent = row
+
+    local typeIndicator = Instance.new("Frame")
+    typeIndicator.Size = UDim2.new(0, 4, 0.7, 0)
+    typeIndicator.Position = UDim2.new(0, 0, 0.15, 0)
+    typeIndicator.BorderSizePixel = 0
+    typeIndicator.Parent = row
+    
+    if remote:IsA("RemoteEvent") then
+        typeIndicator.BackgroundColor3 = Color3.fromRGB(100, 200, 120)
+    else
+        typeIndicator.BackgroundColor3 = Color3.fromRGB(255, 180, 80)
+    end
+
+    local typeCorner = Instance.new("UICorner")
+    typeCorner.CornerRadius = UDim.new(1, 0)
+    typeCorner.Parent = typeIndicator
+
+    local left = Instance.new("Frame")
+    left.Size = UDim2.new(0.65, 0, 1, 0)
+    left.Position = UDim2.new(0, 12, 0, 0)
+    left.BackgroundTransparency = 1
+    left.Parent = row
+
+    local nameLbl = Instance.new("TextLabel")
+    nameLbl.Size = UDim2.new(1, -5, 0, 20)
+    nameLbl.Position = UDim2.new(0, 0, 0, 8)
+    nameLbl.BackgroundTransparency = 1
+    nameLbl.Text = remote.Name
+    nameLbl.TextColor3 = Color3.fromRGB(240, 240, 245)
+    nameLbl.TextXAlignment = Enum.TextXAlignment.Left
+    nameLbl.Font = Enum.Font.GothamSemibold
+    nameLbl.TextSize = 14
+    nameLbl.TextTruncate = Enum.TextTruncate.AtEnd
+    nameLbl.Parent = left
+
+    local pathLbl = Instance.new("TextButton")
+    pathLbl.Size = UDim2.new(1, -5, 0, 18)
+    pathLbl.Position = UDim2.new(0, 0, 0, 32)
+    pathLbl.BackgroundTransparency = 1
+    pathLbl.Text = "📋 " .. getPath(remote)
+    pathLbl.TextColor3 = Color3.fromRGB(140, 140, 150)
+    pathLbl.TextXAlignment = Enum.TextXAlignment.Left
+    pathLbl.Font = Enum.Font.Gotham
+    pathLbl.TextSize = 11
+    pathLbl.TextTruncate = Enum.TextTruncate.AtEnd
+    pathLbl.AutoButtonColor = false
+    pathLbl.Parent = left
+
+    pathLbl.MouseEnter:Connect(function()
+        pathLbl.TextColor3 = Color3.fromRGB(100, 180, 255)
+    end)
+    pathLbl.MouseLeave:Connect(function()
+        pathLbl.TextColor3 = Color3.fromRGB(140, 140, 150)
+    end)
+
+    pathLbl.MouseButton1Click:Connect(function()
+        setclipboard(getPath(remote))
+        pathLbl.Text = "✓ Copied!"
+        task.wait(1)
+        pathLbl.Text = "📋 " .. getPath(remote)
+    end)
+
+    local btn = Instance.new("TextButton")
+    btn.Size = UDim2.new(0, 85, 0, 32)
+    btn.Position = UDim2.new(1, -95, 0.5, -16)
+    btn.Font = Enum.Font.GothamBold
+    btn.TextSize = 13
+    btn.TextColor3 = Color3.fromRGB(255, 255, 255)
+    btn.AutoButtonColor = false
+    btn.Parent = row
+
+    local btnCorner = Instance.new("UICorner")
+    btnCorner.CornerRadius = UDim.new(0, 6)
+    btnCorner.Parent = btn
+
+    if remote:IsA("RemoteEvent") then
+        btn.Text = "🚀 Fire"
+        btn.BackgroundColor3 = Color3.fromRGB(80, 180, 100)
+        addHoverEffect(btn, Color3.fromRGB(80, 180, 100), Color3.fromRGB(100, 200, 120))
+        btn.MouseButton1Click:Connect(function()
+            remote:FireServer()
+            btn.Text = "✓ Fired"
+            task.wait(0.5)
+            btn.Text = "🚀 Fire"
+        end)
+    elseif remote:IsA("RemoteFunction") then
+        btn.Text = "⚡ Invoke"
+        btn.BackgroundColor3 = Color3.fromRGB(220, 140, 60)
+        addHoverEffect(btn, Color3.fromRGB(220, 140, 60), Color3.fromRGB(255, 180, 80))
+        btn.MouseButton1Click:Connect(function()
+            local ok, res = pcall(function()
+                return remote:InvokeServer()
+            end)
+            if ok then
+                btn.Text = "✓ Success"
+                task.wait(0.5)
+                btn.Text = "⚡ Invoke"
+            else
+                btn.Text = "✗ Failed"
+                task.wait(0.5)
+                btn.Text = "⚡ Invoke"
+            end
+        end)
+    end
+
+    rows[remote] = {row = row, name = remote.Name, path = getPath(remote)}
+end
+
+local function refresh()
+    for _, data in pairs(rows) do
+        if data.row then
+            data.row:Destroy()
+        end
+    end
+    rows = {}
+    for _, obj in pairs(RS:GetDescendants()) do
+        if obj:IsA("RemoteEvent") or obj:IsA("RemoteFunction") then
+            addRow(obj)
+        end
+    end
+end
+
+refreshBtn.MouseButton1Click:Connect(function()
+    local originalText = refreshBtn.Text
+    refreshBtn.Text = "↻"
+    TweenService:Create(refreshBtn, TweenInfo.new(0.5, Enum.EasingStyle.Linear), {Rotation = 360}):Play()
+    refresh()
+    task.wait(0.5)
+    refreshBtn.Rotation = 0
+    refreshBtn.Text = originalText
+end)
+
+for _, obj in pairs(RS:GetDescendants()) do
+    if obj:IsA("RemoteEvent") or obj:IsA("RemoteFunction") then
+        addRow(obj)
+    end
+end
+
+RS.DescendantAdded:Connect(function(obj)
+    if obj:IsA("RemoteEvent") or obj:IsA("RemoteFunction") then
+        addRow(obj)
+    end
+end)
+
+search:GetPropertyChangedSignal("Text"):Connect(function()
+    local q = string.lower(search.Text)
+    for _, data in pairs(rows) do
+        local match = string.find(string.lower(data.name), q) or string.find(string.lower(data.path), q)
+        data.row.Visible = (q == "" or match ~= nil)
+    end
+end)
